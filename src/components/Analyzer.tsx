@@ -147,6 +147,9 @@ export default function Analyzer({ examples }: { examples: Example[] }) {
           <Link href="/vendors" className="text-xs text-accent hover:underline ml-1">
             Full leaderboard →
           </Link>
+          <Link href="/compare" className="text-xs text-accent hover:underline">
+            Compare two vendors →
+          </Link>
         </div>
       )}
 

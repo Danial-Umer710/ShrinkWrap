@@ -17,9 +17,14 @@ export default function VendorsPage() {
   return (
     <main className="flex-1 px-4 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto">
-        <Link href="/" className="text-sm text-muted hover:text-foreground transition">
-          ← ShrinkWrap
-        </Link>
+        <div className="flex items-center gap-4 text-sm text-muted">
+          <Link href="/" className="hover:text-foreground transition">
+            ← ShrinkWrap
+          </Link>
+          <Link href="/compare" className="hover:text-foreground transition">
+            Compare
+          </Link>
+        </div>
         <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight mt-4 leading-[1.05]">
           Pricing stability leaderboard
         </h1>

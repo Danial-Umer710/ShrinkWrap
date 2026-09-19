@@ -30,9 +30,14 @@ export default async function ReportPage({ params }: { params: Promise<{ slug: s
         <Link href="/" className="hover:text-foreground transition">
           ← ShrinkWrap
         </Link>
-        <Link href="/vendors" className="hover:text-foreground transition">
-          Leaderboard
-        </Link>
+        <span className="flex gap-4">
+          <Link href={`/compare?a=${slug}`} className="hover:text-foreground transition">
+            Compare
+          </Link>
+          <Link href="/vendors" className="hover:text-foreground transition">
+            Leaderboard
+          </Link>
+        </span>
       </div>
       <ReportView report={report} permalink={`/r/${slug}`} />
       <p className="max-w-4xl mx-auto mt-12 text-sm text-muted">
