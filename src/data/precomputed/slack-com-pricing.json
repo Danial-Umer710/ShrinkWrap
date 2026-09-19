@@ -385,49 +385,47 @@
       "Lite": 0,
       "Standard": 6.67,
       "Plus": 12.5,
-      "Enterprise": 49.99
+      "Enterprise Grid": 49.99
     },
     {
       "date": "2016-08-06",
-      "Free": 0,
+      "Lite": 0,
       "Standard": 8,
       "Plus": 15,
-      "Enterprise": null
+      "Enterprise Grid": null
     },
     {
       "date": "2018-11-02",
-      "Free": 0,
+      "Lite": 0,
       "Standard": 8,
       "Plus": 15
     },
     {
       "date": "2020-08-02",
-      "Free": 0,
+      "Lite": 0,
       "Standard": 8,
       "Plus": 15,
       "Enterprise Grid": null
     },
     {
       "date": "2025-03-06",
-      "Free": 0,
+      "Lite": 0,
       "Pro": 7.25,
       "Business+": 12.5,
       "Enterprise Grid": null
     },
     {
       "date": "2026-09-03",
-      "Free": 0,
+      "Lite": 0,
       "Pro": 8.75,
       "Business+": 18,
-      "Enterprise": null
+      "Enterprise Grid": null
     }
   ],
   "planNames": [
     "Lite",
     "Standard",
     "Plus",
-    "Enterprise",
-    "Free",
     "Enterprise Grid",
     "Pro",
     "Business+"
@@ -436,8 +434,8 @@
     {
       "date": "2016-08-06",
       "plan": "Lite",
-      "kind": "plan_removed",
-      "detail": "Lite plan ($0) disappeared"
+      "kind": "plan_renamed",
+      "detail": "Lite renamed to Free"
     },
     {
       "date": "2016-08-06",
@@ -450,12 +448,6 @@
       "plan": "Plus",
       "kind": "price_increase",
       "detail": "Plus: $12.50 / user / month → $15 billed monthly (+20%)"
-    },
-    {
-      "date": "2016-08-06",
-      "plan": "Free",
-      "kind": "plan_added",
-      "detail": "New Free plan at Free"
     },
     {
       "date": "2016-08-06",
@@ -532,20 +524,14 @@
     {
       "date": "2026-09-03",
       "plan": "Enterprise Grid",
-      "kind": "plan_removed",
-      "detail": "Enterprise Grid plan (Contact sales for pricing) disappeared"
-    },
-    {
-      "date": "2026-09-03",
-      "plan": "Enterprise",
-      "kind": "plan_added",
-      "detail": "New Enterprise plan at Contact sales for pricing"
+      "kind": "plan_renamed",
+      "detail": "Enterprise Grid renamed to Enterprise+"
     }
   ],
-  "grade": "D",
+  "grade": "C",
   "volatility": {
     "priceIncreases": 4,
-    "planRemovals": 5,
+    "planRemovals": 3,
     "limitTightenings": 2,
     "yearsCovered": 12.2,
     "biggestIncreasePct": 44,

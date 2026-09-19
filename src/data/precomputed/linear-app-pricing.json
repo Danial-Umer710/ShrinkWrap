@@ -477,7 +477,7 @@
       "date": "2020-07-01",
       "Free": 0,
       "Standard": 8,
-      "Enterprise": null
+      "Linear Enterprise": null
     },
     {
       "date": "2021-06-10",
@@ -501,39 +501,37 @@
     {
       "date": "2024-05-16",
       "Free": 0,
-      "Basic": 8,
+      "Standard": 8,
       "Business": 12,
-      "Enterprise": null
+      "Linear Enterprise": null
     },
     {
       "date": "2025-03-11",
       "Free": 0,
-      "Basic": 8,
+      "Standard": 8,
       "Business": 14,
-      "Enterprise": null
+      "Linear Enterprise": null
     },
     {
       "date": "2025-12-02",
       "Free": 0,
-      "Basic": 10,
+      "Standard": 10,
       "Business": 16,
-      "Enterprise": null
+      "Linear Enterprise": null
     },
     {
       "date": "2026-09-02",
       "Free": 0,
-      "Basic": 10,
+      "Standard": 10,
       "Business": 16,
-      "Enterprise": null
+      "Linear Enterprise": null
     }
   ],
   "planNames": [
     "Free",
     "Standard",
-    "Enterprise",
-    "Plus",
     "Linear Enterprise",
-    "Basic",
+    "Plus",
     "Business"
   ],
   "changes": [
@@ -570,8 +568,8 @@
     {
       "date": "2024-05-16",
       "plan": "Standard",
-      "kind": "plan_removed",
-      "detail": "Standard plan ($8 per user/month) disappeared"
+      "kind": "plan_renamed",
+      "detail": "Standard renamed to Basic"
     },
     {
       "date": "2024-05-16",
@@ -582,26 +580,14 @@
     {
       "date": "2024-05-16",
       "plan": "Linear Enterprise",
-      "kind": "plan_removed",
-      "detail": "Linear Enterprise plan (Contact Sales) disappeared"
-    },
-    {
-      "date": "2024-05-16",
-      "plan": "Basic",
-      "kind": "plan_added",
-      "detail": "New Basic plan at $8 per user/month"
+      "kind": "plan_renamed",
+      "detail": "Linear Enterprise renamed to Enterprise"
     },
     {
       "date": "2024-05-16",
       "plan": "Business",
       "kind": "plan_added",
       "detail": "New Business plan at $12 per user/month"
-    },
-    {
-      "date": "2024-05-16",
-      "plan": "Enterprise",
-      "kind": "plan_added",
-      "detail": "New Enterprise plan at Custom pricing"
     },
     {
       "date": "2024-05-16",
@@ -617,9 +603,9 @@
     },
     {
       "date": "2025-12-02",
-      "plan": "Basic",
+      "plan": "Standard",
       "kind": "price_increase",
-      "detail": "Basic: $8 per user/month → $10 per user/month (+25%)"
+      "detail": "Standard: $8 per user/month → $10 per user/month (+25%)"
     },
     {
       "date": "2025-12-02",
@@ -631,7 +617,7 @@
   "grade": "D",
   "volatility": {
     "priceIncreases": 4,
-    "planRemovals": 4,
+    "planRemovals": 2,
     "limitTightenings": 2,
     "yearsCovered": 6.2,
     "biggestIncreasePct": 25,

@@ -461,7 +461,7 @@
   "timeline": [
     {
       "date": "2014-10-20",
-      "Free": 0,
+      "Starter": 0,
       "Personal": 49,
       "Agency": 279,
       "Enterprise": 2590
@@ -470,60 +470,55 @@
       "date": "2018-07-09",
       "Team Pro": 45,
       "Team Business": 290,
-      "Team Enterprise": null
+      "Enterprise": null
     },
     {
       "date": "2019-12-09",
       "Starter": 0,
-      "Pro": 45,
-      "Business": 1000
+      "Team Pro": 45,
+      "Team Business": 1000
     },
     {
       "date": "2021-06-13",
       "Starter": 0,
-      "Pro": 19,
-      "Business": 99,
+      "Team Pro": 19,
+      "Team Business": 99,
       "Enterprise": null
     },
     {
       "date": "2022-09-10",
       "Starter": 0,
-      "Pro": 19,
-      "Business": 99,
+      "Team Pro": 19,
+      "Team Business": 99,
       "Enterprise": null
     },
     {
       "date": "2024-01-16",
       "Starter": 0,
-      "Pro": 19,
+      "Team Pro": 19,
       "Enterprise": null
     },
     {
       "date": "2025-05-02",
-      "Free & Starter": 0,
-      "Pro": 19,
+      "Starter": 0,
+      "Team Pro": 19,
       "Enterprise": null
     },
     {
       "date": "2026-09-05",
-      "Free": 0,
+      "Starter": 0,
       "Personal": 9,
-      "Pro": 20,
+      "Team Pro": 20,
       "Enterprise": null
     }
   ],
   "planNames": [
-    "Free",
+    "Starter",
     "Personal",
     "Agency",
     "Enterprise",
     "Team Pro",
-    "Team Business",
-    "Team Enterprise",
-    "Starter",
-    "Pro",
-    "Business",
-    "Free & Starter"
+    "Team Business"
   ],
   "changes": [
     {
@@ -547,8 +542,8 @@
     {
       "date": "2018-07-09",
       "plan": "Enterprise",
-      "kind": "plan_removed",
-      "detail": "Enterprise plan ($2590) disappeared"
+      "kind": "plan_renamed",
+      "detail": "Enterprise renamed to Team Enterprise"
     },
     {
       "date": "2018-07-09",
@@ -563,28 +558,28 @@
       "detail": "New Team Business plan at $290 / month"
     },
     {
-      "date": "2018-07-09",
-      "plan": "Team Enterprise",
-      "kind": "plan_added",
-      "detail": "New Team Enterprise plan at Custom"
-    },
-    {
       "date": "2019-12-09",
       "plan": "Team Pro",
-      "kind": "plan_removed",
-      "detail": "Team Pro plan ($45 / month) disappeared"
+      "kind": "plan_renamed",
+      "detail": "Team Pro renamed to Pro"
     },
     {
       "date": "2019-12-09",
       "plan": "Team Business",
-      "kind": "plan_removed",
-      "detail": "Team Business plan ($290 / month) disappeared"
+      "kind": "plan_renamed",
+      "detail": "Team Business renamed to Business"
     },
     {
       "date": "2019-12-09",
-      "plan": "Team Enterprise",
+      "plan": "Team Business",
+      "kind": "price_increase",
+      "detail": "Team Business: $290 / month → $1,000 /month (+245%)"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Enterprise",
       "kind": "plan_removed",
-      "detail": "Team Enterprise plan (Custom) disappeared"
+      "detail": "Enterprise plan (Custom) disappeared"
     },
     {
       "date": "2019-12-09",
@@ -593,28 +588,16 @@
       "detail": "New Starter plan at $0 /month"
     },
     {
-      "date": "2019-12-09",
-      "plan": "Pro",
-      "kind": "plan_added",
-      "detail": "New Pro plan at $45 /month"
-    },
-    {
-      "date": "2019-12-09",
-      "plan": "Business",
-      "kind": "plan_added",
-      "detail": "New Business plan at $1,000 /month"
+      "date": "2021-06-13",
+      "plan": "Team Pro",
+      "kind": "price_decrease",
+      "detail": "Team Pro: $45 /month → $19 per member /month (-58%)"
     },
     {
       "date": "2021-06-13",
-      "plan": "Pro",
+      "plan": "Team Business",
       "kind": "price_decrease",
-      "detail": "Pro: $45 /month → $19 per member /month (-58%)"
-    },
-    {
-      "date": "2021-06-13",
-      "plan": "Business",
-      "kind": "price_decrease",
-      "detail": "Business: $1,000 /month → $99 per member /month (-90%)"
+      "detail": "Team Business: $1,000 /month → $99 per member /month (-90%)"
     },
     {
       "date": "2021-06-13",
@@ -636,39 +619,27 @@
     },
     {
       "date": "2024-01-16",
-      "plan": "Business",
+      "plan": "Team Business",
       "kind": "plan_removed",
-      "detail": "Business plan ($99 per member / month) disappeared"
+      "detail": "Team Business plan ($99 per member / month) disappeared"
     },
     {
       "date": "2025-05-02",
       "plan": "Starter",
-      "kind": "plan_removed",
-      "detail": "Starter plan ($0 to get started) disappeared"
-    },
-    {
-      "date": "2025-05-02",
-      "plan": "Free & Starter",
-      "kind": "plan_added",
-      "detail": "New Free & Starter plan at Free or $0 / month"
+      "kind": "plan_renamed",
+      "detail": "Starter renamed to Free & Starter"
     },
     {
       "date": "2026-09-05",
-      "plan": "Free & Starter",
-      "kind": "plan_removed",
-      "detail": "Free & Starter plan (Free or $0 / month) disappeared"
+      "plan": "Starter",
+      "kind": "plan_renamed",
+      "detail": "Starter renamed to Free"
     },
     {
       "date": "2026-09-05",
-      "plan": "Pro",
+      "plan": "Team Pro",
       "kind": "price_increase",
-      "detail": "Pro: $19 per member / month → $20 /month with unlimited members (+5%)"
-    },
-    {
-      "date": "2026-09-05",
-      "plan": "Free",
-      "kind": "plan_added",
-      "detail": "New Free plan at $0 forever"
+      "detail": "Team Pro: $19 per member / month → $20 /month with unlimited members (+5%)"
     },
     {
       "date": "2026-09-05",
@@ -679,11 +650,11 @@
   ],
   "grade": "C",
   "volatility": {
-    "priceIncreases": 1,
-    "planRemovals": 10,
+    "priceIncreases": 2,
+    "planRemovals": 5,
     "limitTightenings": 0,
     "yearsCovered": 11.9,
-    "biggestIncreasePct": 5,
+    "biggestIncreasePct": 245,
     "freeTierKilled": false
   },
   "verdict": "Netlify has drastically reorganized its pricing model multiple times over the years. From flat-rate team plans in 2018 to per-member pricing in 2021, and finally shifting toward credit-based limits and cheaper personal options by 2026, buyers should expect continuous packaging shifts.",

@@ -84,6 +84,23 @@ function isFree(p: Plan): boolean {
   return p.monthlyPrice === 0 || /^free$/i.test(p.priceLabel.trim());
 }
 
+const GENERIC_TOKENS = new Set(["plan", "tier", "edition", "package", "the", "and", "for", "per", "month", "user"]);
+
+function distinctiveTokens(name: string): Set<string> {
+  return new Set(canon(name).split(" ").filter((t) => t.length >= 2 && !GENERIC_TOKENS.has(t)));
+}
+
+// "1GB Plan" -> "1GB Droplet", "Hobby" -> "Hobby (Free)": same price and a shared
+// distinctive word means a rename, not a kill + launch.
+function looksRenamed(a: Plan, b: Plan): boolean {
+  const samePrice = a.monthlyPrice != null && a.monthlyPrice === b.monthlyPrice;
+  const ta = distinctiveTokens(a.name);
+  const tb = distinctiveTokens(b.name);
+  const sharedToken = [...ta].some((t) => tb.has(t));
+  if (samePrice) return sharedToken || a.perSeat === b.perSeat;
+  return sharedToken && ta.size <= 2 && tb.size <= 2;
+}
+
 // A date where many plans vanish and many appear is a lineup overhaul, not N separate kills.
 function removalPenalty(changes: PlanChange[]): number {
   const byDate = new Map<string, { removed: number; added: number }>();
@@ -166,63 +183,8 @@ export async function analyze(
   }
 
   emit({ type: "status", message: "Comparing prices across time…", step: 3, total: 4 });
-
-  // Canonical plan names: keep first-seen display name per canonical key.
-  const display = new Map<string, string>();
-  for (const s of good) for (const p of s.plans) if (!display.has(canon(p.name))) display.set(canon(p.name), p.name);
-
-  const timeline = good.map((s) => {
-    const row: Report["timeline"][number] = { date: s.date };
-    for (const p of s.plans) row[display.get(canon(p.name))!] = p.monthlyPrice;
-    return row;
-  });
-
-  const changes: PlanChange[] = [];
-  let biggestIncreasePct: number | null = null;
-  let freeTierKilled = false;
-  // Only call it "killed" if no free plan exists today; a free plan missing from one
-  // archived page but back later is an extraction gap, not a policy change.
-  const freeGoneToday = !good[good.length - 1].plans.some(isFree);
-  for (let i = 1; i < good.length; i++) {
-    const prev = new Map(good[i - 1].plans.map((p) => [canon(p.name), p]));
-    const cur = new Map(good[i].plans.map((p) => [canon(p.name), p]));
-    const curHasFree = good[i].plans.some(isFree) || !freeGoneToday;
-    for (const [k, p] of prev) {
-      const c = cur.get(k);
-      const name = display.get(k)!;
-      if (!c) {
-        if (isFree(p) && !curHasFree) {
-          freeTierKilled = true;
-          changes.push({
-            date: good[i].date,
-            plan: name,
-            kind: "plan_removed",
-            detail: `Free tier killed: ${name} plan disappeared and no free plan remains`,
-          });
-        } else {
-          changes.push({ date: good[i].date, plan: name, kind: "plan_removed", detail: `${name} plan (${p.priceLabel}) disappeared` });
-        }
-        continue;
-      }
-      if (p.monthlyPrice != null && c.monthlyPrice != null && p.monthlyPrice !== c.monthlyPrice) {
-        const pct = p.monthlyPrice > 0 ? Math.round(((c.monthlyPrice - p.monthlyPrice) / p.monthlyPrice) * 100) : null;
-        const up = c.monthlyPrice > p.monthlyPrice;
-        if (up && pct != null) biggestIncreasePct = Math.max(biggestIncreasePct ?? 0, pct);
-        changes.push({
-          date: good[i].date,
-          plan: name,
-          kind: up ? "price_increase" : "price_decrease",
-          detail: `${name}: ${p.priceLabel} → ${c.priceLabel}${pct != null ? ` (${up ? "+" : ""}${pct}%)` : ""}`,
-        });
-      }
-    }
-    for (const [k, c] of cur) {
-      if (!prev.has(k)) {
-        const name = display.get(k)!;
-        changes.push({ date: good[i].date, plan: name, kind: "plan_added", detail: `New ${name} plan at ${c.priceLabel}` });
-      }
-    }
-  }
+  const diff = diffSnapshots(good);
+  const { changes } = diff;
 
   emit({ type: "status", message: "Writing the verdict…", step: 4, total: 4 });
 
@@ -254,12 +216,20 @@ Tasks:
     "smart",
   );
 
-  const allChanges = [...changes, ...summary.limitChanges].sort((a, b) => a.date.localeCompare(b.date));
+  return finalizeReport(url, snapshots, diff, summary);
+}
+
+export function summarizeVolatility(
+  good: SnapshotExtraction[],
+  allChanges: PlanChange[],
+  biggestIncreasePct: number | null,
+  freeTierKilled: boolean,
+): Report["volatility"] {
   const years = Math.max(
     0.5,
     (new Date(good[good.length - 1].date).getTime() - new Date(good[0].date).getTime()) / (365.25 * 24 * 3600 * 1000),
   );
-  const volatility = {
+  return {
     priceIncreases: allChanges.filter((c) => c.kind === "price_increase").length,
     planRemovals: allChanges.filter((c) => c.kind === "plan_removed").length,
     limitTightenings: allChanges.filter((c) => c.kind === "limit_tightened").length,
@@ -267,14 +237,113 @@ Tasks:
     biggestIncreasePct,
     freeTierKilled,
   };
+}
+
+export type Diff = {
+  changes: PlanChange[];
+  timeline: Report["timeline"];
+  planNames: string[];
+  biggestIncreasePct: number | null;
+  freeTierKilled: boolean;
+};
+
+export function diffSnapshots(good: SnapshotExtraction[]): Diff {
+  // Canonical plan names: keep first-seen display name per canonical key.
+  const display = new Map<string, string>();
+  for (const s of good) for (const p of s.plans) if (!display.has(canon(p.name))) display.set(canon(p.name), p.name);
+
+  const changes: PlanChange[] = [];
+  let biggestIncreasePct: number | null = null;
+  let freeTierKilled = false;
+  // Only call it "killed" if no free plan exists today; a free plan missing from one
+  // archived page but back later is an extraction gap, not a policy change.
+  const freeGoneToday = !good[good.length - 1].plans.some(isFree);
+  for (let i = 1; i < good.length; i++) {
+    const prev = new Map(good[i - 1].plans.map((p) => [canon(p.name), p]));
+    const cur = new Map(good[i].plans.map((p) => [canon(p.name), p]));
+    const curHasFree = good[i].plans.some(isFree) || !freeGoneToday;
+    // Pair vanished plans with newly-appeared ones that look like the same plan renamed.
+    const renamed = new Map<string, string>();
+    const claimed = new Set<string>();
+    for (const [k, p] of prev) {
+      if (cur.has(k)) continue;
+      for (const [ck, c] of cur) {
+        if (prev.has(ck) || claimed.has(ck) || !looksRenamed(p, c)) continue;
+        renamed.set(k, ck);
+        claimed.add(ck);
+        break;
+      }
+    }
+    for (const [k, p] of prev) {
+      const rk = renamed.get(k);
+      const c = cur.get(k) ?? (rk ? cur.get(rk) : undefined);
+      const name = display.get(k)!;
+      if (rk) {
+        display.set(rk, name);
+        if (canon(c!.name) !== canon(name)) changes.push({ date: good[i].date, plan: name, kind: "plan_renamed", detail: `${name} renamed to ${c!.name}` });
+      }
+      if (!c) {
+        if (isFree(p) && !curHasFree) {
+          freeTierKilled = true;
+          changes.push({
+            date: good[i].date,
+            plan: name,
+            kind: "plan_removed",
+            detail: `Free tier killed: ${name} plan disappeared and no free plan remains`,
+          });
+        } else {
+          changes.push({ date: good[i].date, plan: name, kind: "plan_removed", detail: `${name} plan (${p.priceLabel}) disappeared` });
+        }
+        continue;
+      }
+      if (p.monthlyPrice != null && c.monthlyPrice != null && p.monthlyPrice !== c.monthlyPrice) {
+        const pct = p.monthlyPrice > 0 ? Math.round(((c.monthlyPrice - p.monthlyPrice) / p.monthlyPrice) * 100) : null;
+        const up = c.monthlyPrice > p.monthlyPrice;
+        if (up && pct != null) biggestIncreasePct = Math.max(biggestIncreasePct ?? 0, pct);
+        changes.push({
+          date: good[i].date,
+          plan: name,
+          kind: up ? "price_increase" : "price_decrease",
+          detail: `${name}: ${p.priceLabel} → ${c.priceLabel}${pct != null ? ` (${up ? "+" : ""}${pct}%)` : ""}`,
+        });
+      }
+    }
+    for (const [k, c] of cur) {
+      if (!prev.has(k) && !claimed.has(k)) {
+        const name = display.get(k)!;
+        changes.push({ date: good[i].date, plan: name, kind: "plan_added", detail: `New ${name} plan at ${c.priceLabel}` });
+      }
+    }
+  }
+
+  // Built after the diff so renamed plans share one series.
+  const timeline = good.map((s) => {
+    const row: Report["timeline"][number] = { date: s.date };
+    for (const p of s.plans) row[display.get(canon(p.name))!] = p.monthlyPrice;
+    return row;
+  });
+  const planNames = Array.from(new Set(display.values()));
+
+  return { changes, timeline, planNames, biggestIncreasePct, freeTierKilled };
+}
+
+export function finalizeReport(
+  url: string,
+  snapshots: SnapshotExtraction[],
+  diff: Diff,
+  summary: { vendor: string; headline: string; verdict: string; limitChanges: PlanChange[] },
+): Report {
+  const good = snapshots.filter((s) => s.ok);
+  const allChanges = [...diff.changes, ...summary.limitChanges].sort((a, b) => a.date.localeCompare(b.date));
+  const volatility = summarizeVolatility(good, allChanges, diff.biggestIncreasePct, diff.freeTierKilled);
 
   return {
     url,
     vendor: summary.vendor,
     generatedAt: new Date().toISOString(),
     snapshots,
-    timeline,
-    planNames: Array.from(display.values()),
+    timeline: diff.timeline,
+    planNames: diff.planNames,
     changes: allChanges,
     grade: computeGrade(volatility, allChanges),
     volatility,

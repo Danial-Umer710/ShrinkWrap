@@ -19,7 +19,7 @@ export type SnapshotExtraction = {
 export type PlanChange = {
   date: string;
   plan: string;
-  kind: "price_increase" | "price_decrease" | "plan_removed" | "plan_added" | "limit_tightened" | "limit_loosened";
+  kind: "price_increase" | "price_decrease" | "plan_removed" | "plan_added" | "plan_renamed" | "limit_tightened" | "limit_loosened";
   detail: string;
 };
 

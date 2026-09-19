@@ -381,40 +381,40 @@
     },
     {
       "date": "2019-03-25",
-      "Starter": 0,
+      "Preview Release": 0,
       "Professional": 15,
       "Organization": 45
     },
     {
       "date": "2020-09-09",
-      "Starter": 0,
+      "Preview Release": 0,
       "Professional": 15,
       "Organization": 45
     },
     {
       "date": "2023-02-05",
-      "Starter": 0,
-      "Figma Professional": 15,
-      "Figma Organization": 45,
+      "Preview Release": 0,
+      "Professional": 15,
+      "Organization": 45,
       "Enterprise": 75
     },
     {
       "date": "2024-04-03",
-      "Starter": 0,
+      "Preview Release": 0,
       "Professional": 12,
       "Organization": 45,
       "Enterprise": 75
     },
     {
       "date": "2025-07-02",
-      "Starter": 0,
+      "Preview Release": 0,
       "Professional": 16,
       "Organization": 55,
       "Enterprise": 90
     },
     {
       "date": "2026-09-02",
-      "Starter": 0,
+      "Preview Release": 0,
       "Professional": 16,
       "Organization": 55,
       "Enterprise": 90
@@ -422,25 +422,16 @@
   ],
   "planNames": [
     "Preview Release",
-    "Starter",
     "Professional",
     "Organization",
-    "Figma Professional",
-    "Figma Organization",
     "Enterprise"
   ],
   "changes": [
     {
       "date": "2019-03-25",
       "plan": "Preview Release",
-      "kind": "plan_removed",
-      "detail": "Preview Release plan (Free) disappeared"
-    },
-    {
-      "date": "2019-03-25",
-      "plan": "Starter",
-      "kind": "plan_added",
-      "detail": "New Starter plan at Free"
+      "kind": "plan_renamed",
+      "detail": "Preview Release renamed to Starter"
     },
     {
       "date": "2019-03-25",
@@ -463,26 +454,14 @@
     {
       "date": "2023-02-05",
       "plan": "Professional",
-      "kind": "plan_removed",
-      "detail": "Professional plan ($12 per editor/month) disappeared"
+      "kind": "plan_renamed",
+      "detail": "Professional renamed to Figma Professional"
     },
     {
       "date": "2023-02-05",
       "plan": "Organization",
-      "kind": "plan_removed",
-      "detail": "Organization plan ($45 per editor/month) disappeared"
-    },
-    {
-      "date": "2023-02-05",
-      "plan": "Figma Professional",
-      "kind": "plan_added",
-      "detail": "New Figma Professional plan at $12 per editor/month"
-    },
-    {
-      "date": "2023-02-05",
-      "plan": "Figma Organization",
-      "kind": "plan_added",
-      "detail": "New Figma Organization plan at $45 per editor/month"
+      "kind": "plan_renamed",
+      "detail": "Organization renamed to Figma Organization"
     },
     {
       "date": "2023-02-05",
@@ -498,27 +477,9 @@
     },
     {
       "date": "2024-04-03",
-      "plan": "Figma Professional",
-      "kind": "plan_removed",
-      "detail": "Figma Professional plan ($12 per editor/month) disappeared"
-    },
-    {
-      "date": "2024-04-03",
-      "plan": "Figma Organization",
-      "kind": "plan_removed",
-      "detail": "Figma Organization plan ($45 per editor/month) disappeared"
-    },
-    {
-      "date": "2024-04-03",
       "plan": "Professional",
-      "kind": "plan_added",
-      "detail": "New Professional plan at $12 /mo"
-    },
-    {
-      "date": "2024-04-03",
-      "plan": "Organization",
-      "kind": "plan_added",
-      "detail": "New Organization plan at $45 /mo"
+      "kind": "price_decrease",
+      "detail": "Professional: $12 per editor/month → $12 /mo (-20%)"
     },
     {
       "date": "2024-04-03",
@@ -557,10 +518,10 @@
       "detail": "Starter plan gained an allocation of 150 AI credits per day."
     }
   ],
-  "grade": "D",
+  "grade": "C",
   "volatility": {
     "priceIncreases": 3,
-    "planRemovals": 5,
+    "planRemovals": 0,
     "limitTightenings": 3,
     "yearsCovered": 10.5,
     "biggestIncreasePct": 33,

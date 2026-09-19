@@ -21,6 +21,7 @@ const KIND_META: Record<PlanChange["kind"], { label: string; cls: string }> = {
   price_decrease: { label: "Price down", cls: "bg-emerald-500/15 text-emerald-300" },
   plan_removed: { label: "Plan killed", cls: "bg-red-500/20 text-red-200" },
   plan_added: { label: "New plan", cls: "bg-sky-500/15 text-sky-300" },
+  plan_renamed: { label: "Renamed", cls: "bg-zinc-500/15 text-zinc-300" },
   limit_tightened: { label: "Limit cut", cls: "bg-orange-500/15 text-orange-300" },
   limit_loosened: { label: "Limit raised", cls: "bg-emerald-500/15 text-emerald-300" },
 };
