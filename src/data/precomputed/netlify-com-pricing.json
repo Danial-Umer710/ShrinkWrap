@@ -1,0 +1,691 @@
+{
+  "url": "https://www.netlify.com/pricing",
+  "vendor": "Netlify",
+  "generatedAt": "2026-09-19T10:52:28.440Z",
+  "snapshots": [
+    {
+      "timestamp": "20141020025157",
+      "date": "2014-10-20",
+      "archiveUrl": "https://web.archive.org/web/20141020025157/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "10 Public Github repos",
+            "0 Private Github repos",
+            "50 Monthly Deploys",
+            "100MB Storage",
+            "10GB Bandwidth"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 49,
+          "priceLabel": "$49/month",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "50 Public Github repos",
+            "5 Private Github repos",
+            "100 Monthly Deploys",
+            "1GB Storage",
+            "300GB Bandwidth"
+          ]
+        },
+        {
+          "name": "Agency",
+          "monthlyPrice": 279,
+          "priceLabel": "$279/month",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Unlimited Public Repos",
+            "20 Private Github repos",
+            "500 Monthly Deploys",
+            "100GB Storage",
+            "1TB Bandwidth"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 2590,
+          "priceLabel": "$2590",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Unlimited Public Repos",
+            "Unlimited Private Github repos",
+            "1000 Monthly Deploys",
+            "1TB Storage",
+            "10TB Bandwidth"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20180709163652",
+      "date": "2018-07-09",
+      "archiveUrl": "https://web.archive.org/web/20180709163652/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Team Pro",
+          "monthlyPrice": 45,
+          "priceLabel": "$45 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "5 people included",
+            "Owner/collaborator roles",
+            "Shared environment variables",
+            "Site passwords",
+            "Audit log preview"
+          ]
+        },
+        {
+          "name": "Team Business",
+          "monthlyPrice": 290,
+          "priceLabel": "$290 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "10 people included",
+            "Owner/collaborator/billing roles",
+            "Shared environment variables",
+            "Full audit logs",
+            "Role-based access control"
+          ]
+        },
+        {
+          "name": "Team Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Large teams",
+            "Full audit logs",
+            "Role-based access control",
+            "SAML single sign-on"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20191209164259",
+      "date": "2019-12-09",
+      "archiveUrl": "https://web.archive.org/web/20191209164259/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 /month",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Custom domains & HTTPS",
+            "Instant Git integration",
+            "Continuous deployment",
+            "100GB Bandwidth"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 45,
+          "priceLabel": "$45 /month",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Concurrent builds (3 included)",
+            "Password protected sites",
+            "3 team members included",
+            "Multiple owners",
+            "400GB Bandwidth"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 1000,
+          "priceLabel": "$1,000 /month",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Custom high-performance builds",
+            "Security: SSO, RBAC, full audit logs",
+            "24x7x365 premium support options",
+            "Enterprise-level CDN",
+            "99.99% uptime SLA"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20210613063341",
+      "date": "2021-06-13",
+      "archiveUrl": "https://web.archive.org/web/20210613063341/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "1 free team member",
+            "1 concurrent build",
+            "100GB bandwidth /month",
+            "300 build minutes /month",
+            "Unlimited websites"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 19,
+          "priceLabel": "$19 per member /month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Background functions",
+            "Password-protected sites",
+            "Audit logs with 7-day history",
+            "400GB bandwidth /month",
+            "1000 build minutes /month"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 99,
+          "priceLabel": "$99 per member /month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "SAML single sign-on",
+            "Role-based access control",
+            "Audit logs with full history",
+            "Unlimited Forms, Identity, & Functions",
+            "Self-hosted GitHub/GitLab"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "99.99% uptime SLA",
+            "24×7×365 premium support",
+            "Enterprise-grade global edge network",
+            "Custom contracts & invoicing",
+            "Security & compliance review"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20220910121813",
+      "date": "2022-09-10",
+      "archiveUrl": "https://web.archive.org/web/20220910121813/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "100GB bandwidth /month",
+            "300 build minutes /month",
+            "Unlimited websites",
+            "1 concurrent build",
+            "3m Edge Functions /month"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 19,
+          "priceLabel": "$19 per member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "1TB bandwidth and 25k build minutes",
+            "Background Functions",
+            "Password-protected sites",
+            "Audit logs with 7-day history",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 99,
+          "priceLabel": "$99 per member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "SAML single sign-on",
+            "Role-based access control",
+            "1.5TB bandwidth and 35k build minutes",
+            "Audit logs with full history",
+            "Unlimited Analytics, Forms and Identity"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "99.99% uptime SLA",
+            "24x7x365 premium support",
+            "Unlimited teams with org-level controls",
+            "Enterprise-grade global edge network",
+            "Custom contracts & invoicing"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20240116153718",
+      "date": "2024-01-16",
+      "archiveUrl": "https://web.archive.org/web/20240116153718/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 to get started",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "1 free member",
+            "100GB bandwidth / month",
+            "300 build minutes / month",
+            "1 concurrent build",
+            "500 sites"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 19,
+          "priceLabel": "$19/month per member",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "1TB bandwidth / month",
+            "25k build minutes / month",
+            "3 concurrent builds",
+            "500 sites",
+            "Audit logs with 7-day history"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Custom pricing",
+            "1.5TB bandwidth / month",
+            "35k build minutes / month",
+            "5 concurrent builds",
+            "Unlimited websites"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20250502025320",
+      "date": "2025-05-02",
+      "archiveUrl": "https://web.archive.org/web/20250502025320/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Free & Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free or $0 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Single member seat",
+            "Global edge network",
+            "100GB bandwidth",
+            "300 build minutes",
+            "500 sites"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 19,
+          "priceLabel": "$19 per member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Starter, plus:",
+            "1TB bandwidth",
+            "25,000 build minutes",
+            "Background functions",
+            "Password-protected sites",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Pro, plus:",
+            "Secrets controller",
+            "Security features",
+            "Org-level SSO and SCIM",
+            "Organization management",
+            "Custom billing"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260905085327",
+      "date": "2026-09-05",
+      "archiveUrl": "https://web.archive.org/web/20260905085327/https://www.netlify.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 forever",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "300 credit limit / month",
+            "1 free member",
+            "Unlimited deploy previews",
+            "Global CDN"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 9,
+          "priceLabel": "$9 /month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "1,000 credits / month",
+            "1 member included",
+            "Smart secret detection",
+            "1-day observability"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 /month with unlimited members",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Starting with 3,000 credits/month",
+            "Unlimited members",
+            "Private organization repos",
+            "3+ concurrent builds",
+            "30-day analytics & metrics"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "99.99% SLA",
+            "Enterprise network tier",
+            "High-performance builds",
+            "SSO & SCIM",
+            "24/7 dedicated support"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2014-10-20",
+      "Free": 0,
+      "Personal": 49,
+      "Agency": 279,
+      "Enterprise": 2590
+    },
+    {
+      "date": "2018-07-09",
+      "Team Pro": 45,
+      "Team Business": 290,
+      "Team Enterprise": null
+    },
+    {
+      "date": "2019-12-09",
+      "Starter": 0,
+      "Pro": 45,
+      "Business": 1000
+    },
+    {
+      "date": "2021-06-13",
+      "Starter": 0,
+      "Pro": 19,
+      "Business": 99,
+      "Enterprise": null
+    },
+    {
+      "date": "2022-09-10",
+      "Starter": 0,
+      "Pro": 19,
+      "Business": 99,
+      "Enterprise": null
+    },
+    {
+      "date": "2024-01-16",
+      "Starter": 0,
+      "Pro": 19,
+      "Enterprise": null
+    },
+    {
+      "date": "2025-05-02",
+      "Free & Starter": 0,
+      "Pro": 19,
+      "Enterprise": null
+    },
+    {
+      "date": "2026-09-05",
+      "Free": 0,
+      "Personal": 9,
+      "Pro": 20,
+      "Enterprise": null
+    }
+  ],
+  "planNames": [
+    "Free",
+    "Personal",
+    "Agency",
+    "Enterprise",
+    "Team Pro",
+    "Team Business",
+    "Team Enterprise",
+    "Starter",
+    "Pro",
+    "Business",
+    "Free & Starter"
+  ],
+  "changes": [
+    {
+      "date": "2018-07-09",
+      "plan": "Free",
+      "kind": "plan_removed",
+      "detail": "Free plan (Free) disappeared"
+    },
+    {
+      "date": "2018-07-09",
+      "plan": "Personal",
+      "kind": "plan_removed",
+      "detail": "Personal plan ($49/month) disappeared"
+    },
+    {
+      "date": "2018-07-09",
+      "plan": "Agency",
+      "kind": "plan_removed",
+      "detail": "Agency plan ($279/month) disappeared"
+    },
+    {
+      "date": "2018-07-09",
+      "plan": "Enterprise",
+      "kind": "plan_removed",
+      "detail": "Enterprise plan ($2590) disappeared"
+    },
+    {
+      "date": "2018-07-09",
+      "plan": "Team Pro",
+      "kind": "plan_added",
+      "detail": "New Team Pro plan at $45 / month"
+    },
+    {
+      "date": "2018-07-09",
+      "plan": "Team Business",
+      "kind": "plan_added",
+      "detail": "New Team Business plan at $290 / month"
+    },
+    {
+      "date": "2018-07-09",
+      "plan": "Team Enterprise",
+      "kind": "plan_added",
+      "detail": "New Team Enterprise plan at Custom"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Team Pro",
+      "kind": "plan_removed",
+      "detail": "Team Pro plan ($45 / month) disappeared"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Team Business",
+      "kind": "plan_removed",
+      "detail": "Team Business plan ($290 / month) disappeared"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Team Enterprise",
+      "kind": "plan_removed",
+      "detail": "Team Enterprise plan (Custom) disappeared"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Starter",
+      "kind": "plan_added",
+      "detail": "New Starter plan at $0 /month"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Pro",
+      "kind": "plan_added",
+      "detail": "New Pro plan at $45 /month"
+    },
+    {
+      "date": "2019-12-09",
+      "plan": "Business",
+      "kind": "plan_added",
+      "detail": "New Business plan at $1,000 /month"
+    },
+    {
+      "date": "2021-06-13",
+      "plan": "Pro",
+      "kind": "price_decrease",
+      "detail": "Pro: $45 /month → $19 per member /month (-58%)"
+    },
+    {
+      "date": "2021-06-13",
+      "plan": "Business",
+      "kind": "price_decrease",
+      "detail": "Business: $1,000 /month → $99 per member /month (-90%)"
+    },
+    {
+      "date": "2021-06-13",
+      "plan": "Enterprise",
+      "kind": "plan_added",
+      "detail": "New Enterprise plan at Custom"
+    },
+    {
+      "date": "2022-09-10",
+      "plan": "Pro",
+      "kind": "limit_loosened",
+      "detail": "Pro plan bandwidth and build minutes significantly increased to 1TB and 25k minutes."
+    },
+    {
+      "date": "2022-09-10",
+      "plan": "Business",
+      "kind": "limit_loosened",
+      "detail": "Business plan added 1.5TB bandwidth and 35k build minutes."
+    },
+    {
+      "date": "2024-01-16",
+      "plan": "Business",
+      "kind": "plan_removed",
+      "detail": "Business plan ($99 per member / month) disappeared"
+    },
+    {
+      "date": "2025-05-02",
+      "plan": "Starter",
+      "kind": "plan_removed",
+      "detail": "Starter plan ($0 to get started) disappeared"
+    },
+    {
+      "date": "2025-05-02",
+      "plan": "Free & Starter",
+      "kind": "plan_added",
+      "detail": "New Free & Starter plan at Free or $0 / month"
+    },
+    {
+      "date": "2026-09-05",
+      "plan": "Free & Starter",
+      "kind": "plan_removed",
+      "detail": "Free & Starter plan (Free or $0 / month) disappeared"
+    },
+    {
+      "date": "2026-09-05",
+      "plan": "Pro",
+      "kind": "price_increase",
+      "detail": "Pro: $19 per member / month → $20 /month with unlimited members (+5%)"
+    },
+    {
+      "date": "2026-09-05",
+      "plan": "Free",
+      "kind": "plan_added",
+      "detail": "New Free plan at $0 forever"
+    },
+    {
+      "date": "2026-09-05",
+      "plan": "Personal",
+      "kind": "plan_added",
+      "detail": "New Personal plan at $9 /month"
+    }
+  ],
+  "grade": "C",
+  "volatility": {
+    "priceIncreases": 1,
+    "planRemovals": 10,
+    "limitTightenings": 0,
+    "yearsCovered": 11.9,
+    "biggestIncreasePct": 5,
+    "freeTierKilled": false
+  },
+  "verdict": "Netlify has drastically reorganized its pricing model multiple times over the years. From flat-rate team plans in 2018 to per-member pricing in 2021, and finally shifting toward credit-based limits and cheaper personal options by 2026, buyers should expect continuous packaging shifts.",
+  "headline": "Evolved from high-tier enterprise packages to per-member models and credit-based plans."
+}

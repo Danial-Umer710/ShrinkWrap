@@ -1,0 +1,642 @@
+{
+  "url": "https://linear.app/pricing",
+  "vendor": "Linear",
+  "generatedAt": "2026-09-19T10:52:48.159Z",
+  "snapshots": [
+    {
+      "timestamp": "20200701053740",
+      "date": "2020-07-01",
+      "archiveUrl": "https://web.archive.org/web/20200701053740/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$ 0 per user per month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All core features",
+            "SSO via G Suite",
+            "3rd party integrations & API access",
+            "Maximum upload size of 10 MB",
+            "150 MB monthly file storage",
+            "250 issues"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$ 8 per user per month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited members and usage",
+            "SSO via G Suite",
+            "Sync issues to Google Sheets",
+            "Advanced issue history",
+            "Admin tools",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "All the features",
+            "SSO via G Suite or SAML",
+            "Priority support",
+            "Custom contract & invoicing",
+            "Dedicated account manager"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20210610163117",
+      "date": "2021-06-10",
+      "archiveUrl": "https://web.archive.org/web/20210610163117/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 per user per month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited members",
+            "10 MB max upload size",
+            "150 MB monthly file storage",
+            "250 issues limit",
+            "All core features"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 per user per month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited members and usage",
+            "Unlimited file uploads",
+            "Unlimited issues",
+            "Private teams and admin tools",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 12,
+          "priceLabel": "$12 per user per month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All standard features",
+            "SSO via G Suite or SAML",
+            "Advanced authentication controls",
+            "Priority support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20220725144111",
+      "date": "2022-07-25",
+      "archiveUrl": "https://web.archive.org/web/20220725144111/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 per user/month",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "All core features",
+            "Unlimited users",
+            "10 MB max upload size",
+            "150 MB monthly file storage",
+            "250 issues"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 per user/month",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "Unlimited users and usage",
+            "SSO via G Suite",
+            "Private teams",
+            "Admin tools",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 12,
+          "priceLabel": "$12 per user/month",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "All Standard features",
+            "SSO via G Suite or SAML",
+            "Advanced authentication controls",
+            "Audit log",
+            "Priority support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230529230522",
+      "date": "2023-05-29",
+      "archiveUrl": "https://web.archive.org/web/20230529230522/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free for everyone",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited members",
+            "250 active issues",
+            "10 MB file upload size",
+            "150 MB monthly upload volume",
+            "All integrations and APIs"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Best for 1-50 users",
+            "Everything in Free, plus...",
+            "Unlimited issues and file uploads",
+            "Guest accounts and private teams",
+            "Admin tools"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 14,
+          "priceLabel": "$14 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Best for 50+ users",
+            "Annual billing only",
+            "SAML / Single Sign On",
+            "Linear Insights and SLAs",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Linear Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact Sales",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Whiteglove onboarding support",
+            "SCIM provisioning",
+            "Dedicated Slack channel",
+            "Enterprise-grade security",
+            "Custom billing"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20240516194329",
+      "date": "2024-05-16",
+      "archiveUrl": "https://web.archive.org/web/20240516194329/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited members",
+            "2 teams",
+            "250 issues (+unlimited archived)",
+            "Slack, GitHub, and API access"
+          ]
+        },
+        {
+          "name": "Basic",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All free plan features",
+            "5 teams",
+            "Unlimited issues and file uploads",
+            "Admin roles"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 12,
+          "priceLabel": "$12 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All basic plan features",
+            "Unlimited teams",
+            "Private teams and guest accounts",
+            "Linear Insights",
+            "Zendesk and Intercom integrations"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "All business plan features",
+            "Linear Asks",
+            "Issue SLAs",
+            "SAML and SCIM",
+            "Advanced security controls"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20250311125747",
+      "date": "2025-03-11",
+      "archiveUrl": "https://web.archive.org/web/20250311125747/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free for everyone",
+            "Unlimited members",
+            "2 teams",
+            "250 issues",
+            "Slack and GitHub"
+          ]
+        },
+        {
+          "name": "Basic",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Free features",
+            "5 teams",
+            "Unlimited issues",
+            "Unlimited file uploads",
+            "Admin roles"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 14,
+          "priceLabel": "$14 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Basic features",
+            "Linear Asks",
+            "Unlimited teams",
+            "Private teams and guests",
+            "Linear Insights"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "All Business features",
+            "Advanced Linear Asks",
+            "Issue SLAs",
+            "SAML and SCIM",
+            "Migration and onboarding support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20251202082911",
+      "date": "2025-12-02",
+      "archiveUrl": "https://web.archive.org/web/20251202082911/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited members",
+            "2 teams",
+            "250 issues",
+            "Slack and GitHub",
+            "AI agents"
+          ]
+        },
+        {
+          "name": "Basic",
+          "monthlyPrice": 10,
+          "priceLabel": "$10 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Free features",
+            "5 teams",
+            "Unlimited issues",
+            "Unlimited file uploads",
+            "Admin roles"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 16,
+          "priceLabel": "$16 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Basic features",
+            "Unlimited teams",
+            "Private teams and guests",
+            "Linear Insights",
+            "Issue SLAs"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "All Business features",
+            "Sub-initiatives",
+            "SAML and SCIM",
+            "Advanced security",
+            "Migration and onboarding support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260902063023",
+      "date": "2026-09-02",
+      "archiveUrl": "https://web.archive.org/web/20260902063023/https://linear.app/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free for everyone",
+            "Unlimited members",
+            "2 teams",
+            "250 issues"
+          ]
+        },
+        {
+          "name": "Basic",
+          "monthlyPrice": 10,
+          "priceLabel": "$10 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Free features",
+            "5 teams",
+            "Unlimited issues",
+            "Unlimited file uploads",
+            "Admin roles"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 16,
+          "priceLabel": "$16 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Basic features",
+            "Unlimited teams",
+            "Private teams and guests",
+            "Code Intelligence",
+            "Linear Insights"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "All Business features",
+            "SAML and SCIM",
+            "Enterprise-grade security",
+            "Priority support",
+            "Account management"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020-07-01",
+      "Free": 0,
+      "Standard": 8,
+      "Enterprise": null
+    },
+    {
+      "date": "2021-06-10",
+      "Free": 0,
+      "Standard": 8,
+      "Plus": 12
+    },
+    {
+      "date": "2022-07-25",
+      "Free": 0,
+      "Standard": 8,
+      "Plus": 12
+    },
+    {
+      "date": "2023-05-29",
+      "Free": 0,
+      "Standard": 8,
+      "Plus": 14,
+      "Linear Enterprise": null
+    },
+    {
+      "date": "2024-05-16",
+      "Free": 0,
+      "Basic": 8,
+      "Business": 12,
+      "Enterprise": null
+    },
+    {
+      "date": "2025-03-11",
+      "Free": 0,
+      "Basic": 8,
+      "Business": 14,
+      "Enterprise": null
+    },
+    {
+      "date": "2025-12-02",
+      "Free": 0,
+      "Basic": 10,
+      "Business": 16,
+      "Enterprise": null
+    },
+    {
+      "date": "2026-09-02",
+      "Free": 0,
+      "Basic": 10,
+      "Business": 16,
+      "Enterprise": null
+    }
+  ],
+  "planNames": [
+    "Free",
+    "Standard",
+    "Enterprise",
+    "Plus",
+    "Linear Enterprise",
+    "Basic",
+    "Business"
+  ],
+  "changes": [
+    {
+      "date": "2021-06-10",
+      "plan": "Enterprise",
+      "kind": "plan_removed",
+      "detail": "Enterprise plan (Custom pricing) disappeared"
+    },
+    {
+      "date": "2021-06-10",
+      "plan": "Plus",
+      "kind": "plan_added",
+      "detail": "New Plus plan at $12 per user per month"
+    },
+    {
+      "date": "2021-06-10",
+      "plan": "Free",
+      "kind": "limit_tightened",
+      "detail": "Free plan added a explicit 250 issues limit."
+    },
+    {
+      "date": "2023-05-29",
+      "plan": "Plus",
+      "kind": "price_increase",
+      "detail": "Plus: $12 per user/month → $14 per user/month (+17%)"
+    },
+    {
+      "date": "2023-05-29",
+      "plan": "Linear Enterprise",
+      "kind": "plan_added",
+      "detail": "New Linear Enterprise plan at Contact Sales"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Standard",
+      "kind": "plan_removed",
+      "detail": "Standard plan ($8 per user/month) disappeared"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Plus",
+      "kind": "plan_removed",
+      "detail": "Plus plan ($14 per user/month) disappeared"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Linear Enterprise",
+      "kind": "plan_removed",
+      "detail": "Linear Enterprise plan (Contact Sales) disappeared"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Basic",
+      "kind": "plan_added",
+      "detail": "New Basic plan at $8 per user/month"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Business",
+      "kind": "plan_added",
+      "detail": "New Business plan at $12 per user/month"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Enterprise",
+      "kind": "plan_added",
+      "detail": "New Enterprise plan at Custom pricing"
+    },
+    {
+      "date": "2024-05-16",
+      "plan": "Free",
+      "kind": "limit_tightened",
+      "detail": "Free plan restricted collaboration to only 2 teams."
+    },
+    {
+      "date": "2025-03-11",
+      "plan": "Business",
+      "kind": "price_increase",
+      "detail": "Business: $12 per user/month → $14 per user/month (+17%)"
+    },
+    {
+      "date": "2025-12-02",
+      "plan": "Basic",
+      "kind": "price_increase",
+      "detail": "Basic: $8 per user/month → $10 per user/month (+25%)"
+    },
+    {
+      "date": "2025-12-02",
+      "plan": "Business",
+      "kind": "price_increase",
+      "detail": "Business: $14 per user/month → $16 per user/month (+14%)"
+    }
+  ],
+  "grade": "D",
+  "volatility": {
+    "priceIncreases": 4,
+    "planRemovals": 4,
+    "limitTightenings": 2,
+    "yearsCovered": 6.2,
+    "biggestIncreasePct": 25,
+    "freeTierKilled": false
+  },
+  "verdict": "Linear has consistently adjusted its pricing and packaging since 2020. Core paid tiers have seen regular price hikes, such as the Business plan increasing from $12 to $16 per user by late 2025, alongside structural shifts that introduced stricter team limits on lower tiers.",
+  "headline": "Steadily increased tier prices while restructuring plans and limits over time."
+}
