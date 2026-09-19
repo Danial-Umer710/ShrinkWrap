@@ -5,12 +5,30 @@ export type Snapshot = {
 };
 
 const CDX = "https://web.archive.org/cdx/search/cdx";
+const ARCHIVE_HOST = "web.archive.org";
 const UA = "ShrinkWrap/0.1 (+https://github.com/Danial-Umer710/ShrinkWrap)";
+const MAX_HTML_BYTES = 2_000_000;
+const MAX_REDIRECTS = 5;
+
+/** Only public, named hosts are analyzable: no IP literals, localhost or internal TLDs. */
+export function isPublicHostname(host: string): boolean {
+  const h = host.toLowerCase().replace(/\.$/, "");
+  if (!h || h.startsWith("[") || /^\d{1,3}(\.\d{1,3}){3}$/.test(h)) return false;
+  if (h === "localhost" || /\.(localhost|local|internal|localdomain|home|lan|arpa)$/.test(h)) {
+    return false;
+  }
+  return h.includes(".");
+}
 
 export function normalizeUrl(input: string): string {
   let u = input.trim();
   if (!/^https?:\/\//i.test(u)) u = "https://" + u;
   const parsed = new URL(u);
+  if (!/^https?:$/.test(parsed.protocol) || !isPublicHostname(parsed.hostname)) {
+    throw new Error("Please enter a public https:// pricing page URL.");
+  }
+  parsed.username = "";
+  parsed.password = "";
   parsed.hash = "";
   parsed.search = "";
   let s = parsed.toString();
@@ -106,22 +124,68 @@ export function htmlToText(html: string): string {
   return s;
 }
 
+function isArchiveReplayUrl(u: string): boolean {
+  try {
+    const p = new URL(u);
+    return p.protocol === "https:" && p.hostname === ARCHIVE_HOST && p.pathname.startsWith("/web/");
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Fetch from the archive, following redirects only while they stay on web.archive.org
+ * replay URLs (archived pages can carry their original Location headers verbatim).
+ */
+async function fetchArchive(start: string): Promise<Response> {
+  let target = start;
+  for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+    if (!isArchiveReplayUrl(target)) throw new Error("Archived page redirected off the archive");
+    const res = await fetch(target, {
+      headers: { "User-Agent": UA, "Accept-Encoding": "gzip, br" },
+      redirect: "manual",
+      signal: AbortSignal.timeout(25000),
+    });
+    const location = res.headers.get("location");
+    if (res.status < 300 || res.status >= 400 || !location) return res;
+    await res.body?.cancel();
+    target = new URL(location, target).toString();
+  }
+  throw new Error("Too many redirects");
+}
+
+async function readCapped(res: Response, maxBytes: number): Promise<string> {
+  const declared = Number(res.headers.get("content-length") ?? 0);
+  if (declared > maxBytes) throw new Error("Archived page too large");
+  if (!res.body) return "";
+  const reader = res.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > maxBytes) {
+      await reader.cancel();
+      break;
+    }
+    chunks.push(value);
+  }
+  return new TextDecoder().decode(Buffer.concat(chunks));
+}
+
 export async function fetchSnapshotText(
   url: string,
   timestamp: string,
   maxChars = 14000,
 ): Promise<string> {
-  const raw = `https://web.archive.org/web/${timestamp}id_/${url}`;
+  const raw = `https://${ARCHIVE_HOST}/web/${timestamp}id_/${url}`;
   let lastErr = "Wayback rate limited, try again";
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt > 0) await new Promise((r) => setTimeout(r, 1500 * attempt));
     let res: Response;
     try {
-      res = await fetch(raw, {
-        headers: { "User-Agent": UA, "Accept-Encoding": "gzip, br" },
-        redirect: "follow",
-        signal: AbortSignal.timeout(25000),
-      });
+      res = await fetchArchive(raw);
     } catch (err) {
       // Wayback resets connections when it throttles; report the socket error and retry.
       const cause = err instanceof Error && err.cause instanceof Error ? err.cause : err;
@@ -134,7 +198,7 @@ export async function fetchSnapshotText(
       continue;
     }
     if (!res.ok) throw new Error(`Snapshot fetch ${res.status}`);
-    const html = await res.text();
+    const html = await readCapped(res, MAX_HTML_BYTES);
     const text = htmlToText(html);
     return text.length > maxChars ? text.slice(0, maxChars) : text;
   }
