@@ -5,7 +5,7 @@ import { GRADE_LABEL, GRADE_STYLE } from "@/lib/grades";
 import type { Report } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Compare vendors — ShrinkWrap",
+  title: "Compare vendors",
   description: "Side-by-side pricing stability of two SaaS vendors, from archived pricing pages.",
 };
 
@@ -53,7 +53,7 @@ export default async function ComparePage({
   const win = a && b ? winner(a, b) : null;
 
   return (
-    <main className="flex-1 px-4 py-10 sm:py-16">
+    <main id="main" className="flex-1 px-4 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 text-sm text-muted">
           <Link href="/" className="hover:text-foreground transition">
