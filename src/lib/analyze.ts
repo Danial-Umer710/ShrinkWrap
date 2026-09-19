@@ -93,6 +93,7 @@ function distinctiveTokens(name: string): Set<string> {
 // "1GB Plan" -> "1GB Droplet", "Hobby" -> "Hobby (Free)": same price and a shared
 // distinctive word means a rename, not a kill + launch.
 function looksRenamed(a: Plan, b: Plan): boolean {
+  if (isFree(a) !== isFree(b)) return false;
   const samePrice = a.monthlyPrice != null && a.monthlyPrice === b.monthlyPrice;
   const ta = distinctiveTokens(a.name);
   const tb = distinctiveTokens(b.name);
@@ -252,16 +253,21 @@ export function diffSnapshots(good: SnapshotExtraction[]): Diff {
   const display = new Map<string, string>();
   for (const s of good) for (const p of s.plans) if (!display.has(canon(p.name))) display.set(canon(p.name), p.name);
 
+  // Rename chains (Micro -> Personal -> Pro) are charted as one series under the latest name.
+  const lineage = new Map<string, { keys: Set<string>; label: string }>();
+
   const changes: PlanChange[] = [];
   let biggestIncreasePct: number | null = null;
   let freeTierKilled = false;
   // Only call it "killed" if no free plan exists today; a free plan missing from one
   // archived page but back later is an extraction gap, not a policy change.
-  const freeGoneToday = !good[good.length - 1].plans.some(isFree);
+  // The kill is the step after the LAST snapshot that still had a free plan.
+  const lastFreeIdx = good.map((s) => s.plans.some(isFree)).lastIndexOf(true);
+  const freeGoneToday = lastFreeIdx !== good.length - 1;
   for (let i = 1; i < good.length; i++) {
     const prev = new Map(good[i - 1].plans.map((p) => [canon(p.name), p]));
     const cur = new Map(good[i].plans.map((p) => [canon(p.name), p]));
-    const curHasFree = good[i].plans.some(isFree) || !freeGoneToday;
+    const curHasFree = !(freeGoneToday && i - 1 === lastFreeIdx);
     // Pair vanished plans with newly-appeared ones that look like the same plan renamed.
     const renamed = new Map<string, string>();
     const claimed = new Set<string>();
@@ -278,9 +284,13 @@ export function diffSnapshots(good: SnapshotExtraction[]): Diff {
       const rk = renamed.get(k);
       const c = cur.get(k) ?? (rk ? cur.get(rk) : undefined);
       const name = display.get(k)!;
-      if (rk) {
-        display.set(rk, name);
-        if (canon(c!.name) !== canon(name)) changes.push({ date: good[i].date, plan: name, kind: "plan_renamed", detail: `${name} renamed to ${c!.name}` });
+      if (rk && c) {
+        const line = lineage.get(k) ?? { keys: new Set([k]), label: name };
+        line.keys.add(rk);
+        line.label = c.name;
+        lineage.set(k, line);
+        lineage.set(rk, line);
+        if (canon(c.name) !== canon(name)) changes.push({ date: good[i].date, plan: name, kind: "plan_renamed", detail: `${name} renamed to ${c.name}` });
       }
       if (!c) {
         if (isFree(p) && !curHasFree) {
@@ -317,6 +327,8 @@ export function diffSnapshots(good: SnapshotExtraction[]): Diff {
   }
 
   // Built after the diff so renamed plans share one series.
+  for (const line of lineage.values()) for (const k of line.keys) display.set(k, line.label);
+  for (const c of changes) c.plan = display.get(canon(c.plan)) ?? c.plan;
   const timeline = good.map((s) => {
     const row: Report["timeline"][number] = { date: s.date };
     for (const p of s.plans) row[display.get(canon(p.name))!] = p.monthlyPrice;

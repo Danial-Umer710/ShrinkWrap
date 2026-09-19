@@ -382,58 +382,58 @@
   "timeline": [
     {
       "date": "2014-07-03",
-      "Lite": 0,
+      "Free": 0,
       "Standard": 6.67,
       "Plus": 12.5,
-      "Enterprise Grid": 49.99
+      "Enterprise+": 49.99
     },
     {
       "date": "2016-08-06",
-      "Lite": 0,
+      "Free": 0,
       "Standard": 8,
       "Plus": 15,
-      "Enterprise Grid": null
+      "Enterprise+": null
     },
     {
       "date": "2018-11-02",
-      "Lite": 0,
+      "Free": 0,
       "Standard": 8,
       "Plus": 15
     },
     {
       "date": "2020-08-02",
-      "Lite": 0,
+      "Free": 0,
       "Standard": 8,
       "Plus": 15,
-      "Enterprise Grid": null
+      "Enterprise+": null
     },
     {
       "date": "2025-03-06",
-      "Lite": 0,
+      "Free": 0,
       "Pro": 7.25,
       "Business+": 12.5,
-      "Enterprise Grid": null
+      "Enterprise+": null
     },
     {
       "date": "2026-09-03",
-      "Lite": 0,
+      "Free": 0,
       "Pro": 8.75,
       "Business+": 18,
-      "Enterprise Grid": null
+      "Enterprise+": null
     }
   ],
   "planNames": [
-    "Lite",
+    "Free",
     "Standard",
     "Plus",
-    "Enterprise Grid",
+    "Enterprise+",
     "Pro",
     "Business+"
   ],
   "changes": [
     {
       "date": "2016-08-06",
-      "plan": "Lite",
+      "plan": "Free",
       "kind": "plan_renamed",
       "detail": "Lite renamed to Free"
     },
@@ -463,7 +463,7 @@
     },
     {
       "date": "2018-11-02",
-      "plan": "Enterprise",
+      "plan": "Enterprise+",
       "kind": "plan_removed",
       "detail": "Enterprise plan (Custom) disappeared"
     },
@@ -475,7 +475,7 @@
     },
     {
       "date": "2020-08-02",
-      "plan": "Enterprise Grid",
+      "plan": "Enterprise+",
       "kind": "plan_added",
       "detail": "New Enterprise Grid plan at Contact Sales"
     },
@@ -523,7 +523,7 @@
     },
     {
       "date": "2026-09-03",
-      "plan": "Enterprise Grid",
+      "plan": "Enterprise+",
       "kind": "plan_renamed",
       "detail": "Enterprise Grid renamed to Enterprise+"
     }

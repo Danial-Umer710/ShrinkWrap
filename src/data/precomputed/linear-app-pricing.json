@@ -476,61 +476,61 @@
     {
       "date": "2020-07-01",
       "Free": 0,
-      "Standard": 8,
-      "Linear Enterprise": null
+      "Basic": 8,
+      "Enterprise": null
     },
     {
       "date": "2021-06-10",
       "Free": 0,
-      "Standard": 8,
+      "Basic": 8,
       "Plus": 12
     },
     {
       "date": "2022-07-25",
       "Free": 0,
-      "Standard": 8,
+      "Basic": 8,
       "Plus": 12
     },
     {
       "date": "2023-05-29",
       "Free": 0,
-      "Standard": 8,
+      "Basic": 8,
       "Plus": 14,
-      "Linear Enterprise": null
+      "Enterprise": null
     },
     {
       "date": "2024-05-16",
       "Free": 0,
-      "Standard": 8,
+      "Basic": 8,
       "Business": 12,
-      "Linear Enterprise": null
+      "Enterprise": null
     },
     {
       "date": "2025-03-11",
       "Free": 0,
-      "Standard": 8,
+      "Basic": 8,
       "Business": 14,
-      "Linear Enterprise": null
+      "Enterprise": null
     },
     {
       "date": "2025-12-02",
       "Free": 0,
-      "Standard": 10,
+      "Basic": 10,
       "Business": 16,
-      "Linear Enterprise": null
+      "Enterprise": null
     },
     {
       "date": "2026-09-02",
       "Free": 0,
-      "Standard": 10,
+      "Basic": 10,
       "Business": 16,
-      "Linear Enterprise": null
+      "Enterprise": null
     }
   ],
   "planNames": [
     "Free",
-    "Standard",
-    "Linear Enterprise",
+    "Basic",
+    "Enterprise",
     "Plus",
     "Business"
   ],
@@ -561,13 +561,13 @@
     },
     {
       "date": "2023-05-29",
-      "plan": "Linear Enterprise",
+      "plan": "Enterprise",
       "kind": "plan_added",
       "detail": "New Linear Enterprise plan at Contact Sales"
     },
     {
       "date": "2024-05-16",
-      "plan": "Standard",
+      "plan": "Basic",
       "kind": "plan_renamed",
       "detail": "Standard renamed to Basic"
     },
@@ -579,7 +579,7 @@
     },
     {
       "date": "2024-05-16",
-      "plan": "Linear Enterprise",
+      "plan": "Enterprise",
       "kind": "plan_renamed",
       "detail": "Linear Enterprise renamed to Enterprise"
     },
@@ -603,9 +603,9 @@
     },
     {
       "date": "2025-12-02",
-      "plan": "Standard",
+      "plan": "Basic",
       "kind": "price_increase",
-      "detail": "Standard: $8 per user/month → $10 per user/month (+25%)"
+      "detail": "Basic: $8 per user/month → $10 per user/month (+25%)"
     },
     {
       "date": "2025-12-02",

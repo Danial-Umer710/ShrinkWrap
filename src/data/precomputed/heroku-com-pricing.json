@@ -563,7 +563,7 @@
     {
       "date": "2009-04-27",
       "Blossom": 0,
-      "Koi": 15,
+      "Shared Database": 15,
       "Crane": 50,
       "Ronin": 200,
       "Fugu": 400,
@@ -573,7 +573,7 @@
       "date": "2011-08-02",
       "Web Dynos": 36.5,
       "Worker Dynos": 36.5,
-      "Koi": 15,
+      "Shared Database": 15,
       "Ronin": 200,
       "Fugu": 400,
       "Ika": 800,
@@ -582,44 +582,44 @@
     },
     {
       "date": "2014-02-07",
-      "1X Dyno": 36,
-      "2X Dyno": 72,
-      "Performance Dyno": 576,
-      "Standard Support": 0,
+      "Standard 1x": 36,
+      "Standard 2x": 72,
+      "Performance M": 576,
+      "Free": 0,
       "Premium Support": 1000,
       "Technical Account Manager": 2000
     },
     {
       "date": "2016-07-08",
-      "Standard Support": 0,
-      "Hobby": 7,
-      "1X Dyno": 25,
-      "2X Dyno": 50,
-      "Performance Dyno": 250,
+      "Free": 0,
+      "Basic": 7,
+      "Standard 1x": 25,
+      "Standard 2x": 50,
+      "Performance M": 250,
       "Performance L": 500
     },
     {
       "date": "2019-08-06",
-      "Standard Support": 0,
-      "Hobby": 7,
-      "1X Dyno": 25,
-      "2X Dyno": 50,
-      "Performance Dyno": 250,
+      "Free": 0,
+      "Basic": 7,
+      "Standard 1x": 25,
+      "Standard 2x": 50,
+      "Performance M": 250,
       "Performance L": 500
     },
     {
       "date": "2026-09-01",
       "Eco": 5,
-      "Hobby": 7,
-      "1X Dyno": 25,
-      "Performance Dyno": 250,
+      "Basic": 7,
+      "Standard 1x": 25,
+      "Performance M": 250,
       "Private-S": 125,
       "Shield-S": 150
     }
   ],
   "planNames": [
     "Blossom",
-    "Koi",
+    "Shared Database",
     "Crane",
     "Ronin",
     "Fugu",
@@ -628,13 +628,13 @@
     "Worker Dynos",
     "Ika",
     "Baku",
-    "1X Dyno",
-    "2X Dyno",
-    "Performance Dyno",
-    "Standard Support",
+    "Standard 1x",
+    "Standard 2x",
+    "Performance M",
+    "Free",
     "Premium Support",
     "Technical Account Manager",
-    "Hobby",
+    "Basic",
     "Performance L",
     "Eco",
     "Private-S",
@@ -645,11 +645,11 @@
       "date": "2011-08-02",
       "plan": "Blossom",
       "kind": "plan_removed",
-      "detail": "Free tier killed: Blossom plan disappeared and no free plan remains"
+      "detail": "Blossom plan (Free) disappeared"
     },
     {
       "date": "2011-08-02",
-      "plan": "Koi",
+      "plan": "Shared Database",
       "kind": "plan_renamed",
       "detail": "Koi renamed to Shared Database"
     },
@@ -715,9 +715,9 @@
     },
     {
       "date": "2014-02-07",
-      "plan": "Koi",
+      "plan": "Shared Database",
       "kind": "plan_removed",
-      "detail": "Koi plan ($15 / month) disappeared"
+      "detail": "Shared Database plan ($15 / month) disappeared"
     },
     {
       "date": "2014-02-07",
@@ -751,25 +751,25 @@
     },
     {
       "date": "2014-02-07",
-      "plan": "1X Dyno",
+      "plan": "Standard 1x",
       "kind": "plan_added",
       "detail": "New 1X Dyno plan at $0.05/dyno-hour"
     },
     {
       "date": "2014-02-07",
-      "plan": "2X Dyno",
+      "plan": "Standard 2x",
       "kind": "plan_added",
       "detail": "New 2X Dyno plan at $0.10/dyno-hour"
     },
     {
       "date": "2014-02-07",
-      "plan": "Performance Dyno",
+      "plan": "Performance M",
       "kind": "plan_added",
       "detail": "New Performance Dyno plan at $0.80/dyno-hour"
     },
     {
       "date": "2014-02-07",
-      "plan": "Standard Support",
+      "plan": "Free",
       "kind": "plan_added",
       "detail": "New Standard Support plan at Free"
     },
@@ -787,43 +787,43 @@
     },
     {
       "date": "2016-07-08",
-      "plan": "1X Dyno",
+      "plan": "Standard 1x",
       "kind": "plan_renamed",
       "detail": "1X Dyno renamed to Standard 1x"
     },
     {
       "date": "2016-07-08",
-      "plan": "1X Dyno",
+      "plan": "Standard 1x",
       "kind": "price_decrease",
       "detail": "1X Dyno: $0.05/dyno-hour → $25/dyno per month (-31%)"
     },
     {
       "date": "2016-07-08",
-      "plan": "2X Dyno",
+      "plan": "Standard 2x",
       "kind": "plan_renamed",
       "detail": "2X Dyno renamed to Standard 2x"
     },
     {
       "date": "2016-07-08",
-      "plan": "2X Dyno",
+      "plan": "Standard 2x",
       "kind": "price_decrease",
       "detail": "2X Dyno: $0.10/dyno-hour → $50/dyno per month (-31%)"
     },
     {
       "date": "2016-07-08",
-      "plan": "Performance Dyno",
+      "plan": "Performance M",
       "kind": "plan_renamed",
       "detail": "Performance Dyno renamed to Performance M"
     },
     {
       "date": "2016-07-08",
-      "plan": "Performance Dyno",
+      "plan": "Performance M",
       "kind": "price_decrease",
       "detail": "Performance Dyno: $0.80/dyno-hour → $250/dyno per month (-57%)"
     },
     {
       "date": "2016-07-08",
-      "plan": "Standard Support",
+      "plan": "Free",
       "kind": "plan_renamed",
       "detail": "Standard Support renamed to Free"
     },
@@ -841,7 +841,7 @@
     },
     {
       "date": "2016-07-08",
-      "plan": "Hobby",
+      "plan": "Basic",
       "kind": "plan_added",
       "detail": "New Hobby plan at $7 /dyno per month"
     },
@@ -853,21 +853,21 @@
     },
     {
       "date": "2026-09-01",
-      "plan": "Standard Support",
+      "plan": "Free",
       "kind": "plan_removed",
-      "detail": "Free tier killed: Standard Support plan disappeared and no free plan remains"
+      "detail": "Free tier killed: Free plan disappeared and no free plan remains"
     },
     {
       "date": "2026-09-01",
-      "plan": "Hobby",
+      "plan": "Basic",
       "kind": "plan_renamed",
       "detail": "Hobby renamed to Basic"
     },
     {
       "date": "2026-09-01",
-      "plan": "2X Dyno",
+      "plan": "Standard 2x",
       "kind": "plan_removed",
-      "detail": "2X Dyno plan ($50/dyno per month) disappeared"
+      "detail": "Standard 2x plan ($50/dyno per month) disappeared"
     },
     {
       "date": "2026-09-01",

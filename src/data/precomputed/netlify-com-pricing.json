@@ -461,64 +461,64 @@
   "timeline": [
     {
       "date": "2014-10-20",
-      "Starter": 0,
+      "Free": 0,
       "Personal": 49,
       "Agency": 279,
-      "Enterprise": 2590
+      "Team Enterprise": 2590
     },
     {
       "date": "2018-07-09",
-      "Team Pro": 45,
-      "Team Business": 290,
-      "Enterprise": null
+      "Pro": 45,
+      "Business": 290,
+      "Team Enterprise": null
     },
     {
       "date": "2019-12-09",
-      "Starter": 0,
-      "Team Pro": 45,
-      "Team Business": 1000
+      "Free": 0,
+      "Pro": 45,
+      "Business": 1000
     },
     {
       "date": "2021-06-13",
-      "Starter": 0,
-      "Team Pro": 19,
-      "Team Business": 99,
-      "Enterprise": null
+      "Free": 0,
+      "Pro": 19,
+      "Business": 99,
+      "Team Enterprise": null
     },
     {
       "date": "2022-09-10",
-      "Starter": 0,
-      "Team Pro": 19,
-      "Team Business": 99,
-      "Enterprise": null
+      "Free": 0,
+      "Pro": 19,
+      "Business": 99,
+      "Team Enterprise": null
     },
     {
       "date": "2024-01-16",
-      "Starter": 0,
-      "Team Pro": 19,
-      "Enterprise": null
+      "Free": 0,
+      "Pro": 19,
+      "Team Enterprise": null
     },
     {
       "date": "2025-05-02",
-      "Starter": 0,
-      "Team Pro": 19,
-      "Enterprise": null
+      "Free": 0,
+      "Pro": 19,
+      "Team Enterprise": null
     },
     {
       "date": "2026-09-05",
-      "Starter": 0,
+      "Free": 0,
       "Personal": 9,
-      "Team Pro": 20,
-      "Enterprise": null
+      "Pro": 20,
+      "Team Enterprise": null
     }
   ],
   "planNames": [
-    "Starter",
+    "Free",
     "Personal",
     "Agency",
-    "Enterprise",
-    "Team Pro",
-    "Team Business"
+    "Team Enterprise",
+    "Pro",
+    "Business"
   ],
   "changes": [
     {
@@ -541,67 +541,67 @@
     },
     {
       "date": "2018-07-09",
-      "plan": "Enterprise",
+      "plan": "Team Enterprise",
       "kind": "plan_renamed",
       "detail": "Enterprise renamed to Team Enterprise"
     },
     {
       "date": "2018-07-09",
-      "plan": "Team Pro",
+      "plan": "Pro",
       "kind": "plan_added",
       "detail": "New Team Pro plan at $45 / month"
     },
     {
       "date": "2018-07-09",
-      "plan": "Team Business",
+      "plan": "Business",
       "kind": "plan_added",
       "detail": "New Team Business plan at $290 / month"
     },
     {
       "date": "2019-12-09",
-      "plan": "Team Pro",
+      "plan": "Pro",
       "kind": "plan_renamed",
       "detail": "Team Pro renamed to Pro"
     },
     {
       "date": "2019-12-09",
-      "plan": "Team Business",
+      "plan": "Business",
       "kind": "plan_renamed",
       "detail": "Team Business renamed to Business"
     },
     {
       "date": "2019-12-09",
-      "plan": "Team Business",
+      "plan": "Business",
       "kind": "price_increase",
       "detail": "Team Business: $290 / month → $1,000 /month (+245%)"
     },
     {
       "date": "2019-12-09",
-      "plan": "Enterprise",
+      "plan": "Team Enterprise",
       "kind": "plan_removed",
-      "detail": "Enterprise plan (Custom) disappeared"
+      "detail": "Team Enterprise plan (Custom) disappeared"
     },
     {
       "date": "2019-12-09",
-      "plan": "Starter",
+      "plan": "Free",
       "kind": "plan_added",
       "detail": "New Starter plan at $0 /month"
     },
     {
       "date": "2021-06-13",
-      "plan": "Team Pro",
+      "plan": "Pro",
       "kind": "price_decrease",
-      "detail": "Team Pro: $45 /month → $19 per member /month (-58%)"
+      "detail": "Pro: $45 /month → $19 per member /month (-58%)"
     },
     {
       "date": "2021-06-13",
-      "plan": "Team Business",
+      "plan": "Business",
       "kind": "price_decrease",
-      "detail": "Team Business: $1,000 /month → $99 per member /month (-90%)"
+      "detail": "Business: $1,000 /month → $99 per member /month (-90%)"
     },
     {
       "date": "2021-06-13",
-      "plan": "Enterprise",
+      "plan": "Team Enterprise",
       "kind": "plan_added",
       "detail": "New Enterprise plan at Custom"
     },
@@ -619,27 +619,27 @@
     },
     {
       "date": "2024-01-16",
-      "plan": "Team Business",
+      "plan": "Business",
       "kind": "plan_removed",
-      "detail": "Team Business plan ($99 per member / month) disappeared"
+      "detail": "Business plan ($99 per member / month) disappeared"
     },
     {
       "date": "2025-05-02",
-      "plan": "Starter",
+      "plan": "Free",
       "kind": "plan_renamed",
       "detail": "Starter renamed to Free & Starter"
     },
     {
       "date": "2026-09-05",
-      "plan": "Starter",
+      "plan": "Free",
       "kind": "plan_renamed",
-      "detail": "Starter renamed to Free"
+      "detail": "Free & Starter renamed to Free"
     },
     {
       "date": "2026-09-05",
-      "plan": "Team Pro",
+      "plan": "Pro",
       "kind": "price_increase",
-      "detail": "Team Pro: $19 per member / month → $20 /month with unlimited members (+5%)"
+      "detail": "Pro: $19 per member / month → $20 /month with unlimited members (+5%)"
     },
     {
       "date": "2026-09-05",

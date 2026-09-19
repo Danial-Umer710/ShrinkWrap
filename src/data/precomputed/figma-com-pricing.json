@@ -377,51 +377,51 @@
   "timeline": [
     {
       "date": "2016-03-10",
-      "Preview Release": 0
+      "Starter": 0
     },
     {
       "date": "2019-03-25",
-      "Preview Release": 0,
+      "Starter": 0,
       "Professional": 15,
       "Organization": 45
     },
     {
       "date": "2020-09-09",
-      "Preview Release": 0,
+      "Starter": 0,
       "Professional": 15,
       "Organization": 45
     },
     {
       "date": "2023-02-05",
-      "Preview Release": 0,
+      "Starter": 0,
       "Professional": 15,
       "Organization": 45,
       "Enterprise": 75
     },
     {
       "date": "2024-04-03",
-      "Preview Release": 0,
+      "Starter": 0,
       "Professional": 12,
       "Organization": 45,
       "Enterprise": 75
     },
     {
       "date": "2025-07-02",
-      "Preview Release": 0,
+      "Starter": 0,
       "Professional": 16,
       "Organization": 55,
       "Enterprise": 90
     },
     {
       "date": "2026-09-02",
-      "Preview Release": 0,
+      "Starter": 0,
       "Professional": 16,
       "Organization": 55,
       "Enterprise": 90
     }
   ],
   "planNames": [
-    "Preview Release",
+    "Starter",
     "Professional",
     "Organization",
     "Enterprise"
@@ -429,7 +429,7 @@
   "changes": [
     {
       "date": "2019-03-25",
-      "plan": "Preview Release",
+      "plan": "Starter",
       "kind": "plan_renamed",
       "detail": "Preview Release renamed to Starter"
     },
@@ -478,8 +478,20 @@
     {
       "date": "2024-04-03",
       "plan": "Professional",
+      "kind": "plan_renamed",
+      "detail": "Figma Professional renamed to Professional"
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Professional",
       "kind": "price_decrease",
-      "detail": "Professional: $12 per editor/month → $12 /mo (-20%)"
+      "detail": "Figma Professional: $12 per editor/month → $12 /mo (-20%)"
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Organization",
+      "kind": "plan_renamed",
+      "detail": "Figma Organization renamed to Organization"
     },
     {
       "date": "2024-04-03",

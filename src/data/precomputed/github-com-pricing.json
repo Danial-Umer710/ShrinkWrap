@@ -449,63 +449,63 @@
     {
       "date": "2014-06-05",
       "Free": 0,
-      "Micro": 7,
+      "Pro": 7,
       "Small": 12,
       "Medium": 22,
       "Large": 50
     },
     {
       "date": "2016-08-09",
-      "Micro": 7,
-      "Organization": 9,
+      "Pro": 7,
+      "Team": 9,
       "Enterprise": 21
     },
     {
       "date": "2018-04-02",
-      "Micro": 7,
-      "Organization": 9,
+      "Pro": 7,
+      "Team": 9,
       "Business": 21,
       "Enterprise": null
     },
     {
       "date": "2019-12-01",
       "Free": 0,
-      "Micro": 7,
-      "Organization": 9,
+      "Pro": 7,
+      "Team": 9,
       "Enterprise": null
     },
     {
       "date": "2021-09-01",
       "Free": 0,
-      "Organization": 4,
+      "Team": 4,
       "Enterprise": 21
     },
     {
       "date": "2023-05-01",
       "Free": 0,
-      "Organization": 4,
+      "Team": 4,
       "Enterprise": 21
     },
     {
       "date": "2025-01-01",
       "Free": 0,
-      "Organization": 4,
+      "Team": 4,
       "Enterprise": 21
     },
     {
       "date": "2026-09-01",
       "Free": 0,
-      "Organization": 4,
+      "Team": 4,
       "Enterprise": 21
     }
   ],
   "planNames": [
     "Free",
-    "Micro",
+    "Pro",
     "Small",
     "Medium",
     "Large",
-    "Organization",
+    "Team",
     "Enterprise",
     "Business"
   ],
@@ -518,7 +518,7 @@
     },
     {
       "date": "2016-08-09",
-      "plan": "Micro",
+      "plan": "Pro",
       "kind": "plan_renamed",
       "detail": "Micro renamed to Personal"
     },
@@ -542,7 +542,7 @@
     },
     {
       "date": "2016-08-09",
-      "plan": "Organization",
+      "plan": "Team",
       "kind": "plan_added",
       "detail": "New Organization plan at $9 per user / month"
     },
@@ -554,13 +554,13 @@
     },
     {
       "date": "2018-04-02",
-      "plan": "Micro",
+      "plan": "Pro",
       "kind": "plan_renamed",
-      "detail": "Micro renamed to Developer"
+      "detail": "Personal renamed to Developer"
     },
     {
       "date": "2018-04-02",
-      "plan": "Organization",
+      "plan": "Team",
       "kind": "plan_renamed",
       "detail": "Organization renamed to Team"
     },
@@ -572,9 +572,9 @@
     },
     {
       "date": "2019-12-01",
-      "plan": "Micro",
+      "plan": "Pro",
       "kind": "plan_renamed",
-      "detail": "Micro renamed to Pro"
+      "detail": "Developer renamed to Pro"
     },
     {
       "date": "2019-12-01",
@@ -596,15 +596,15 @@
     },
     {
       "date": "2021-09-01",
-      "plan": "Micro",
+      "plan": "Pro",
       "kind": "plan_removed",
-      "detail": "Micro plan ($7 / month) disappeared"
+      "detail": "Pro plan ($7 / month) disappeared"
     },
     {
       "date": "2021-09-01",
-      "plan": "Organization",
+      "plan": "Team",
       "kind": "price_decrease",
-      "detail": "Organization: $9 / user / month → $4 per user/month (-56%)"
+      "detail": "Team: $9 / user / month → $4 per user/month (-56%)"
     },
     {
       "date": "2021-09-01",
