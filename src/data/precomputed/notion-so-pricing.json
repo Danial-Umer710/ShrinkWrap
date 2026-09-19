@@ -1,0 +1,484 @@
+{
+  "url": "https://www.notion.so/pricing",
+  "vendor": "Notion",
+  "generatedAt": "2026-09-19T10:01:07.806Z",
+  "snapshots": [
+    {
+      "timestamp": "20171029042702",
+      "date": "2017-10-29",
+      "archiveUrl": "https://web.archive.org/web/20171029042702/https://www.notion.so/pricing",
+      "plans": [],
+      "ok": false
+    },
+    {
+      "timestamp": "20190908120406",
+      "date": "2019-09-08",
+      "archiveUrl": "https://web.archive.org/web/20190908120406/https://www.notion.so/pricing",
+      "plans": [],
+      "ok": false
+    },
+    {
+      "timestamp": "20201020161151",
+      "date": "2020-10-20",
+      "archiveUrl": "https://web.archive.org/web/20201020161151/https://www.notion.so/pricing",
+      "plans": [],
+      "ok": false
+    },
+    {
+      "timestamp": "20210909103843",
+      "date": "2021-09-09",
+      "archiveUrl": "https://web.archive.org/web/20210909103843/https://www.notion.so/pricing",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "$0",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited pages & blocks",
+            "Share with 5 guests",
+            "Sync across devices",
+            "API Beta"
+          ]
+        },
+        {
+          "name": "Personal Pro",
+          "monthlyPrice": 4,
+          "priceLabel": "$4 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Personal, plus",
+            "Unlimited file uploads",
+            "Unlimited guests",
+            "Version history"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 / member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Pro, plus",
+            "Unlimited team members",
+            "Collaborative workspace",
+            "Advanced permissions",
+            "Admin tools"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact sales",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Team, plus",
+            "SAML SSO",
+            "User provisioning (SCIM)",
+            "Advanced security",
+            "Dedicated manager",
+            "Custom contract"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20220906005739",
+      "date": "2022-09-06",
+      "archiveUrl": "https://web.archive.org/web/20220906005739/https://www.notion.so/pricing",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited pages & blocks",
+            "Share with 5 guests",
+            "Sync across devices",
+            "API access"
+          ]
+        },
+        {
+          "name": "Personal Pro",
+          "monthlyPrice": 5,
+          "priceLabel": "$5 billed monthly",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Personal, plus",
+            "Unlimited file uploads",
+            "Unlimited guests",
+            "30 day version history"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 10,
+          "priceLabel": "$10 billed monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Pro, plus",
+            "Unlimited team members",
+            "Collaborative workspace",
+            "Admin tools"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact sales",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Team, plus",
+            "SAML SSO",
+            "User provisioning (SCIM)",
+            "Advanced security & controls",
+            "Dedicated success manager"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230804043837",
+      "date": "2023-08-04",
+      "archiveUrl": "https://web.archive.org/web/20230804043837/https://www.notion.so/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited blocks for individuals",
+            "Limited block trial for teams",
+            "Up to 5 MB file uploads",
+            "7 day page history",
+            "Invite 10 guests"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 10,
+          "priceLabel": "$10 billed monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Free, and",
+            "Unlimited blocks for teams",
+            "Unlimited file uploads",
+            "30 day page history",
+            "Invite 100 guests"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 18,
+          "priceLabel": "$18 billed monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Plus, and",
+            "SAML SSO",
+            "Private teamspaces",
+            "Bulk PDF export",
+            "90 day page history",
+            "Invite 250 guests"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Business, and",
+            "User provisioning (SCIM)",
+            "Advanced security & controls",
+            "Audit log",
+            "Dedicated success manager (100+ seats)",
+            "Unlimited page history"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20240807075542",
+      "date": "2024-08-07",
+      "archiveUrl": "https://web.archive.org/web/20240807075542/https://www.notion.so/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Collaborative workspace",
+            "Integrate with Slack, GitHub & more",
+            "Basic page analytics",
+            "7 day page history",
+            "Invite 10 guests"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 10,
+          "priceLabel": "$10 per seat/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Free +",
+            "Unlimited blocks for teams",
+            "Unlimited file uploads",
+            "30 day page history",
+            "Invite 100 guests"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 15,
+          "priceLabel": "$15 per seat/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Plus +",
+            "SAML SSO",
+            "Private teamspaces",
+            "Bulk PDF export",
+            "90 day page history",
+            "Invite 250 guests"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact Sales",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Business +",
+            "User provisioning (SCIM)",
+            "Advanced security & controls",
+            "Audit log",
+            "Customer success manager",
+            "Unlimited page history"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260809180627",
+      "date": "2026-08-09",
+      "archiveUrl": "https://web.archive.org/web/20260809180627/https://www.notion.so/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 per member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For individuals to organize personal projects",
+            "Trial of Notion AI capabilities",
+            "Basic forms and sites",
+            "Notion Calendar integration",
+            "7 days page history"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 10,
+          "priceLabel": "$10 per member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For small teams and professionals",
+            "Unlimited collaborative blocks",
+            "Unlimited file uploads",
+            "Custom sites and forms",
+            "30 days page history"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 per member / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For growing businesses",
+            "Notion Agent & AI Meeting Notes",
+            "Enterprise Search beta",
+            "SAML SSO and private teamspaces",
+            "90 days page history"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom pricing",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For organizations requiring scalability and security",
+            "Zero data retention with LLM providers",
+            "User provisioning (SCIM)",
+            "Audit log and advanced security controls",
+            "Customer success manager"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2021-09-09",
+      "Personal": 0,
+      "Personal Pro": 4,
+      "Team": 8,
+      "Enterprise": null
+    },
+    {
+      "date": "2022-09-06",
+      "Personal": 0,
+      "Personal Pro": 5,
+      "Team": 10,
+      "Enterprise": null
+    },
+    {
+      "date": "2023-08-04",
+      "Free": 0,
+      "Plus": 10,
+      "Business": 18,
+      "Enterprise": null
+    },
+    {
+      "date": "2024-08-07",
+      "Free": 0,
+      "Plus": 10,
+      "Business": 15,
+      "Enterprise": null
+    },
+    {
+      "date": "2026-08-09",
+      "Free": 0,
+      "Plus": 10,
+      "Business": 20,
+      "Enterprise": null
+    }
+  ],
+  "planNames": [
+    "Personal",
+    "Personal Pro",
+    "Team",
+    "Enterprise",
+    "Free",
+    "Plus",
+    "Business"
+  ],
+  "changes": [
+    {
+      "date": "2022-09-06",
+      "plan": "Personal Pro",
+      "kind": "price_increase",
+      "detail": "Personal Pro: $4 / month → $5 billed monthly (+25%)"
+    },
+    {
+      "date": "2022-09-06",
+      "plan": "Team",
+      "kind": "price_increase",
+      "detail": "Team: $8 / member / month → $10 billed monthly (+25%)"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Personal",
+      "kind": "plan_removed",
+      "detail": "Personal plan (Free) disappeared"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Personal Pro",
+      "kind": "plan_removed",
+      "detail": "Personal Pro plan ($5 billed monthly) disappeared"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Team",
+      "kind": "plan_removed",
+      "detail": "Team plan ($10 billed monthly) disappeared"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Free",
+      "kind": "plan_added",
+      "detail": "New Free plan at Free"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Plus",
+      "kind": "plan_added",
+      "detail": "New Plus plan at $10 billed monthly"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Business",
+      "kind": "plan_added",
+      "detail": "New Business plan at $18 billed monthly"
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Free",
+      "kind": "limit_tightened",
+      "detail": "Free tier introduced a 5 MB file upload limit and block restrictions for teams."
+    },
+    {
+      "date": "2023-08-04",
+      "plan": "Plus",
+      "kind": "limit_tightened",
+      "detail": "Guest invitations capped at 100 guests, down from unlimited on the legacy Personal Pro plan."
+    },
+    {
+      "date": "2024-08-07",
+      "plan": "Business",
+      "kind": "price_decrease",
+      "detail": "Business: $18 billed monthly → $15 per seat/month (-17%)"
+    },
+    {
+      "date": "2026-08-09",
+      "plan": "Business",
+      "kind": "price_increase",
+      "detail": "Business: $15 per seat/month → $20 per member / month (+33%)"
+    },
+    {
+      "date": "2026-08-09",
+      "plan": "Business",
+      "kind": "limit_loosened",
+      "detail": "Added Notion Agent, AI Meeting Notes, and Enterprise Search beta features."
+    }
+  ],
+  "grade": "F",
+  "volatility": {
+    "priceIncreases": 3,
+    "planRemovals": 3,
+    "limitTightenings": 2,
+    "yearsCovered": 4.9,
+    "biggestIncreasePct": 33
+  },
+  "verdict": "Notion overhauled its plan structure in August 2023, replacing Personal and Team tiers with Free, Plus, and Business plans while imposing file upload caps and guest limits. Although the Business tier saw a temporary price drop to $15/seat in 2024, it increased to $20/member by 2026 alongside bundled AI capabilities. Buyers should account for recurring plan re-bundling and seat price creep when committing long-term.",
+  "headline": "Notion restructured plans, capped free entitlements, and hiked seat prices over time."
+}

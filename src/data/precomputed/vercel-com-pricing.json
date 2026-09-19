@@ -1,0 +1,510 @@
+{
+  "url": "https://vercel.com/pricing",
+  "vendor": "Vercel",
+  "generatedAt": "2026-09-19T09:59:17.603Z",
+  "snapshots": [
+    {
+      "timestamp": "20200422121817",
+      "date": "2020-04-22",
+      "archiveUrl": "https://web.archive.org/web/20200422121817/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 /mo",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free, forever",
+            "Deploy from personal accounts",
+            "Command-Line Interface",
+            "Unlimited Bandwidth, Builds & Executions"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20/mo per member",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Up to 10 Team Members",
+            "Deploy from Organizations/Groups/Teams",
+            "Advanced Invoice Settings",
+            "Multiple Concurrent Builds",
+            "Unlimited Bandwidth, Builds & Executions"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "SLA for 99.99% Uptime",
+            "Multi-Region Serverless Functions",
+            "Enterprise Support",
+            "Next.js Application Audit",
+            "Training and Consulting"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20210417061312",
+      "date": "2021-04-17",
+      "archiveUrl": "https://web.archive.org/web/20210417061312/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free, forever",
+            "Personal, non-commercial use",
+            "Deploy from personal accounts",
+            "Command-Line Interface"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20/mo per member",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Up to 10 Team Members",
+            "Deploy from Organizations and Groups",
+            "Advanced Invoice Settings",
+            "Multiple Concurrent Builds",
+            "Password Protection"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Suited to your needs",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "SLA for 99.99% Uptime",
+            "Unlimited Serverless Functions",
+            "Enterprise Support",
+            "Next.js Application Audit",
+            "Training and Consulting"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20220305083952",
+      "date": "2022-03-05",
+      "archiveUrl": "https://web.archive.org/web/20220305083952/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free for non-commercial sites",
+            "100 GB bandwidth",
+            "100 GB-hours execution",
+            "6,000 build minutes",
+            "1,000 source images"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20/mo per member",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Up to 1 TB of bandwidth",
+            "1,000 GB-hours of execution",
+            "Dynamic edge caching",
+            "Email support",
+            "24,000 build minutes"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "SSO/SAML",
+            "Scaled bandwidth pricing",
+            "Isolated infrastructure",
+            "Dedicated support manager & SLAs"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230209225924",
+      "date": "2023-02-09",
+      "archiveUrl": "https://web.archive.org/web/20230209225924/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "1 GB bandwidth",
+            "1 seat",
+            "500,000 edge execution units",
+            "10 seconds function timeout",
+            "100 GB-hours function execution"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Up to 1TB of bandwidth",
+            "1 seat included",
+            "1 million edge execution units",
+            "1,000 GB-hours function execution",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "10+ seats",
+            "1+ TB bandwidth",
+            "SSO/SAML Login",
+            "Isolated build infrastructure",
+            "Dedicated success manager & SLAs"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20231203061226",
+      "date": "2023-12-03",
+      "archiveUrl": "https://web.archive.org/web/20231203061226/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "$0",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Support for 35+ Frameworks",
+            "Fast Globally (Edge Network)",
+            "Automatic CI/CD (Git Integration)",
+            "Starter Database (KV, Postgres)",
+            "100 GB Bandwidth",
+            "100 GB-hours Serverless Functions"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Hobby, plus higher limits",
+            "Unlimited Environments",
+            "1 TB Bandwidth",
+            "1,000 GB-hours Serverless Functions",
+            "Email Support",
+            "24,000 Build Execution minutes"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "99.99% SLA",
+            "SAML Single-Sign-On (SSO)",
+            "Advanced DDoS Mitigation",
+            "Secure VPC and VPN Connectivity",
+            "Dedicated Customer Success Team",
+            "Custom limits and performance features"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20241110085559",
+      "date": "2024-11-10",
+      "archiveUrl": "https://web.archive.org/web/20241110085559/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "100 GB /month data transfer",
+            "1M Edge Requests /month",
+            "100,000 function invocations",
+            "10 GB Remote Cache",
+            "Community Support"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 /month , per member",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "1 TB /month data transfer",
+            "10M Edge Requests /month",
+            "1M function invocations",
+            "Secure team collaboration",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Custom data transfer and compute",
+            "99.99% SLA",
+            "Advanced Support",
+            "SCIM & Directory Sync",
+            "Managed WAF Rulesets"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20251001001622",
+      "date": "2025-10-01",
+      "archiveUrl": "https://web.archive.org/web/20251001001622/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "Free forever",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free forever for personal use",
+            "Automatic CI/CD and Global CDN",
+            "Web Application Firewall & DDoS Mitigation",
+            "Traffic & performance insights",
+            "1M Edge Requests / month",
+            "100 GB Fast Data Transfer / month"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "$20 of included usage credit",
+            "Advanced spend management",
+            "Team collaboration & free viewer seats",
+            "Faster builds + no queues",
+            "10M Edge Requests / month",
+            "1TB Fast Data Transfer / month"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Critical security, performance & observability",
+            "Guest & Team access controls",
+            "SCIM & Directory Sync",
+            "Managed WAF Rulesets",
+            "99.99% SLA",
+            "Advanced Support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260902121017",
+      "date": "2026-09-02",
+      "archiveUrl": "https://web.archive.org/web/20260902121017/https://vercel.com/pricing",
+      "plans": [
+        {
+          "name": "Hobby",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 /mo.",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Import your repo, deploy in seconds",
+            "Automatic CI/CD",
+            "Web Application Firewall",
+            "Global, automated CDN",
+            "Fluid compute",
+            "DDoS Mitigation"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20,
+          "priceLabel": "$20 /mo.",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "All Hobby features, plus:",
+            "$20 of included usage credit",
+            "Advanced spend management",
+            "Team collaboration & free viewer seats",
+            "Faster builds + no queues",
+            "Free custom domain"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "All Pro features, plus:",
+            "Guest & Team access controls",
+            "SCIM & Directory Sync",
+            "Managed WAF Rulesets",
+            "Multi-region compute & failover",
+            "99.99% SLA"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020-04-22",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2021-04-17",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2022-03-05",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2023-02-09",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2023-12-03",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2024-11-10",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2025-10-01",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    },
+    {
+      "date": "2026-09-02",
+      "Hobby": 0,
+      "Pro": 20,
+      "Enterprise": null
+    }
+  ],
+  "planNames": [
+    "Hobby",
+    "Pro",
+    "Enterprise"
+  ],
+  "changes": [
+    {
+      "date": "2022-03-05",
+      "plan": "Hobby",
+      "kind": "limit_tightened",
+      "detail": "Hobby plan replaced unlimited usage with explicit caps including 100 GB bandwidth and 6,000 build minutes."
+    },
+    {
+      "date": "2022-03-05",
+      "plan": "Pro",
+      "kind": "limit_tightened",
+      "detail": "Pro plan replaced unlimited usage claims with a 1 TB bandwidth cap and 24,000 build minutes."
+    },
+    {
+      "date": "2023-02-09",
+      "plan": "Hobby",
+      "kind": "limit_tightened",
+      "detail": "Hobby plan bandwidth was temporarily cut from 100 GB down to 1 GB."
+    },
+    {
+      "date": "2023-12-03",
+      "plan": "Hobby",
+      "kind": "limit_loosened",
+      "detail": "Hobby plan bandwidth limit was restored back to 100 GB per month."
+    },
+    {
+      "date": "2025-10-01",
+      "plan": "Pro",
+      "kind": "limit_loosened",
+      "detail": "Pro plan added $20 of included usage credit and free viewer seats for team collaboration."
+    }
+  ],
+  "grade": "B",
+  "volatility": {
+    "priceIncreases": 0,
+    "planRemovals": 0,
+    "limitTightenings": 3,
+    "yearsCovered": 6.4,
+    "biggestIncreasePct": null
+  },
+  "verdict": "Vercel maintained a steady $20 per month baseline for its Pro tier while systematically replacing initial 'unlimited' marketing with concrete usage quotas starting in March 2022. The free Hobby tier experienced a brief, severe bandwidth restriction down to 1 GB in early 2023 before reverting to 100 GB later that year. Buyers should closely evaluate their bandwidth, edge request volume, and build minutes to project real consumption costs.",
+  "headline": "Kept Pro at $20/mo while formalizing usage caps and edge execution limits over time."
+}
