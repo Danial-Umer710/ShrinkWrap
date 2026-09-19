@@ -1,5 +1,7 @@
 const FAST_MODEL = process.env.GEMINI_FAST_MODEL || "gemini-3.5-flash-lite";
-const SMART_MODEL = process.env.GEMINI_MODEL || "gemini-3.6-flash";
+// The bigger models think for 30-60s per call and burn free-tier quota; the verdict is
+// two sentences, so default to the lite model and let GEMINI_MODEL opt in to a larger one.
+const SMART_MODEL = process.env.GEMINI_MODEL || FAST_MODEL;
 
 const endpoint = (model: string) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
@@ -28,7 +30,7 @@ export async function geminiJson<T>(
           responseSchema: schema,
         },
       }),
-      signal: AbortSignal.timeout(45000),
+      signal: AbortSignal.timeout(30000),
     });
     if (res.status === 429 || res.status >= 500) {
       lastErr = (await res.text()).slice(0, 200);
