@@ -22,34 +22,53 @@ export function toDate(ts: string): string {
   return `${ts.slice(0, 4)}-${ts.slice(4, 6)}-${ts.slice(6, 8)}`;
 }
 
-export async function listSnapshots(url: string): Promise<Snapshot[]> {
-  const target = url.replace(/^https?:\/\//, "");
+async function cdx(extra: Record<string, string>, timeoutMs: number): Promise<string[][]> {
   const params = new URLSearchParams({
-    url: target,
     output: "json",
     fl: "timestamp,statuscode,mimetype",
     filter: "statuscode:200",
-    collapse: "timestamp:6",
-    limit: "1000",
+    ...extra,
   });
-  let rows: string[][] = [];
-  for (let attempt = 0; attempt < 2; attempt++) {
-    try {
-      const res = await fetch(`${CDX}?${params}`, {
-        headers: { "User-Agent": UA },
-        signal: AbortSignal.timeout(35000),
-      });
-      if (!res.ok) throw new Error(`Wayback CDX error ${res.status}`);
-      rows = (await res.json()) as string[][];
-      break;
-    } catch (err) {
-      if (attempt === 1) throw new Error("The Wayback Machine is slow right now — please try again.");
-      void err;
+  const res = await fetch(`${CDX}?${params}`, {
+    headers: { "User-Agent": UA },
+    signal: AbortSignal.timeout(timeoutMs),
+  });
+  if (!res.ok) throw new Error(`Wayback CDX error ${res.status}`);
+  const rows = (await res.json()) as string[][];
+  return rows.slice(1);
+}
+
+// Heavily-archived URLs make the collapsed full-history query crawl (it scans every
+// capture), so fall back to one cheap `limit=1` query per year.
+async function perYearFallback(target: string): Promise<string[][]> {
+  const now = new Date().getFullYear();
+  const years = Array.from({ length: now - 2008 + 1 }, (_, i) => String(now - i));
+  const out: string[][] = [];
+  let next = 0;
+  const worker = async () => {
+    while (next < years.length) {
+      const y = years[next++];
+      try {
+        out.push(...(await cdx({ url: target, from: y, to: y, limit: "1" }, 15000)));
+      } catch {
+        // skip a year rather than fail the whole lookup
+      }
     }
+  };
+  await Promise.all(Array.from({ length: 4 }, worker));
+  return out.sort((a, b) => a[0].localeCompare(b[0]));
+}
+
+export async function listSnapshots(url: string): Promise<Snapshot[]> {
+  const target = url.replace(/^https?:\/\//, "");
+  let rows: string[][] = [];
+  try {
+    rows = await cdx({ url: target, collapse: "timestamp:6", limit: "1000" }, 20000);
+  } catch {
+    rows = await perYearFallback(target);
+    if (rows.length === 0) throw new Error("The Wayback Machine is slow right now — please try again.");
   }
-  if (rows.length === 0) return [];
   return rows
-    .slice(1)
     .filter((r) => !r[2] || r[2].includes("html"))
     .map((r) => ({
       timestamp: r[0],

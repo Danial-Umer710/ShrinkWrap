@@ -1,0 +1,571 @@
+{
+  "url": "https://www.figma.com/pricing",
+  "vendor": "Figma",
+  "generatedAt": "2026-09-19T10:15:50.870Z",
+  "snapshots": [
+    {
+      "timestamp": "20160310052258",
+      "date": "2016-03-10",
+      "archiveUrl": "https://web.archive.org/web/20160310052258/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Preview Release",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free during Preview Release",
+            "Pricing coming in 2016"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20190325001613",
+      "date": "2019-03-25",
+      "archiveUrl": "https://web.archive.org/web/20190325001613/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "2 members",
+            "3 projects",
+            "30 days version history",
+            "Unlimited file storage"
+          ]
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 15,
+          "priceLabel": "$15 per editor/month, billed monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited editors",
+            "Unlimited projects",
+            "Unlimited version history",
+            "Team Component Library",
+            "Slack Integration"
+          ]
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 45,
+          "priceLabel": "$45 per editor/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited projects",
+            "Unlimited editors",
+            "Enforced SSO",
+            "Activity Logs",
+            "24/7 Prioritized Support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20200909010627",
+      "date": "2020-09-09",
+      "archiveUrl": "https://web.archive.org/web/20200909010627/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Up to 2 editors",
+            "3 projects",
+            "30-day version history",
+            "Unlimited cloud storage",
+            "Unlimited free viewers"
+          ]
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 15,
+          "priceLabel": "$12 per editor/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited projects",
+            "Unlimited version history",
+            "Custom file/user permissions",
+            "Invite-only private projects",
+            "Shareable team libraries"
+          ]
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 45,
+          "priceLabel": "$45 per editor/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Org-wide design systems",
+            "Centralized teams",
+            "Private plugins and administration",
+            "Shared fonts",
+            "SSO + advanced security"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20211128155252",
+      "date": "2021-11-28",
+      "archiveUrl": "https://web.archive.org/web/20211128155252/https://www.figma.com/pricing",
+      "plans": [],
+      "ok": false
+    },
+    {
+      "timestamp": "20230205083820",
+      "date": "2023-02-05",
+      "archiveUrl": "https://web.archive.org/web/20230205083820/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "3 Figma and 3 FigJam files",
+            "Unlimited personal files",
+            "Unlimited collaborators",
+            "Plugins, widgets, and templates",
+            "Mobile app"
+          ]
+        },
+        {
+          "name": "Figma Professional",
+          "monthlyPrice": 15,
+          "priceLabel": "$12 per editor/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited Figma files",
+            "Unlimited version history",
+            "Sharing permissions",
+            "Shared and private projects",
+            "Team libraries"
+          ]
+        },
+        {
+          "name": "Figma Organization",
+          "monthlyPrice": 45,
+          "priceLabel": "$45 per editor/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Org-wide libraries",
+            "Design system analytics",
+            "Branching and merging",
+            "Centralized file management",
+            "Single sign-on"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 75,
+          "priceLabel": "$75 per Figma editor/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Advanced security",
+            "Flexible controls",
+            "Design processes company-wide",
+            "$5 per FigJam editor/month"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20240403093601",
+      "date": "2024-04-03",
+      "archiveUrl": "https://web.archive.org/web/20240403093601/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "3 collaborative design files",
+            "Unlimited personal drafts",
+            "Basic file inspection"
+          ]
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 12,
+          "priceLabel": "$12 /mo",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Dev Mode included",
+            "Unlimited Figma files",
+            "Team libraries",
+            "Advanced prototyping",
+            "Unlimited version history"
+          ]
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 45,
+          "priceLabel": "$45 /mo",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Org-wide libraries",
+            "Design system analytics",
+            "Branching and merging",
+            "Centralized admin",
+            "Single sign-on"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 75,
+          "priceLabel": "$75 /mo",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Advanced theming with 40 modes",
+            "REST API for variables",
+            "Dedicated workspaces",
+            "Role setting via SCIM",
+            "Idle session timeout"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20250702130717",
+      "date": "2025-07-02",
+      "archiveUrl": "https://web.archive.org/web/20250702130717/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited drafts",
+            "UI kits and templates",
+            "Basic design file inspection"
+          ]
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 16,
+          "priceLabel": "$16 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited files and projects",
+            "Team-wide design libraries",
+            "Advanced Dev Mode inspection"
+          ]
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 55,
+          "priceLabel": "$55 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited teams",
+            "Shared libraries and fonts",
+            "Centralized admin tools"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 90,
+          "priceLabel": "$90 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Custom team workspaces",
+            "Design system theming and APIs",
+            "SCIM seat management"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260902173400",
+      "date": "2026-09-02",
+      "archiveUrl": "https://web.archive.org/web/20260902173400/https://www.figma.com/pricing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited drafts",
+            "UI kits and templates",
+            "150 AI credits/day"
+          ]
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 16,
+          "priceLabel": "$16 /mo",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Full seat $16 /mo",
+            "Dev seat $12 /mo",
+            "Collab seat $3 /mo",
+            "Team-wide design libraries",
+            "Advanced Dev Mode inspection"
+          ]
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 55,
+          "priceLabel": "$55 /mo",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Full seat $55 /mo",
+            "Dev seat $25 /mo",
+            "Collab seat $5 /mo",
+            "Unlimited teams",
+            "Shared libraries and fonts",
+            "Centralized admin tools"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 90,
+          "priceLabel": "$90 /mo",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Full seat $90 /mo",
+            "Dev seat $35 /mo",
+            "Collab seat $5 /mo",
+            "Custom team workspaces",
+            "Design system theming and APIs",
+            "SCIM seat management"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016-03-10",
+      "Preview Release": 0
+    },
+    {
+      "date": "2019-03-25",
+      "Starter": 0,
+      "Professional": 15,
+      "Organization": 45
+    },
+    {
+      "date": "2020-09-09",
+      "Starter": 0,
+      "Professional": 15,
+      "Organization": 45
+    },
+    {
+      "date": "2023-02-05",
+      "Starter": 0,
+      "Figma Professional": 15,
+      "Figma Organization": 45,
+      "Enterprise": 75
+    },
+    {
+      "date": "2024-04-03",
+      "Starter": 0,
+      "Professional": 12,
+      "Organization": 45,
+      "Enterprise": 75
+    },
+    {
+      "date": "2025-07-02",
+      "Starter": 0,
+      "Professional": 16,
+      "Organization": 55,
+      "Enterprise": 90
+    },
+    {
+      "date": "2026-09-02",
+      "Starter": 0,
+      "Professional": 16,
+      "Organization": 55,
+      "Enterprise": 90
+    }
+  ],
+  "planNames": [
+    "Preview Release",
+    "Starter",
+    "Professional",
+    "Organization",
+    "Figma Professional",
+    "Figma Organization",
+    "Enterprise"
+  ],
+  "changes": [
+    {
+      "date": "2019-03-25",
+      "plan": "Preview Release",
+      "kind": "plan_removed",
+      "detail": "Preview Release plan (Free) disappeared"
+    },
+    {
+      "date": "2019-03-25",
+      "plan": "Starter",
+      "kind": "plan_added",
+      "detail": "New Starter plan at Free"
+    },
+    {
+      "date": "2019-03-25",
+      "plan": "Professional",
+      "kind": "plan_added",
+      "detail": "New Professional plan at $15 per editor/month, billed monthly"
+    },
+    {
+      "date": "2019-03-25",
+      "plan": "Organization",
+      "kind": "plan_added",
+      "detail": "New Organization plan at $45 per editor/month"
+    },
+    {
+      "date": "2020-09-09",
+      "plan": "Starter",
+      "kind": "limit_tightened",
+      "detail": "Starter plan editor capacity was explicitly capped at up to 2 editors."
+    },
+    {
+      "date": "2023-02-05",
+      "plan": "Professional",
+      "kind": "plan_removed",
+      "detail": "Professional plan ($12 per editor/month) disappeared"
+    },
+    {
+      "date": "2023-02-05",
+      "plan": "Organization",
+      "kind": "plan_removed",
+      "detail": "Organization plan ($45 per editor/month) disappeared"
+    },
+    {
+      "date": "2023-02-05",
+      "plan": "Figma Professional",
+      "kind": "plan_added",
+      "detail": "New Figma Professional plan at $12 per editor/month"
+    },
+    {
+      "date": "2023-02-05",
+      "plan": "Figma Organization",
+      "kind": "plan_added",
+      "detail": "New Figma Organization plan at $45 per editor/month"
+    },
+    {
+      "date": "2023-02-05",
+      "plan": "Enterprise",
+      "kind": "plan_added",
+      "detail": "New Enterprise plan at $75 per Figma editor/month"
+    },
+    {
+      "date": "2023-02-05",
+      "plan": "Starter",
+      "kind": "limit_tightened",
+      "detail": "Starter file creation was restricted to 3 Figma and 3 FigJam files."
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Figma Professional",
+      "kind": "plan_removed",
+      "detail": "Figma Professional plan ($12 per editor/month) disappeared"
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Figma Organization",
+      "kind": "plan_removed",
+      "detail": "Figma Organization plan ($45 per editor/month) disappeared"
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Professional",
+      "kind": "plan_added",
+      "detail": "New Professional plan at $12 /mo"
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Organization",
+      "kind": "plan_added",
+      "detail": "New Organization plan at $45 /mo"
+    },
+    {
+      "date": "2024-04-03",
+      "plan": "Starter",
+      "kind": "limit_tightened",
+      "detail": "Starter file limit was reframed to 3 collaborative design files."
+    },
+    {
+      "date": "2025-07-02",
+      "plan": "Professional",
+      "kind": "price_increase",
+      "detail": "Professional: $12 /mo → $16 / user / month (+33%)"
+    },
+    {
+      "date": "2025-07-02",
+      "plan": "Organization",
+      "kind": "price_increase",
+      "detail": "Organization: $45 /mo → $55 / user / month (+22%)"
+    },
+    {
+      "date": "2025-07-02",
+      "plan": "Enterprise",
+      "kind": "price_increase",
+      "detail": "Enterprise: $75 /mo → $90 / user / month (+20%)"
+    },
+    {
+      "date": "2025-07-02",
+      "plan": "Starter",
+      "kind": "limit_loosened",
+      "detail": "Starter plan file limits were removed in favor of unlimited drafts."
+    },
+    {
+      "date": "2026-09-02",
+      "plan": "Starter",
+      "kind": "limit_loosened",
+      "detail": "Starter plan gained an allocation of 150 AI credits per day."
+    }
+  ],
+  "grade": "D",
+  "volatility": {
+    "priceIncreases": 3,
+    "planRemovals": 5,
+    "limitTightenings": 3,
+    "yearsCovered": 10.5,
+    "biggestIncreasePct": 33,
+    "freeTierKilled": false
+  },
+  "verdict": "Figma has systematically raised prices and layered in mandatory seat distinctions like Dev and Collab seats. Professional jumped 33% to $16 per month in 2025, while Organization and Enterprise saw proportional bumps. Buyers should carefully evaluate team seat mixes to avoid unexpected cost escalations.",
+  "headline": "Figma expanded paid tiers and steadily increased core prices over time."
+}

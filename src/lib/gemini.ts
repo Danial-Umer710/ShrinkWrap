@@ -11,10 +11,12 @@ export async function geminiJson<T>(
 ): Promise<T> {
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new Error("GEMINI_API_KEY is not set");
-  const model = tier === "fast" ? FAST_MODEL : SMART_MODEL;
+  let model = tier === "fast" ? FAST_MODEL : SMART_MODEL;
 
   let lastErr = "";
   for (let attempt = 0; attempt < 4; attempt++) {
+    // Daily quota exhausted on the smart model: fall back to the fast one instead of failing.
+    if (attempt > 0 && model !== FAST_MODEL && /quota/i.test(lastErr)) model = FAST_MODEL;
     const res = await fetch(endpoint(model), {
       method: "POST",
       headers: { "x-goog-api-key": key, "Content-Type": "application/json" },

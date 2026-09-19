@@ -41,6 +41,7 @@ export type Report = {
     limitTightenings: number;
     yearsCovered: number;
     biggestIncreasePct: number | null;
+    freeTierKilled?: boolean;
   };
   verdict: string;
   headline: string;

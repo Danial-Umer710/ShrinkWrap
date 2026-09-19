@@ -54,7 +54,9 @@ async function extractPlans(text: string, date: string): Promise<Plan[]> {
   const prompt = `You are extracting pricing plans from the text of a SaaS pricing page archived on ${date}.
 
 Rules:
-- List every plan/tier shown. Use the plan's displayed name (e.g. "Free", "Hobby", "Pro", "Team", "Enterprise").
+- List the main subscription tiers a customer chooses between (typically 2-6, e.g. "Free", "Hobby", "Pro", "Team", "Enterprise"). Use the plan's displayed name.
+- Do NOT list add-ons, support packages, compute/instance sizes, database sizes, or per-resource line items as plans. If the page only sells resources (e.g. dyno sizes), pick the 4-6 most prominent ones.
+- Maximum 8 plans.
 - monthlyPrice: the numeric price per month in the page's currency. If the page shows an annual-billing monthly-equivalent and a monthly price, prefer the MONTHLY billing price. If price is $0 use 0. If "Custom", "Contact sales", or not shown, use null.
 - priceLabel: short human label exactly as a user would read it, e.g. "$20 / user / month", "Free", "Custom".
 - perSeat: true if priced per user/seat/member.
@@ -67,7 +69,7 @@ ${text}
 """`;
   const out = await geminiJson<{ isPricingPage: boolean; plans: Plan[] }>(prompt, planSchema);
   if (!out.isPricingPage) return [];
-  return out.plans.map((p) => ({
+  return out.plans.slice(0, 8).map((p) => ({
     ...p,
     name: p.name.trim(),
     limits: (p.limits ?? []).slice(0, 6),
@@ -78,11 +80,32 @@ function canon(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-function computeGrade(v: Report["volatility"]): Report["grade"] {
+function isFree(p: Plan): boolean {
+  return p.monthlyPrice === 0 || /^free$/i.test(p.priceLabel.trim());
+}
+
+// A date where many plans vanish and many appear is a lineup overhaul, not N separate kills.
+function removalPenalty(changes: PlanChange[]): number {
+  const byDate = new Map<string, { removed: number; added: number }>();
+  for (const c of changes) {
+    const d = byDate.get(c.date) ?? { removed: 0, added: 0 };
+    if (c.kind === "plan_removed") d.removed++;
+    if (c.kind === "plan_added") d.added++;
+    byDate.set(c.date, d);
+  }
+  let penalty = 0;
+  for (const d of byDate.values()) {
+    penalty += d.removed >= 3 && d.added >= 2 ? 1.5 : d.removed;
+  }
+  return penalty;
+}
+
+function computeGrade(v: Report["volatility"], changes: PlanChange[]): Report["grade"] {
   const score =
     v.priceIncreases * 2 +
-    v.planRemovals * 3 +
+    removalPenalty(changes) * 3 +
     v.limitTightenings * 1.5 +
+    (v.freeTierKilled ? 4 : 0) +
     (v.biggestIncreasePct && v.biggestIncreasePct >= 50 ? 2 : 0);
   const perYear = score / Math.max(1, v.yearsCovered);
   if (perYear === 0) return "A";
@@ -148,14 +171,29 @@ export async function analyze(
 
   const changes: PlanChange[] = [];
   let biggestIncreasePct: number | null = null;
+  let freeTierKilled = false;
+  // Only call it "killed" if no free plan exists today; a free plan missing from one
+  // archived page but back later is an extraction gap, not a policy change.
+  const freeGoneToday = !good[good.length - 1].plans.some(isFree);
   for (let i = 1; i < good.length; i++) {
     const prev = new Map(good[i - 1].plans.map((p) => [canon(p.name), p]));
     const cur = new Map(good[i].plans.map((p) => [canon(p.name), p]));
+    const curHasFree = good[i].plans.some(isFree) || !freeGoneToday;
     for (const [k, p] of prev) {
       const c = cur.get(k);
       const name = display.get(k)!;
       if (!c) {
-        changes.push({ date: good[i].date, plan: name, kind: "plan_removed", detail: `${name} plan (${p.priceLabel}) disappeared` });
+        if (isFree(p) && !curHasFree) {
+          freeTierKilled = true;
+          changes.push({
+            date: good[i].date,
+            plan: name,
+            kind: "plan_removed",
+            detail: `Free tier killed: ${name} plan disappeared and no free plan remains`,
+          });
+        } else {
+          changes.push({ date: good[i].date, plan: name, kind: "plan_removed", detail: `${name} plan (${p.priceLabel}) disappeared` });
+        }
         continue;
       }
       if (p.monthlyPrice != null && c.monthlyPrice != null && p.monthlyPrice !== c.monthlyPrice) {
@@ -219,6 +257,7 @@ Tasks:
     limitTightenings: allChanges.filter((c) => c.kind === "limit_tightened").length,
     yearsCovered: Math.round(years * 10) / 10,
     biggestIncreasePct,
+    freeTierKilled,
   };
 
   return {
@@ -229,7 +268,7 @@ Tasks:
     timeline,
     planNames: Array.from(display.values()),
     changes: allChanges,
-    grade: computeGrade(volatility),
+    grade: computeGrade(volatility, allChanges),
     volatility,
     verdict: summary.verdict,
     headline: summary.headline,

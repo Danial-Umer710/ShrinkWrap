@@ -1,7 +1,7 @@
 {
   "url": "https://vercel.com/pricing",
   "vendor": "Vercel",
-  "generatedAt": "2026-09-19T09:59:17.603Z",
+  "generatedAt": "2026-09-19T10:14:04.002Z",
   "snapshots": [
     {
       "timestamp": "20200422121817",
@@ -11,14 +11,13 @@
         {
           "name": "Hobby",
           "monthlyPrice": 0,
-          "priceLabel": "$0 /mo",
+          "priceLabel": "Free",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "Free, forever",
-            "Deploy from personal accounts",
+            "Deploy from personal Git accounts",
             "Command-Line Interface",
-            "Unlimited Bandwidth, Builds & Executions"
+            "Unlimited Bandwidth, Builds & Functions"
           ]
         },
         {
@@ -28,11 +27,10 @@
           "currency": "USD",
           "perSeat": true,
           "limits": [
+            "Deploy from Git Organizations & Teams",
             "Up to 10 Team Members",
-            "Deploy from Organizations/Groups/Teams",
             "Advanced Invoice Settings",
-            "Multiple Concurrent Builds",
-            "Unlimited Bandwidth, Builds & Executions"
+            "Multiple Concurrent Builds"
           ]
         },
         {
@@ -45,8 +43,7 @@
             "SLA for 99.99% Uptime",
             "Multi-Region Serverless Functions",
             "Enterprise Support",
-            "Next.js Application Audit",
-            "Training and Consulting"
+            "Next.js Application Audit"
           ]
         }
       ],
@@ -60,14 +57,14 @@
         {
           "name": "Hobby",
           "monthlyPrice": 0,
-          "priceLabel": "Free",
+          "priceLabel": "$0 /mo",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "Free, forever",
-            "Personal, non-commercial use",
             "Deploy from personal accounts",
-            "Command-Line Interface"
+            "Command-Line Interface",
+            "Personal, non-commercial use"
           ]
         },
         {
@@ -79,9 +76,9 @@
           "limits": [
             "Up to 10 Team Members",
             "Deploy from Organizations and Groups",
-            "Advanced Invoice Settings",
             "Multiple Concurrent Builds",
-            "Password Protection"
+            "Password Protection",
+            "Advanced Invoice Settings"
           ]
         },
         {
@@ -114,10 +111,10 @@
           "perSeat": false,
           "limits": [
             "Free for non-commercial sites",
-            "100 GB bandwidth",
-            "100 GB-hours execution",
-            "6,000 build minutes",
-            "1,000 source images"
+            "Deploy from CLI or git integrations",
+            "Built-in CI/CD",
+            "Automatic HTTPS/SSL",
+            "Previews for every git push"
           ]
         },
         {
@@ -128,10 +125,10 @@
           "perSeat": true,
           "limits": [
             "Up to 1 TB of bandwidth",
-            "1,000 GB-hours of execution",
+            "Unlimited function requests",
+            "1000 GB-hours of execution",
             "Dynamic edge caching",
-            "Email support",
-            "24,000 build minutes"
+            "Email support"
           ]
         },
         {
@@ -162,11 +159,10 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "1 GB bandwidth",
-            "1 seat",
-            "500,000 edge execution units",
-            "10 seconds function timeout",
-            "100 GB-hours function execution"
+            "For personal or non-commercial projects",
+            "Deploy from CLI or personal git integrations",
+            "Built-in CI/CD",
+            "Automatic HTTPS/SSL"
           ]
         },
         {
@@ -177,9 +173,9 @@
           "perSeat": true,
           "limits": [
             "Up to 1TB of bandwidth",
-            "1 seat included",
-            "1 million edge execution units",
-            "1,000 GB-hours function execution",
+            "Team comments on Previews",
+            "Unlimited function requests",
+            "1000 GB-hours of execution",
             "Email support"
           ]
         },
@@ -190,9 +186,8 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "10+ seats",
-            "1+ TB bandwidth",
             "SSO/SAML Login",
+            "Enhanced observability & logging",
             "Isolated build infrastructure",
             "Dedicated success manager & SLAs"
           ]
@@ -215,9 +210,8 @@
             "Support for 35+ Frameworks",
             "Fast Globally (Edge Network)",
             "Automatic CI/CD (Git Integration)",
-            "Starter Database (KV, Postgres)",
-            "100 GB Bandwidth",
-            "100 GB-hours Serverless Functions"
+            "Functions (Serverless, Edge)",
+            "Starter Database (KV, Postgres)"
           ]
         },
         {
@@ -229,10 +223,9 @@
           "limits": [
             "Everything in Hobby, plus higher limits",
             "Unlimited Environments",
-            "1 TB Bandwidth",
-            "1,000 GB-hours Serverless Functions",
-            "Email Support",
-            "24,000 Build Execution minutes"
+            "Preview/Comment/Edit Deployments",
+            "Basic DDoS Mitigation",
+            "Email Support"
           ]
         },
         {
@@ -243,11 +236,10 @@
           "perSeat": false,
           "limits": [
             "99.99% SLA",
+            "IP Allow & Block Rules",
+            "Isolated Builds & Deployments",
             "SAML Single-Sign-On (SSO)",
-            "Advanced DDoS Mitigation",
-            "Secure VPC and VPN Connectivity",
-            "Dedicated Customer Success Team",
-            "Custom limits and performance features"
+            "Secure VPC and VPN Connectivity"
           ]
         }
       ],
@@ -265,10 +257,11 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "100 GB /month data transfer",
-            "1M Edge Requests /month",
-            "100,000 function invocations",
-            "10 GB Remote Cache",
+            "Everything you need to kickstart your web project",
+            "Automatic CI/CD",
+            "Serverless Compute",
+            "Traffic & performance insights",
+            "DDoS Mitigation",
             "Community Support"
           ]
         },
@@ -279,10 +272,11 @@
           "currency": "USD",
           "perSeat": true,
           "limits": [
-            "1 TB /month data transfer",
-            "10M Edge Requests /month",
-            "1M function invocations",
             "Secure team collaboration",
+            "Frontend Observability tools",
+            "Advanced Protection",
+            "Scales with you",
+            "Spend management",
             "Email support"
           ]
         },
@@ -291,13 +285,14 @@
           "monthlyPrice": null,
           "priceLabel": "Custom",
           "currency": "USD",
-          "perSeat": true,
+          "perSeat": false,
           "limits": [
-            "Custom data transfer and compute",
-            "99.99% SLA",
-            "Advanced Support",
+            "Critical security, performance, observability and support",
+            "Guest & Team access controls",
             "SCIM & Directory Sync",
-            "Managed WAF Rulesets"
+            "Managed WAF Rulesets",
+            "Multi-region compute & failover",
+            "99.99% SLA"
           ]
         }
       ],
@@ -315,27 +310,25 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "Free forever for personal use",
-            "Automatic CI/CD and Global CDN",
-            "Web Application Firewall & DDoS Mitigation",
-            "Traffic & performance insights",
-            "1M Edge Requests / month",
-            "100 GB Fast Data Transfer / month"
+            "Free forever",
+            "Import your repo, deploy in seconds",
+            "Automatic CI/CD",
+            "Web Application Firewall",
+            "Global, automated CDN"
           ]
         },
         {
           "name": "Pro",
           "monthlyPrice": 20,
-          "priceLabel": "$20 / month",
+          "priceLabel": "$20/mo + additional usage",
           "currency": "USD",
           "perSeat": true,
           "limits": [
+            "All Hobby features, plus:",
             "$20 of included usage credit",
             "Advanced spend management",
             "Team collaboration & free viewer seats",
-            "Faster builds + no queues",
-            "10M Edge Requests / month",
-            "1TB Fast Data Transfer / month"
+            "Faster builds + no queues"
           ]
         },
         {
@@ -343,14 +336,13 @@
           "monthlyPrice": null,
           "priceLabel": "Custom",
           "currency": "USD",
-          "perSeat": true,
+          "perSeat": false,
           "limits": [
-            "Critical security, performance & observability",
+            "All Pro features, plus:",
             "Guest & Team access controls",
             "SCIM & Directory Sync",
             "Managed WAF Rulesets",
-            "99.99% SLA",
-            "Advanced Support"
+            "99.99% SLA"
           ]
         }
       ],
@@ -368,12 +360,10 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "Import your repo, deploy in seconds",
+            "Personal project use",
             "Automatic CI/CD",
-            "Web Application Firewall",
-            "Global, automated CDN",
-            "Fluid compute",
-            "DDoS Mitigation"
+            "Global automated CDN",
+            "DDoS mitigation"
           ]
         },
         {
@@ -383,11 +373,9 @@
           "currency": "USD",
           "perSeat": true,
           "limits": [
-            "All Hobby features, plus:",
-            "$20 of included usage credit",
+            "$20 included usage credit",
             "Advanced spend management",
-            "Team collaboration & free viewer seats",
-            "Faster builds + no queues",
+            "Team collaboration",
             "Free custom domain"
           ]
         },
@@ -398,12 +386,10 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "All Pro features, plus:",
-            "Guest & Team access controls",
-            "SCIM & Directory Sync",
+            "Critical security & performance",
             "Managed WAF Rulesets",
-            "Multi-region compute & failover",
-            "99.99% SLA"
+            "99.99% SLA",
+            "Advanced Support"
           ]
         }
       ],
@@ -467,44 +453,21 @@
   ],
   "changes": [
     {
-      "date": "2022-03-05",
+      "date": "2021-04-17",
       "plan": "Hobby",
       "kind": "limit_tightened",
-      "detail": "Hobby plan replaced unlimited usage with explicit caps including 100 GB bandwidth and 6,000 build minutes."
-    },
-    {
-      "date": "2022-03-05",
-      "plan": "Pro",
-      "kind": "limit_tightened",
-      "detail": "Pro plan replaced unlimited usage claims with a 1 TB bandwidth cap and 24,000 build minutes."
-    },
-    {
-      "date": "2023-02-09",
-      "plan": "Hobby",
-      "kind": "limit_tightened",
-      "detail": "Hobby plan bandwidth was temporarily cut from 100 GB down to 1 GB."
-    },
-    {
-      "date": "2023-12-03",
-      "plan": "Hobby",
-      "kind": "limit_loosened",
-      "detail": "Hobby plan bandwidth limit was restored back to 100 GB per month."
-    },
-    {
-      "date": "2025-10-01",
-      "plan": "Pro",
-      "kind": "limit_loosened",
-      "detail": "Pro plan added $20 of included usage credit and free viewer seats for team collaboration."
+      "detail": "Added explicit personal, non-commercial use restriction to the Hobby plan."
     }
   ],
   "grade": "B",
   "volatility": {
     "priceIncreases": 0,
     "planRemovals": 0,
-    "limitTightenings": 3,
+    "limitTightenings": 1,
     "yearsCovered": 6.4,
-    "biggestIncreasePct": null
+    "biggestIncreasePct": null,
+    "freeTierKilled": false
   },
-  "verdict": "Vercel maintained a steady $20 per month baseline for its Pro tier while systematically replacing initial 'unlimited' marketing with concrete usage quotas starting in March 2022. The free Hobby tier experienced a brief, severe bandwidth restriction down to 1 GB in early 2023 before reverting to 100 GB later that year. Buyers should closely evaluate their bandwidth, edge request volume, and build minutes to project real consumption costs.",
-  "headline": "Kept Pro at $20/mo while formalizing usage caps and edge execution limits over time."
+  "verdict": "Vercel has kept its Pro tier at $20 per month or user across all observed snapshots while frequently reorganizing features and introducing usage credits. The Hobby tier has remained permanently free, though the specific listed capabilities have shifted between snapshots. Buyers on the Pro plan should pay close attention to included usage limits and add-on pricing changes over time.",
+  "headline": "Maintained a stable $20 Pro price while reshuffling tier limits."
 }

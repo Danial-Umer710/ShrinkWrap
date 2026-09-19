@@ -1,0 +1,661 @@
+{
+  "url": "https://github.com/pricing",
+  "vendor": "GitHub",
+  "generatedAt": "2026-09-19T10:15:18.722Z",
+  "snapshots": [
+    {
+      "timestamp": "20140605102233",
+      "date": "2014-06-05",
+      "archiveUrl": "https://web.archive.org/web/20140605102233/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0/month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited collaborators",
+            "Unlimited public repositories",
+            "0 private repositories"
+          ]
+        },
+        {
+          "name": "Micro",
+          "monthlyPrice": 7,
+          "priceLabel": "$7/month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited collaborators",
+            "Unlimited public repositories",
+            "5 private repositories"
+          ]
+        },
+        {
+          "name": "Small",
+          "monthlyPrice": 12,
+          "priceLabel": "$12/month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited collaborators",
+            "Unlimited public repositories",
+            "10 private repositories"
+          ]
+        },
+        {
+          "name": "Medium",
+          "monthlyPrice": 22,
+          "priceLabel": "$22/month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited collaborators",
+            "Unlimited public repositories",
+            "20 private repositories"
+          ]
+        },
+        {
+          "name": "Large",
+          "monthlyPrice": 50,
+          "priceLabel": "$50/month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited collaborators",
+            "Unlimited public repositories",
+            "50 private repositories"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20160809211223",
+      "date": "2016-08-09",
+      "archiveUrl": "https://web.archive.org/web/20160809211223/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 7,
+          "priceLabel": "$7 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited private repositories",
+            "Build your own projects",
+            "Invite collaborators"
+          ]
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 9,
+          "priceLabel": "$9 per user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited private repositories",
+            "Work with your team",
+            "Manage team and user level permissions",
+            "Starting at $25 / month for first 5 users"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 21,
+          "priceLabel": "$21 per user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Host on your own servers or private cloud",
+            "Existing security controls",
+            "Sold in packs of 10 users",
+            "Billed annually"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20180402075620",
+      "date": "2018-04-02",
+      "archiveUrl": "https://web.archive.org/web/20180402075620/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Developer",
+          "monthlyPrice": 7,
+          "priceLabel": "$7 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Personal account",
+            "Unlimited public repositories",
+            "Unlimited private repositories",
+            "Unlimited collaborators"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 9,
+          "priceLabel": "$9 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Organization account",
+            "Unlimited public repositories",
+            "Unlimited private repositories",
+            "Team and user permissions"
+          ]
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 21,
+          "priceLabel": "$21 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Hosted on GitHub.com",
+            "SAML single sign-on",
+            "Access provisioning",
+            "24/5 support with 8-hour response time",
+            "99.95% Uptime SLA"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us to learn more",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Multiple organizations",
+            "SAML, LDAP, and CAS",
+            "24/7 support for urgent issues",
+            "Advanced auditing",
+            "Host on your servers, AWS, Azure, or GCP"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20191201011657",
+      "date": "2019-12-01",
+      "archiveUrl": "https://web.archive.org/web/20191201011657/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited public and private repositories",
+            "3 collaborators for private repositories",
+            "2,000 total Action minutes/month",
+            "500MB of GitHub Packages storage"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 7,
+          "priceLabel": "$7 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything included in Free",
+            "Unlimited collaborators",
+            "3,000 total Action minutes/month",
+            "500MB of GitHub Packages storage",
+            "Private GitHub pages and wikis"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 9,
+          "priceLabel": "$9 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Advanced collaboration tools for teams",
+            "10,000 total Action minutes/month",
+            "2GB of GitHub Packages storage",
+            "Team access controls and user management"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact sales",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything included in Team",
+            "50,000 total Action minutes/month",
+            "50GB of GitHub Packages storage",
+            "Self-hosted or cloud-hosted",
+            "SAML single sign-on and 99.95% SLA"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20210901003802",
+      "date": "2021-09-01",
+      "archiveUrl": "https://web.archive.org/web/20210901003802/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 per month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited public/private repositories",
+            "2,000 automation minutes/month",
+            "500MB of Packages storage",
+            "Community support"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 4,
+          "priceLabel": "$4 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Free, plus...",
+            "Protected branches and code owners",
+            "3,000 automation minutes/month",
+            "2GB of Packages storage",
+            "Web-based support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 21,
+          "priceLabel": "$21 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Team, plus...",
+            "SAML single sign-on and advanced auditing",
+            "50,000 automation minutes/month",
+            "50GB of Packages storage",
+            "Token, secret, and code scanning",
+            "Premium support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230501004538",
+      "date": "2023-05-01",
+      "archiveUrl": "https://web.archive.org/web/20230501004538/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited public/private repositories",
+            "2,000 CI/CD minutes/month",
+            "500MB of Packages storage",
+            "Community support"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 4,
+          "priceLabel": "$4 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Free, plus...",
+            "Access to GitHub Codespaces",
+            "Protected branches",
+            "3,000 CI/CD minutes/month",
+            "2GB of Packages storage",
+            "Web-based support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 21,
+          "priceLabel": "$21 per user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Team, plus...",
+            "Enterprise Managed Users",
+            "SAML single sign-on",
+            "Advanced auditing",
+            "50,000 CI/CD minutes/month",
+            "50GB of Packages storage"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20250101011831",
+      "date": "2025-01-01",
+      "archiveUrl": "https://web.archive.org/web/20250101011831/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 / month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited public/private repositories",
+            "2,000 CI/CD minutes/month",
+            "500MB of Packages storage",
+            "Community support"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 4,
+          "priceLabel": "$4 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Free, plus...",
+            "Access to GitHub Codespaces",
+            "Protected branches and multiple reviewers",
+            "3,000 CI/CD minutes/month",
+            "2GB of Packages storage"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 21,
+          "priceLabel": "$21 / user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Team, plus...",
+            "Data residency options",
+            "Enterprise Managed Users & SCIM provisioning",
+            "SAML single sign-on",
+            "50,000 CI/CD minutes/month",
+            "50GB of Packages storage"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260901011017",
+      "date": "2026-09-01",
+      "archiveUrl": "https://web.archive.org/web/20260901011017/https://github.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited public/private repositories",
+            "Dependabot security updates",
+            "2,000 CI/CD minutes/month",
+            "500MB of Packages storage",
+            "Community support"
+          ]
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 4,
+          "priceLabel": "$4 / user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Free, plus...",
+            "Access to GitHub Codespaces",
+            "Repository rules",
+            "3,000 CI/CD minutes/month",
+            "2GB of Packages storage",
+            "Web-based support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 21,
+          "priceLabel": "Starting at $21 / user/month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything included in Team, plus...",
+            "Data residency options",
+            "Enterprise Managed Users & SCIM",
+            "Audit Log API",
+            "50,000 CI/CD minutes/month",
+            "50GB of Packages storage"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2014-06-05",
+      "Free": 0,
+      "Micro": 7,
+      "Small": 12,
+      "Medium": 22,
+      "Large": 50
+    },
+    {
+      "date": "2016-08-09",
+      "Personal": 7,
+      "Organization": 9,
+      "Enterprise": 21
+    },
+    {
+      "date": "2018-04-02",
+      "Developer": 7,
+      "Team": 9,
+      "Business": 21,
+      "Enterprise": null
+    },
+    {
+      "date": "2019-12-01",
+      "Free": 0,
+      "Pro": 7,
+      "Team": 9,
+      "Enterprise": null
+    },
+    {
+      "date": "2021-09-01",
+      "Free": 0,
+      "Team": 4,
+      "Enterprise": 21
+    },
+    {
+      "date": "2023-05-01",
+      "Free": 0,
+      "Team": 4,
+      "Enterprise": 21
+    },
+    {
+      "date": "2025-01-01",
+      "Free": 0,
+      "Team": 4,
+      "Enterprise": 21
+    },
+    {
+      "date": "2026-09-01",
+      "Free": 0,
+      "Team": 4,
+      "Enterprise": 21
+    }
+  ],
+  "planNames": [
+    "Free",
+    "Micro",
+    "Small",
+    "Medium",
+    "Large",
+    "Personal",
+    "Organization",
+    "Enterprise",
+    "Developer",
+    "Team",
+    "Business",
+    "Pro"
+  ],
+  "changes": [
+    {
+      "date": "2016-08-09",
+      "plan": "Free",
+      "kind": "plan_removed",
+      "detail": "Free tier killed: Free plan disappeared and no free plan remains"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Micro",
+      "kind": "plan_removed",
+      "detail": "Micro plan ($7/month) disappeared"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Small",
+      "kind": "plan_removed",
+      "detail": "Small plan ($12/month) disappeared"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Medium",
+      "kind": "plan_removed",
+      "detail": "Medium plan ($22/month) disappeared"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Large",
+      "kind": "plan_removed",
+      "detail": "Large plan ($50/month) disappeared"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Personal",
+      "kind": "plan_added",
+      "detail": "New Personal plan at $7 / month"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Organization",
+      "kind": "plan_added",
+      "detail": "New Organization plan at $9 per user / month"
+    },
+    {
+      "date": "2016-08-09",
+      "plan": "Enterprise",
+      "kind": "plan_added",
+      "detail": "New Enterprise plan at $21 per user / month"
+    },
+    {
+      "date": "2018-04-02",
+      "plan": "Personal",
+      "kind": "plan_removed",
+      "detail": "Personal plan ($7 / month) disappeared"
+    },
+    {
+      "date": "2018-04-02",
+      "plan": "Organization",
+      "kind": "plan_removed",
+      "detail": "Organization plan ($9 per user / month) disappeared"
+    },
+    {
+      "date": "2018-04-02",
+      "plan": "Developer",
+      "kind": "plan_added",
+      "detail": "New Developer plan at $7 / month"
+    },
+    {
+      "date": "2018-04-02",
+      "plan": "Team",
+      "kind": "plan_added",
+      "detail": "New Team plan at $9 / user / month"
+    },
+    {
+      "date": "2018-04-02",
+      "plan": "Business",
+      "kind": "plan_added",
+      "detail": "New Business plan at $21 / user / month"
+    },
+    {
+      "date": "2019-12-01",
+      "plan": "Developer",
+      "kind": "plan_removed",
+      "detail": "Developer plan ($7 / month) disappeared"
+    },
+    {
+      "date": "2019-12-01",
+      "plan": "Business",
+      "kind": "plan_removed",
+      "detail": "Business plan ($21 / user / month) disappeared"
+    },
+    {
+      "date": "2019-12-01",
+      "plan": "Free",
+      "kind": "plan_added",
+      "detail": "New Free plan at $0 / month"
+    },
+    {
+      "date": "2019-12-01",
+      "plan": "Pro",
+      "kind": "plan_added",
+      "detail": "New Pro plan at $7 / month"
+    },
+    {
+      "date": "2019-12-01",
+      "plan": "Free",
+      "kind": "limit_loosened",
+      "detail": "Free plan added support for unlimited private repositories with up to 3 collaborators."
+    },
+    {
+      "date": "2021-09-01",
+      "plan": "Pro",
+      "kind": "plan_removed",
+      "detail": "Pro plan ($7 / month) disappeared"
+    },
+    {
+      "date": "2021-09-01",
+      "plan": "Team",
+      "kind": "price_decrease",
+      "detail": "Team: $9 / user / month → $4 per user/month (-56%)"
+    },
+    {
+      "date": "2021-09-01",
+      "plan": "Team",
+      "kind": "limit_loosened",
+      "detail": "Team plan added protected branches and code owners features."
+    },
+    {
+      "date": "2023-05-01",
+      "plan": "Team",
+      "kind": "limit_loosened",
+      "detail": "Team plan added access to GitHub Codespaces."
+    }
+  ],
+  "grade": "C",
+  "volatility": {
+    "priceIncreases": 0,
+    "planRemovals": 10,
+    "limitTightenings": 0,
+    "yearsCovered": 12.2,
+    "biggestIncreasePct": null,
+    "freeTierKilled": true
+  },
+  "verdict": "GitHub has significantly lowered its paid team barrier by dropping the Team plan price from $9 to $4 per user in 2021 while introducing a renewed Free tier in 2019. Enterprise pricing has remained steadily anchored at $21 per user per month across multiple structural restructurings, offering predictable scaling for larger organizations.",
+  "headline": "GitHub expanded developer access while slashing team pricing by over half."
+}

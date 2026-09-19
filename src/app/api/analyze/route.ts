@@ -2,7 +2,7 @@ import { analyze } from "@/lib/analyze";
 import { loadPrecomputed } from "@/lib/precomputed";
 import type { ProgressEvent } from "@/lib/types";
 
-export const maxDuration = 60;
+export const maxDuration = 150;
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
