@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   description: "Which SaaS vendors raise prices, kill plans and shrink free tiers — ranked from most to least stable.",
 };
 
+function count(n: number, one: string, many: string) {
+  return `${n} ${n === 1 ? one : many}`;
+}
+
 export default function VendorsPage() {
   const vendors = listPrecomputed();
   return (
@@ -42,12 +46,12 @@ export default function VendorsPage() {
                   <span className="block font-medium truncate">{v.vendor}</span>
                   <span className="block text-sm text-muted truncate">{v.headline}</span>
                   <span className="mt-1.5 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-muted">
-                    <span>{v.volatility.priceIncreases} hikes</span>
-                    <span>{v.volatility.planRemovals} plans killed</span>
+                    <span>{count(v.volatility.priceIncreases, "hike", "hikes")}</span>
+                    <span>{count(v.volatility.planRemovals, "plan killed", "plans killed")}</span>
                     {v.volatility.freeTierKilled ? (
                       <span className="text-red-300">free tier killed</span>
                     ) : (
-                      <span>{v.volatility.limitTightenings} limits cut</span>
+                      <span>{count(v.volatility.limitTightenings, "limit cut", "limits cut")}</span>
                     )}
                     <span className="hidden sm:inline">
                       {v.span.from.slice(0, 4)}–{v.span.to.slice(0, 4)}
