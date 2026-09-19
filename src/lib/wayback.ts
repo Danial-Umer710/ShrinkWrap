@@ -112,14 +112,25 @@ export async function fetchSnapshotText(
   maxChars = 14000,
 ): Promise<string> {
   const raw = `https://web.archive.org/web/${timestamp}id_/${url}`;
+  let lastErr = "Wayback rate limited, try again";
   for (let attempt = 0; attempt < 3; attempt++) {
-    const res = await fetch(raw, {
-      headers: { "User-Agent": UA, "Accept-Encoding": "gzip, br" },
-      redirect: "follow",
-      signal: AbortSignal.timeout(25000),
-    });
+    if (attempt > 0) await new Promise((r) => setTimeout(r, 1500 * attempt));
+    let res: Response;
+    try {
+      res = await fetch(raw, {
+        headers: { "User-Agent": UA, "Accept-Encoding": "gzip, br" },
+        redirect: "follow",
+        signal: AbortSignal.timeout(25000),
+      });
+    } catch (err) {
+      // Wayback resets connections when it throttles; report the socket error and retry.
+      const cause = err instanceof Error && err.cause instanceof Error ? err.cause : err;
+      const code = cause && typeof cause === "object" && "code" in cause ? String(cause.code) : "";
+      lastErr = `Wayback fetch failed${code ? ` (${code})` : ""}: ${cause instanceof Error ? cause.message : String(err)}`;
+      continue;
+    }
     if (res.status === 429 || res.status >= 500) {
-      await new Promise((r) => setTimeout(r, 1200 * (attempt + 1)));
+      lastErr = `Wayback returned ${res.status}`;
       continue;
     }
     if (!res.ok) throw new Error(`Snapshot fetch ${res.status}`);
@@ -127,5 +138,5 @@ export async function fetchSnapshotText(
     const text = htmlToText(html);
     return text.length > maxChars ? text.slice(0, maxChars) : text;
   }
-  throw new Error("Wayback rate limited, try again");
+  throw new Error(lastErr);
 }
