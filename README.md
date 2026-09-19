@@ -1,21 +1,43 @@
-# ShrinkWrap
+# ShrinkWrap — a credit score for SaaS vendors
 
-**Know how a vendor treats its customers before you depend on it.**
+**Live:** https://shrink-wrap-alpha.vercel.app · No sign-in · Built with Devin at the Cognition × LaunchLoop Budapest hackathon
 
-Paste any SaaS pricing page. ShrinkWrap pulls five years of archived versions from the
-Internet Archive's Wayback Machine, extracts every plan and price with Gemini, diffs them
-across time, and shows you every price hike, killed plan and shrunken free tier — with a
-link to the archived page that proves it.
+## The Problem
 
-Built with Devin at the Cognition × LaunchLoop Budapest hackathon.
-Live: https://shrink-wrap-alpha.vercel.app
+Heroku killed its free tier. Unity flipped its pricing model overnight. Half the tools you depend on have quietly raised the Pro plan year after year — and you only find out when the invoice changes. You can check a vendor's uptime history and funding history, but not the one thing that decides your bill: how they've treated customers on price. ShrinkWrap makes that visible *before* you build on them.
 
-## Features
+## Core Features
 
-- **Stability grade (A–F)** with a price timeline per plan and every detected change linked to its archived page.
-- **Planning & Defense** — when the next hike is likely, whether to lock in annual pricing now, and one architecture tip to avoid lock-in with that vendor.
-- **Cached reports** for 9 vendors (`/r/<slug>`), a **leaderboard** (`/vendors`) and a **side-by-side compare** (`/compare?a=…&b=…`) that all work without an API key.
-- No sign-in, mobile-friendly, works in a private window.
+Paste any pricing-page URL. ShrinkWrap pulls 5+ years of snapshots from the Internet Archive, extracts every plan, price and limit with Gemini, and diffs them across time (rename-aware, per-seat normalized). You get:
+
+- **Stability grade A–F** for the vendor.
+- **Price timeline** per plan.
+- **Every hike / killed plan / tightened limit**, each with a link to the archived page as proof.
+- **Plain-English verdict.**
+- **"Planning & Defense" card** — when the next hike is likely, whether to lock in an annual contract now, and one architecture tip to avoid lock-in with that vendor.
+- **Vendor leaderboard** (`/vendors`), **shareable report links** (`/r/<slug>`) and a **Compare page** (`/compare?a=…&b=…`) — *"Vercel is the safer bet — beats Heroku on 4 of 6 signals."*
+- **No sign-in, mobile-friendly.** 9 vendors are cached for an instant demo; any new URL is analyzed live in about a minute.
+
+## Technical Execution (Devin)
+
+Essentially the whole build:
+
+- Proposed the idea and scaffolded the Next.js app.
+- Built the Wayback pipeline, Gemini extraction, cross-snapshot diffing and grading model.
+- Built the charts and UI, leaderboard, permalinks and Compare page.
+- Precomputed the cached vendor reports and wrote `AGENTS.md`.
+- Deployed to Vercel — moving the region to Frankfurt when Wayback blocked US IPs.
+- Verified the live site with Computer Use.
+- Ran a deep security scan that found a real **SSRF** (archived pages could redirect the server to internal hosts) plus DoS and info-disclosure issues, and **fixed the high-severity ones**.
+- Shipped a **test suite + GitHub Actions CI** as a reviewed PR — all before submission.
+
+## Product Steering (Human)
+
+- Chose and steered the idea.
+- Set up GitHub, Vercel and Gemini.
+- Tested every iteration on a phone.
+- Specified the Planning & Defense feature and the pre-seeded demo buttons.
+- Set priorities, and approved the security fixes and the PR.
 
 ## How it works
 
