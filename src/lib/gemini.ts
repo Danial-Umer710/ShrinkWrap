@@ -11,7 +11,7 @@ export async function geminiJson<T>(
   schema: object,
   tier: "fast" | "smart" = "fast",
 ): Promise<T> {
-  const key = process.env.GEMINI_API_KEY;
+  const key = process.env.GEMINI_API_KEY?.trim();
   if (!key) throw new Error("GEMINI_API_KEY is not set");
   let model = tier === "fast" ? FAST_MODEL : SMART_MODEL;
 
