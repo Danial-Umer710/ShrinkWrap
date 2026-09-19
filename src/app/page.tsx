@@ -4,7 +4,7 @@ import Analyzer from "@/components/Analyzer";
 export default function Home() {
   const examples = listPrecomputed();
   return (
-    <main className="flex-1 px-4 py-10 sm:py-16">
+    <main id="main" className="flex-1 px-4 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 text-sm text-muted">
           <span className="inline-block w-2 h-2 rounded-full bg-accent" />

@@ -4,7 +4,7 @@ import { listPrecomputed } from "@/lib/precomputed";
 import { GRADE_LABEL, GRADE_STYLE } from "@/lib/grades";
 
 export const metadata: Metadata = {
-  title: "Pricing stability leaderboard — ShrinkWrap",
+  title: "Pricing stability leaderboard",
   description: "Which SaaS vendors raise prices, kill plans and shrink free tiers — ranked from most to least stable.",
 };
 
@@ -15,7 +15,7 @@ function count(n: number, one: string, many: string) {
 export default function VendorsPage() {
   const vendors = listPrecomputed();
   return (
-    <main className="flex-1 px-4 py-10 sm:py-16">
+    <main id="main" className="flex-1 px-4 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 text-sm text-muted">
           <Link href="/" className="hover:text-foreground transition">
