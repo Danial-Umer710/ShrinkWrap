@@ -12,24 +12,9 @@ import {
   YAxis,
 } from "recharts";
 import type { PlanChange, Report } from "@/lib/types";
+import { GRADE_LABEL, GRADE_STYLE } from "@/lib/grades";
 
 const COLORS = ["#f97316", "#22d3ee", "#a78bfa", "#4ade80", "#f472b6", "#facc15", "#60a5fa"];
-
-const GRADE_STYLE: Record<Report["grade"], string> = {
-  A: "bg-emerald-500/15 text-emerald-300 border-emerald-500/40",
-  B: "bg-lime-500/15 text-lime-300 border-lime-500/40",
-  C: "bg-yellow-500/15 text-yellow-300 border-yellow-500/40",
-  D: "bg-orange-500/15 text-orange-300 border-orange-500/40",
-  F: "bg-red-500/15 text-red-300 border-red-500/40",
-};
-
-const GRADE_LABEL: Record<Report["grade"], string> = {
-  A: "Rock solid",
-  B: "Mostly stable",
-  C: "Some creep",
-  D: "Volatile",
-  F: "Buyer beware",
-};
 
 const KIND_META: Record<PlanChange["kind"], { label: string; cls: string }> = {
   price_increase: { label: "Price up", cls: "bg-red-500/15 text-red-300" },
@@ -85,8 +70,9 @@ function Stat({ label, value }: { label: string; value: string | number }) {
   );
 }
 
-export default function ReportView({ report }: { report: Report }) {
+export default function ReportView({ report, permalink }: { report: Report; permalink?: string }) {
   const [showSources, setShowSources] = useState(false);
+  const [copied, setCopied] = useState(false);
   const chartPlans = pickChartPlans(report);
   const bad = report.changes.filter((c) => ["price_increase", "plan_removed", "limit_tightened"].includes(c.kind));
   const groups = groupByDate(report.changes);
@@ -107,8 +93,24 @@ export default function ReportView({ report }: { report: Report }) {
           <div className="text-sm text-muted truncate">{report.url}</div>
           <h2 className="text-2xl sm:text-3xl font-semibold mt-1 leading-tight">{report.vendor}: {report.headline}</h2>
           <p className="text-muted mt-3 leading-relaxed">{report.verdict}</p>
-          <div className="text-xs text-muted mt-3">
-            Based on {report.timeline.length} archived pricing pages, {first} → {last}.
+          <div className="text-xs text-muted mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>
+              Based on {report.timeline.length} archived pricing pages, {first} → {last}.
+            </span>
+            {permalink && (
+              <button
+                type="button"
+                onClick={() => {
+                  const href = new URL(permalink, window.location.origin).toString();
+                  void navigator.clipboard?.writeText(href);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 1500);
+                }}
+                className="rounded-md border border-border px-2 py-0.5 hover:border-accent/60 transition"
+              >
+                {copied ? "Link copied" : "Copy link"}
+              </button>
+            )}
           </div>
         </div>
       </header>

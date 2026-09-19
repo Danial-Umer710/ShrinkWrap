@@ -1,10 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { FormEvent, useRef, useState } from "react";
 import ReportView from "./ReportView";
 import type { ProgressEvent, Report } from "@/lib/types";
 
-type Example = { url: string; vendor: string; grade: string; headline: string };
+type Example = { slug: string; url: string; vendor: string; grade: string; headline: string };
 
 type Progress = { message: string; step: number; total: number; snapshots: { date: string; ok: boolean }[] };
 
@@ -65,6 +66,11 @@ export default function Analyzer({ examples }: { examples: Example[] }) {
     run(url);
   }
 
+  function permalinkFor(r: Report): string | undefined {
+    const slug = examples.find((ex) => ex.url === r.url)?.slug;
+    return slug ? `/r/${slug}` : undefined;
+  }
+
   return (
     <div className="mt-8">
       <form onSubmit={onSubmit} className="flex flex-col sm:flex-row gap-2">
@@ -107,6 +113,9 @@ export default function Analyzer({ examples }: { examples: Example[] }) {
               {ex.vendor} <span className="text-muted">· {ex.grade}</span>
             </button>
           ))}
+          <Link href="/vendors" className="text-xs text-accent hover:underline ml-1">
+            Full leaderboard →
+          </Link>
         </div>
       )}
 
@@ -146,7 +155,7 @@ export default function Analyzer({ examples }: { examples: Example[] }) {
         </div>
       )}
 
-      {report && <ReportView report={report} />}
+      {report && <ReportView report={report} permalink={permalinkFor(report)} />}
     </div>
   );
 }
