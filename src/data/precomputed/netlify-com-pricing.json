@@ -658,5 +658,10 @@
     "freeTierKilled": false
   },
   "verdict": "Netlify has drastically reorganized its pricing model multiple times over the years. From flat-rate team plans in 2018 to per-member pricing in 2021, and finally shifting toward credit-based limits and cheaper personal options by 2026, buyers should expect continuous packaging shifts.",
-  "headline": "Evolved from high-tier enterprise packages to per-member models and credit-based plans."
+  "headline": "Evolved from high-tier enterprise packages to per-member models and credit-based plans.",
+  "recommendation": {
+    "nextHikePrediction": "Likely within 12-24 months as Netlify shifts pricing models, given recent 2026 restructuring and past history.",
+    "contractStrategy": "Stay month-to-month since Netlify frequently restructures plans and historically shifts between flat rates and per-seat pricing.",
+    "architectureDefense": "Keep build configurations, routing rules, and environment variables portable using standard open-source static site generators to enable easy migration to rival hosts."
+  }
 }

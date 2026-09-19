@@ -1,0 +1,1389 @@
+{
+  "url": "https://unity.com/pricing",
+  "vendor": "Unity",
+  "generatedAt": "2026-09-19T11:28:25.971Z",
+  "snapshots": [
+    {
+      "timestamp": "20180930043416",
+      "date": "2018-09-30",
+      "archiveUrl": "https://web.archive.org/web/20180930043416/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "For beginners and revenue under $100K",
+            "All Core Engine Features & Platforms",
+            "Royalty-Free",
+            "Continuous Updates"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 35,
+          "priceLabel": "$35 paid monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For hobbyists and revenue under $200K",
+            "25GB Unity Cloud Storage",
+            "Expert Live Sessions",
+            "20% off Asset Store",
+            "Unity Game Dev Courses"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 125,
+          "priceLabel": "$125 per month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For teams and freelancers",
+            "Priority access to Unity experts",
+            "Multiplayer Game Server Hosting",
+            "Pro Editor UI Skin",
+            "Splash Screen Customization",
+            "Performance Crash Reporting"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "For teams of 21 or more",
+            "Custom solutions",
+            "Source Code Access for Purchase",
+            "Premium Support for Purchase"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20191219151044",
+      "date": "2019-12-19",
+      "archiveUrl": "https://web.archive.org/web/20191219151044/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free version of Unity",
+            "Core Unity real-time development platform",
+            "For revenue or funding less than $100K"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 35,
+          "priceLabel": "$35 per month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Pro Editor UI theme",
+            "Splash screen customization",
+            "3 seats, 25GB storage",
+            "For revenue or funding less than $200K"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 125,
+          "priceLabel": "$125 per month",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Advanced Cloud Diagnostics",
+            "Core Analytics",
+            "Access to Unity Learn Premium",
+            "Required for revenue over $200K"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Custom solutions at scale",
+            "Industry-specific solution toolkits",
+            "Integrated Success Services",
+            "Custom technical and business goals"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20200723103712",
+      "date": "2020-07-23",
+      "archiveUrl": "https://web.archive.org/web/20200723103712/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free version of Unity",
+            "Core Unity real-time development platform",
+            "Multiplatform support"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 40,
+          "priceLabel": "$40 /mo per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "More functionality and resources",
+            "Dark theme UI",
+            "Splash screen customization"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 150,
+          "priceLabel": "$150 /mo per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Complete solution for professionals",
+            "Advanced Cloud Diagnostics",
+            "Core Analytics"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 200,
+          "priceLabel": "$200 /mo per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Success at scale for large organizations",
+            "Technical support included",
+            "Customer Success Manager"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20210121053200",
+      "date": "2021-01-21",
+      "archiveUrl": "https://web.archive.org/web/20210121053200/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free version of Unity",
+            "Core Unity real-time development platform",
+            "Eligible if revenue or funding is less than $100K"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "More functionality and resources",
+            "Eligible if revenue or funding is less than $200K",
+            "Bolt visual scripting"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 150,
+          "priceLabel": "$1,800 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Complete solution for professionals",
+            "Source code access available",
+            "Splash screen customization"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 200,
+          "priceLabel": "$200 /mo per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Success at scale for large organizations",
+            "Minimum 10 seats",
+            "Technical support included"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20210616014740",
+      "date": "2021-06-16",
+      "archiveUrl": "https://web.archive.org/web/20210616014740/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free version of Unity",
+            "Core Unity real-time development platform",
+            "Bolt visual scripting",
+            "Eligible if revenue under $100K"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "More functionality and resources",
+            "Eligible if revenue under $200K",
+            "Unity Teams Advanced included",
+            "Custom splash screen"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 150,
+          "priceLabel": "$1,800 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Complete solution for professionals",
+            "Advanced Cloud Diagnostics",
+            "Core Analytics",
+            "Unity Ads and In-App Purchase"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 200,
+          "priceLabel": "$2,000 /mo per 10 seats",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Success at scale for large orgs",
+            "Minimum 10 seats",
+            "Technical support included",
+            "Assigned Customer Success Manager"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20211203010705",
+      "date": "2021-12-03",
+      "archiveUrl": "https://web.archive.org/web/20211203010705/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Core Unity real-time development platform",
+            "Bolt visual scripting",
+            "Free version of Unity"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "More functionality and resources",
+            "Revenue or funding less than $200K",
+            "25GB per org Cloud Storage included"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 150,
+          "priceLabel": "$1,800 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Complete solution for professionals",
+            "Splash screen customization",
+            "Unity Teams Advanced included"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 200,
+          "priceLabel": "$4,000 /mo per 20 seats",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Success at scale for large organizations",
+            "Minimum 20 seats",
+            "Technical support included"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20220716034244",
+      "date": "2022-07-16",
+      "archiveUrl": "https://web.archive.org/web/20220716034244/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Free version of Unity",
+            "For revenue or funding under $100K",
+            "Core Unity real-time development platform"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "For revenue or funding under $200K",
+            "More functionality and resources",
+            "Core Unity real-time development platform"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 150,
+          "priceLabel": "$1,800 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Complete solution for professionals",
+            "Splash screen customization",
+            "Advanced Cloud Diagnostics"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 200,
+          "priceLabel": "$4,000 /mo per 20 seats",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Success at scale for large organizations",
+            "Includes Premium Support Team",
+            "Assigned Customer Success Manager"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230302071354",
+      "date": "2023-03-02",
+      "archiveUrl": "https://web.archive.org/web/20230302071354/https://store.unity.com/compare-plans",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Revenue or funding less than $100K in last 12 months",
+            "Free version of Unity",
+            "Unity real-time development platform",
+            "Visual scripting in Unity"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": null,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Revenue or funding less than $200K in last 12 months",
+            "More functionality and resources",
+            "Cloud Diagnostics extra capacity",
+            "Longer data retention and storage"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": null,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Complete solution for professionals",
+            "Splash screen customization",
+            "Deploy to game consoles",
+            "Extended LTS support for 3 years"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Success at scale for large organizations",
+            "Custom solutions at scale",
+            "On-demand training subscriptions",
+            "Dedicated partner support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230328203544",
+      "date": "2023-03-28",
+      "archiveUrl": "https://web.archive.org/web/20230328203544/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Students 16 years and older",
+            "Latest version of core Unity Platform",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn Unity"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Revenue or funding less than $100K",
+            "Latest version of core Unity Platform",
+            "Resources for learning Unity"
+          ]
+        },
+        {
+          "name": "Unity Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Latest version of the Unity Platform",
+            "Splash screen customization",
+            "Basic crash and error reporting"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Plus",
+            "Publish to game consoles",
+            "Priority Customer Service",
+            "Unity Mars tools for AR/MR",
+            "Havok Physics for Unity"
+          ]
+        },
+        {
+          "name": "Industrial Collection",
+          "monthlyPrice": 210,
+          "priceLabel": "$2,520 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Includes Unity Pro",
+            "Pixyz Plugin",
+            "Material importers (xTex and AxF)",
+            "Unity Mars tools for AR/MR",
+            "Toolkits for VR collaboration"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Pro",
+            "Technical support",
+            "Build Server license capacity",
+            "Partner Relations Manager",
+            "Three-year LTS support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230504090740",
+      "date": "2023-05-04",
+      "archiveUrl": "https://web.archive.org/web/20230504090740/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Core Unity Platform",
+            "Free assets",
+            "Learning resources",
+            "For students 16+"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Core Unity Platform",
+            "Learning resources",
+            "For revenue under $100K",
+            "Royalty-free"
+          ]
+        },
+        {
+          "name": "Unity Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Latest Unity Platform",
+            "Splash screen customization",
+            "Basic crash reporting",
+            "Annual plan"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Plus",
+            "Publish to game consoles",
+            "Priority Customer Service",
+            "Havok Physics for Unity",
+            "Unity Mars tools for AR/MR"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Pro",
+            "Technical support",
+            "Build Server license capacity",
+            "Dedicated Unity Advisor",
+            "Three-year LTS support"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin",
+            "Industry Success",
+            "Rapid-response tech support",
+            "300+ hours training"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230711164628",
+      "date": "2023-07-11",
+      "archiveUrl": "https://web.archive.org/web/20230711164628/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Students 16 years and older",
+            "Latest version of core Unity Platform",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn Unity"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Revenue or funding less than $100K",
+            "Latest version of core Unity Platform",
+            "Resources for learning Unity",
+            "Royalty-free creation"
+          ]
+        },
+        {
+          "name": "Unity Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Revenue or funding less than $200K",
+            "Latest version of Unity Platform",
+            "Splash screen customization",
+            "Basic crash and error reporting"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Plus",
+            "Publish to game consoles",
+            "Priority Customer Service",
+            "Unity Mars tools for AR/MR",
+            "Havok Physics for Unity"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Pro",
+            "Technical support",
+            "Build Server license capacity",
+            "Dedicated Unity Advisor",
+            "Three-year LTS support"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin",
+            "Industry Success",
+            "Rapid-response technical support",
+            "On-Demand Training (300+ hours)"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20230902053650",
+      "date": "2023-09-02",
+      "archiveUrl": "https://web.archive.org/web/20230902053650/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Latest version of core Unity Platform",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn",
+            "For eligible students 16+"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Latest version of core Unity Platform",
+            "Resources for getting started",
+            "For revenue or funding under $100K",
+            "Royalty-free creation tools"
+          ]
+        },
+        {
+          "name": "Unity Plus",
+          "monthlyPrice": 33.25,
+          "priceLabel": "$399 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Latest version of Unity Platform",
+            "Splash screen customization",
+            "Basic crash and error reporting",
+            "For revenue under $200K"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Plus",
+            "Publish to game consoles",
+            "Priority Customer Service",
+            "Unity Mars tools for AR/MR"
+          ]
+        },
+        {
+          "name": "Unity Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Pro",
+            "Unity Source Code access",
+            "Three-year LTS support",
+            "Build Server license capacity"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": 412.5,
+          "priceLabel": "$4,950 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin included",
+            "Industry Success advisory",
+            "Rapid-response technical support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20231001225554",
+      "date": "2023-10-01",
+      "archiveUrl": "https://web.archive.org/web/20231001225554/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Latest version of core Unity Platform",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn",
+            "Students 16 years and older"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Latest version of core Unity Platform",
+            "Resources for learning Unity",
+            "Revenue less than $100K in 12 months",
+            "Free version of Unity"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Publish to game consoles",
+            "Splash screen customization",
+            "Priority Customer Service",
+            "Unity Mars tools for AR/MR"
+          ]
+        },
+        {
+          "name": "Unity Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Pro",
+            "Unity Source Code access",
+            "Three-year LTS support",
+            "Build Server license capacity"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": 412.5,
+          "priceLabel": "$4,950 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin",
+            "Industry Success",
+            "Dedicated Unity Advisor"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20231201202842",
+      "date": "2023-12-01",
+      "archiveUrl": "https://web.archive.org/web/20231201202842/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Students 16 years and older",
+            "Latest core Unity Platform version",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Revenue less than $100K in last 12 mo",
+            "Latest core Unity Platform version",
+            "Resources for learning Unity"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Publish to game consoles",
+            "Priority Customer Service",
+            "Unity Cloud and Asset Manager",
+            "Unity Mars and Havok Physics"
+          ]
+        },
+        {
+          "name": "Unity Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Pro",
+            "Expedited technical support",
+            "Unity Source Code access",
+            "Three-year LTS support",
+            "Minimum purchase of 20 seats"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": 412.5,
+          "priceLabel": "$4,950 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin",
+            "Industry Success",
+            "Rapid-response technical support",
+            "Dedicated Unity Advisor"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20240203010314",
+      "date": "2024-02-03",
+      "archiveUrl": "https://web.archive.org/web/20240203010314/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "EUR",
+          "perSeat": false,
+          "limits": [
+            "For students 16 years and older",
+            "Latest version of core Unity Platform",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn Unity"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "EUR",
+          "perSeat": false,
+          "limits": [
+            "For revenue less than $100K in last 12 months",
+            "Latest version of core Unity Platform",
+            "Resources for learning Unity",
+            "Free version of Unity"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": null,
+          "priceLabel": "€1,877 /yr per seat",
+          "currency": "EUR",
+          "perSeat": true,
+          "limits": [
+            "Publish to game consoles",
+            "Guidance from Partner Advisor",
+            "Priority Customer Service",
+            "Unity Cloud and Asset Manager",
+            "Team Administration and Unity DevOps"
+          ]
+        },
+        {
+          "name": "Unity Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "EUR",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Pro",
+            "Expedited technical support",
+            "Unity Source Code access",
+            "Three-year LTS support",
+            "Floating license availability"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": null,
+          "priceLabel": "€4,554 /yr per seat",
+          "currency": "EUR",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin",
+            "Industry Success",
+            "On-Demand Training (300+ hours)",
+            "Dedicated Partner Relations Manager"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20240401155905",
+      "date": "2024-04-01",
+      "archiveUrl": "https://web.archive.org/web/20240401155905/https://unity.com/pricing",
+      "plans": [
+        {
+          "name": "Student",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Core Unity Platform latest version",
+            "Free assets to accelerate projects",
+            "Resources to get started and learn",
+            "For eligible students 16+"
+          ]
+        },
+        {
+          "name": "Personal",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Core Unity Platform latest version",
+            "Resources for learning Unity",
+            "For revenue under $100K in last 12 mos"
+          ]
+        },
+        {
+          "name": "Unity Pro",
+          "monthlyPrice": 170,
+          "priceLabel": "$2,040 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Publish to game consoles",
+            "Priority Customer Service",
+            "Unity Cloud and Asset Manager",
+            "Team Administration & DevOps",
+            "Havok Physics for Unity"
+          ]
+        },
+        {
+          "name": "Unity Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Contact us",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Everything in Unity Pro",
+            "Expedited technical support",
+            "Unity Source Code access",
+            "Three-year LTS support",
+            "Floating license availability"
+          ]
+        },
+        {
+          "name": "Unity Industry",
+          "monthlyPrice": 412.5,
+          "priceLabel": "$4,950 /yr per seat",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Everything in Unity Enterprise",
+            "Pixyz Plugin",
+            "Industry Success",
+            "Dedicated Partner Relations Manager",
+            "300+ hours On-Demand Training"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2018-09-30",
+      "Personal": 0,
+      "Unity Plus": 35,
+      "Unity Pro": 125,
+      "Unity Enterprise": null
+    },
+    {
+      "date": "2019-12-19",
+      "Personal": 0,
+      "Unity Plus": 35,
+      "Unity Pro": 125,
+      "Unity Enterprise": null
+    },
+    {
+      "date": "2020-07-23",
+      "Personal": 0,
+      "Unity Plus": 40,
+      "Unity Pro": 150,
+      "Unity Enterprise": 200
+    },
+    {
+      "date": "2021-01-21",
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 150,
+      "Unity Enterprise": 200
+    },
+    {
+      "date": "2021-06-16",
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 150,
+      "Unity Enterprise": 200
+    },
+    {
+      "date": "2021-12-03",
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 150,
+      "Unity Enterprise": 200
+    },
+    {
+      "date": "2022-07-16",
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 150,
+      "Unity Enterprise": 200
+    },
+    {
+      "date": "2023-03-02",
+      "Personal": 0,
+      "Unity Plus": null,
+      "Unity Pro": null,
+      "Unity Enterprise": null
+    },
+    {
+      "date": "2023-03-28",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 170,
+      "Industrial Collection": 210,
+      "Unity Enterprise": null
+    },
+    {
+      "date": "2023-05-04",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 170,
+      "Unity Enterprise": null,
+      "Unity Industry": null
+    },
+    {
+      "date": "2023-07-11",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 170,
+      "Unity Enterprise": null,
+      "Unity Industry": null
+    },
+    {
+      "date": "2023-09-02",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Plus": 33.25,
+      "Unity Pro": 170,
+      "Unity Enterprise": null,
+      "Unity Industry": 412.5
+    },
+    {
+      "date": "2023-10-01",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Pro": 170,
+      "Unity Enterprise": null,
+      "Unity Industry": 412.5
+    },
+    {
+      "date": "2023-12-01",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Pro": 170,
+      "Unity Enterprise": null,
+      "Unity Industry": 412.5
+    },
+    {
+      "date": "2024-02-03",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Pro": null,
+      "Unity Enterprise": null,
+      "Unity Industry": null
+    },
+    {
+      "date": "2024-04-01",
+      "Student": 0,
+      "Personal": 0,
+      "Unity Pro": 170,
+      "Unity Enterprise": null,
+      "Unity Industry": 412.5
+    }
+  ],
+  "planNames": [
+    "Personal",
+    "Unity Plus",
+    "Unity Pro",
+    "Unity Enterprise",
+    "Student",
+    "Industrial Collection",
+    "Unity Industry"
+  ],
+  "changes": [
+    {
+      "date": "2020-07-23",
+      "plan": "Unity Plus",
+      "kind": "price_increase",
+      "detail": "Plus: $35 per month → $40 /mo per seat (+14%)"
+    },
+    {
+      "date": "2020-07-23",
+      "plan": "Unity Pro",
+      "kind": "price_increase",
+      "detail": "Pro: $125 per month → $150 /mo per seat (+20%)"
+    },
+    {
+      "date": "2020-07-23",
+      "plan": "Plus",
+      "kind": "limit_loosened",
+      "detail": "Added Dark theme UI and Splash screen customization."
+    },
+    {
+      "date": "2020-07-23",
+      "plan": "Pro",
+      "kind": "limit_loosened",
+      "detail": "Added Advanced Cloud Diagnostics and Core Analytics."
+    },
+    {
+      "date": "2021-01-21",
+      "plan": "Unity Plus",
+      "kind": "price_decrease",
+      "detail": "Plus: $40 /mo per seat → $399 /yr per seat (-17%)"
+    },
+    {
+      "date": "2021-01-21",
+      "plan": "Plus",
+      "kind": "limit_loosened",
+      "detail": "Added Bolt visual scripting."
+    },
+    {
+      "date": "2021-06-16",
+      "plan": "Plus",
+      "kind": "limit_loosened",
+      "detail": "Added Unity Teams Advanced and Custom splash screen."
+    },
+    {
+      "date": "2021-12-03",
+      "plan": "Plus",
+      "kind": "limit_loosened",
+      "detail": "Added 25GB per org Cloud Storage included."
+    },
+    {
+      "date": "2023-03-02",
+      "plan": "Plus",
+      "kind": "limit_loosened",
+      "detail": "Added Cloud Diagnostics extra capacity and longer retention."
+    },
+    {
+      "date": "2023-03-02",
+      "plan": "Pro",
+      "kind": "limit_loosened",
+      "detail": "Added Deploy to game consoles and Extended LTS support."
+    },
+    {
+      "date": "2023-03-28",
+      "plan": "Unity Plus",
+      "kind": "plan_renamed",
+      "detail": "Plus renamed to Unity Plus"
+    },
+    {
+      "date": "2023-03-28",
+      "plan": "Unity Pro",
+      "kind": "plan_renamed",
+      "detail": "Pro renamed to Unity Pro"
+    },
+    {
+      "date": "2023-03-28",
+      "plan": "Student",
+      "kind": "plan_added",
+      "detail": "New Student plan at Free"
+    },
+    {
+      "date": "2023-03-28",
+      "plan": "Industrial Collection",
+      "kind": "plan_added",
+      "detail": "New Industrial Collection plan at $2,520 /yr per seat"
+    },
+    {
+      "date": "2023-03-28",
+      "plan": "Unity Pro",
+      "kind": "limit_loosened",
+      "detail": "Added Unity Mars tools for AR/MR and Havok Physics."
+    },
+    {
+      "date": "2023-05-04",
+      "plan": "Industrial Collection",
+      "kind": "plan_removed",
+      "detail": "Industrial Collection plan ($2,520 /yr per seat) disappeared"
+    },
+    {
+      "date": "2023-05-04",
+      "plan": "Unity Industry",
+      "kind": "plan_added",
+      "detail": "New Unity Industry plan at Contact us"
+    },
+    {
+      "date": "2023-09-02",
+      "plan": "Unity Enterprise",
+      "kind": "plan_renamed",
+      "detail": "Enterprise renamed to Unity Enterprise"
+    },
+    {
+      "date": "2023-10-01",
+      "plan": "Unity Plus",
+      "kind": "plan_removed",
+      "detail": "Unity Plus plan ($399 /yr per seat) disappeared"
+    }
+  ],
+  "grade": "C",
+  "volatility": {
+    "priceIncreases": 2,
+    "planRemovals": 2,
+    "limitTightenings": 0,
+    "yearsCovered": 5.5,
+    "biggestIncreasePct": 20,
+    "freeTierKilled": false
+  },
+  "verdict": "Unity transitioned its paid tiers from monthly flexibility to annual commitments while significantly raising Pro prices to $2,040 per year by 2023. The Plus tier was eventually phased out entirely, replaced by higher-end bundles like Unity Industry at $4,950 per year.",
+  "headline": "Steadily raised seat prices while restructuring plans and phasing out Plus.",
+  "recommendation": {
+    "nextHikePrediction": "Likely within 12-18 months around late 2027 based on historical intervals between major restructuring and price bumps.",
+    "contractStrategy": "Lock into an annual contract now to freeze current rates, as Unity has shown a pattern of plan removals and consistent price inflation.",
+    "architectureDefense": "Isolate Unity SDK calls behind custom wrapper interfaces and manage asset pipelines externally to allow easier migration to alternative engines."
+  }
+}

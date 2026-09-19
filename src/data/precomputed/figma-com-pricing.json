@@ -540,5 +540,10 @@
     "freeTierKilled": false
   },
   "verdict": "Figma has systematically raised prices and layered in mandatory seat distinctions like Dev and Collab seats. Professional jumped 33% to $16 per month in 2025, while Organization and Enterprise saw proportional bumps. Buyers should carefully evaluate team seat mixes to avoid unexpected cost escalations.",
-  "headline": "Figma expanded paid tiers and steadily increased core prices over time."
+  "headline": "Figma expanded paid tiers and steadily increased core prices over time.",
+  "recommendation": {
+    "nextHikePrediction": "Likely within 24 to 36 months, around mid-2028, given past major hikes occurred in 2025 after a two-year cadence.",
+    "contractStrategy": "Lock into an annual contract now to freeze the recent July 2025 price increases and hedge against future upward adjustments.",
+    "architectureDefense": "Isolate design tokens and component libraries in platform-agnostic formats to enable seamless migration to alternative tools."
+  }
 }

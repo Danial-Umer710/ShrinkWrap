@@ -538,5 +538,10 @@
     "freeTierKilled": false
   },
   "verdict": "Slack has steadily increased its pricing and restricted limits over the years. The Free tier took a major hit by capping message history at 90 days by 2025, and monthly plan prices have risen significantly up to 2026. Buyers should anticipate rising costs upon renewal and evaluate whether advanced AI or enterprise features justify the premium tiers.",
-  "headline": "Slack raised monthly pricing across plans while shrinking the Free tier message history."
+  "headline": "Slack raised monthly pricing across plans while shrinking the Free tier message history.",
+  "recommendation": {
+    "nextHikePrediction": "Likely within 12-18 months around late 2027, driven by recent aggressive 21-44 percent hikes in September 2026.",
+    "contractStrategy": "Lock into an annual contract immediately to freeze the newly increased monthly rates and protect against upcoming surges.",
+    "architectureDefense": "Abstract chat and messaging integrations behind a custom internal notification interface to enable rapid swapping of providers."
+  }
 }

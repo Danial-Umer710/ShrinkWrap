@@ -469,5 +469,10 @@
     "freeTierKilled": false
   },
   "verdict": "Vercel has kept its Pro tier at $20 per month or user across all observed snapshots while frequently reorganizing features and introducing usage credits. The Hobby tier has remained permanently free, though the specific listed capabilities have shifted between snapshots. Buyers on the Pro plan should pay close attention to included usage limits and add-on pricing changes over time.",
-  "headline": "Maintained a stable $20 Pro price while reshuffling tier limits."
+  "headline": "Maintained a stable $20 Pro price while reshuffling tier limits.",
+  "recommendation": {
+    "nextHikePrediction": "No historical price increases observed for Pro or Hobby over 6.4 years, but limit tightenings and terms restrictions indicate potential indirect monetization risks.",
+    "contractStrategy": "Stay month-to-month since base pricing has remained completely stable at $20 for Pro over the entire observation window without historical inflation.",
+    "architectureDefense": "Keep deployment configurations and edge middleware portable by avoiding proprietary serverless bindings so you can migrate to alternative hosts if needed."
+  }
 }

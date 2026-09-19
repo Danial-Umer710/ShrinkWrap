@@ -45,6 +45,13 @@ export type Report = {
   };
   verdict: string;
   headline: string;
+  recommendation?: Recommendation;
+};
+
+export type Recommendation = {
+  nextHikePrediction: string;
+  contractStrategy: string;
+  architectureDefense: string;
 };
 
 export type ProgressEvent =

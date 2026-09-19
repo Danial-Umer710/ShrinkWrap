@@ -4,6 +4,10 @@ import Link from "next/link";
 import { FormEvent, useRef, useState } from "react";
 import ReportView from "./ReportView";
 import type { ProgressEvent, Report } from "@/lib/types";
+import { GRADE_STYLE } from "@/lib/grades";
+
+// Big one-tap demo buttons, in this order; everything else cached becomes a small chip.
+const FEATURED = ["vercel-com-pricing", "heroku-com-pricing", "unity-com-pricing"];
 
 type Example = { slug: string; url: string; vendor: string; grade: string; headline: string };
 
@@ -16,6 +20,8 @@ export default function Analyzer({ examples }: { examples: Example[] }) {
   const [report, setReport] = useState<Report | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const featured = FEATURED.map((slug) => examples.find((ex) => ex.slug === slug)).filter((ex): ex is Example => !!ex);
+  const others = examples.filter((ex) => !FEATURED.includes(ex.slug));
 
   async function run(target: string) {
     if (!target.trim()) return;
@@ -96,10 +102,35 @@ export default function Analyzer({ examples }: { examples: Example[] }) {
         </button>
       </form>
 
-      {examples.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-2 items-center">
-          <span className="text-xs text-muted">Try:</span>
-          {examples.map((ex) => (
+      {featured.length > 0 && (
+        <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-3">
+          {featured.map((ex) => (
+            <button
+              key={ex.url}
+              type="button"
+              disabled={loading}
+              onClick={() => {
+                setUrl(ex.url.replace(/^https?:\/\/(www\.)?/, ""));
+                run(ex.url);
+              }}
+              className="rounded-xl border border-border bg-card/60 px-3 py-3 text-left hover:border-accent/60 transition disabled:opacity-50"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="font-medium text-sm sm:text-base truncate">{ex.vendor}</span>
+                <span className={`shrink-0 rounded-md border px-1.5 text-xs font-semibold ${GRADE_STYLE[ex.grade as Report["grade"]] ?? ""}`}>
+                  {ex.grade}
+                </span>
+              </div>
+              <div className="text-xs text-muted mt-1 line-clamp-2">{ex.headline}</div>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {others.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-2 items-center">
+          <span className="text-xs text-muted">More:</span>
+          {others.map((ex) => (
             <button
               key={ex.url}
               type="button"

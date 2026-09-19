@@ -1,5 +1,5 @@
 import { geminiJson } from "./gemini";
-import type { Plan, PlanChange, ProgressEvent, Report, SnapshotExtraction } from "./types";
+import type { Plan, PlanChange, ProgressEvent, Recommendation, Report, SnapshotExtraction } from "./types";
 import { fetchSnapshotText, listSnapshots, normalizeUrl, pickSpread } from "./wayback";
 
 const planSchema = {
@@ -48,6 +48,45 @@ const summarySchema = {
   required: ["vendor", "headline", "verdict", "limitChanges"],
 };
 
+const recommendationSchema = {
+  type: "OBJECT",
+  properties: {
+    nextHikePrediction: { type: "STRING" },
+    contractStrategy: { type: "STRING" },
+    architectureDefense: { type: "STRING" },
+  },
+  required: ["nextHikePrediction", "contractStrategy", "architectureDefense"],
+};
+
+// Second pass over the finished report: turns the price history into buyer guidance.
+export async function recommendPlanning(report: Report): Promise<Recommendation> {
+  const hikes = report.changes.filter((c) => c.kind === "price_increase");
+  const today = new Date().toISOString().slice(0, 10);
+  return geminiJson<Recommendation>(
+    `You are a pragmatic procurement + engineering advisor. Today is ${today}.
+
+Vendor: ${report.vendor} (${report.url})
+Archived pricing observed from ${report.snapshots[0]?.date} to ${report.snapshots[report.snapshots.length - 1]?.date} (${report.volatility.yearsCovered} years).
+Stability grade: ${report.grade}. Price increases: ${report.volatility.priceIncreases}. Plans removed: ${report.volatility.planRemovals}. Limits tightened: ${report.volatility.limitTightenings}. Free tier killed: ${report.volatility.freeTierKilled ? "yes" : "no"}.
+
+Price increases with dates:
+${hikes.map((c) => `- ${c.date} ${c.detail}`).join("\n") || "- none observed"}
+
+All detected changes:
+${report.changes.map((c) => `- ${c.date} ${c.detail}`).join("\n") || "- none"}
+
+Monthly price per plan over time (JSON):
+${JSON.stringify(report.timeline)}
+
+Answer with three short, concrete points (each 1-2 sentences, max 200 chars, no markdown):
+1. nextHikePrediction: based on the frequency and spacing of past increases, when is the next price jump likely? Give a rough window (e.g. "likely within 12-18 months, around mid-2027") and the reasoning in a few words. If no increases were ever observed, say a hike is not indicated by history but note any other risk (plan removals, limit cuts).
+2. contractStrategy: should a buyer lock into an annual contract now to freeze the current price, or stay month-to-month? Decide, and justify from the history.
+3. architectureDefense: ONE sentence of specific engineering advice to avoid technical lock-in with THIS vendor's product category (e.g. wrap the SDK behind an interface, keep deploy config portable, avoid proprietary features), so the team can switch if prices exceed budget.`,
+    recommendationSchema,
+    "smart",
+  );
+}
+
 const CONCURRENCY = Number(process.env.SNAPSHOT_CONCURRENCY || 3);
 
 async function extractPlans(text: string, date: string): Promise<Plan[]> {
@@ -69,11 +108,20 @@ ${text}
 """`;
   const out = await geminiJson<{ isPricingPage: boolean; plans: Plan[] }>(prompt, planSchema);
   if (!out.isPricingPage) return [];
-  return out.plans.slice(0, 8).map((p) => ({
+  return out.plans.slice(0, 8).map(normalizePlan);
+}
+
+// "$2,000 /mo per 10 seats" is a bundle: compare it per seat so a minimum-seat change isn't a 900% hike.
+export function normalizePlan(p: Plan): Plan {
+  const bundle = /per\s+(\d+)\s+(seats?|users?|members?)/i.exec(p.priceLabel)?.[1];
+  const n = bundle ? Number(bundle) : 1;
+  return {
     ...p,
     name: p.name.trim(),
+    monthlyPrice: p.monthlyPrice != null && n > 1 ? p.monthlyPrice / n : p.monthlyPrice,
+    perSeat: p.perSeat || n > 1,
     limits: (p.limits ?? []).slice(0, 6),
-  }));
+  };
 }
 
 function canon(name: string): string {
@@ -188,17 +236,25 @@ export async function analyze(
   const { changes } = diff;
 
   emit({ type: "status", message: "Writing the verdict…", step: 4, total: 4 });
+  const summary = await summarizeHistory(url, good, changes);
 
+  const report = finalizeReport(url, snapshots, diff, summary);
+  try {
+    report.recommendation = await recommendPlanning(report);
+  } catch {
+    // Planning advice is a bonus; never fail the report over it.
+  }
+  return report;
+}
+
+export type Summary = { vendor: string; headline: string; verdict: string; limitChanges: PlanChange[] };
+
+export async function summarizeHistory(url: string, good: SnapshotExtraction[], changes: PlanChange[]): Promise<Summary> {
   const compact = good.map((s) => ({
     date: s.date,
     plans: s.plans.map((p) => ({ name: p.name, price: p.priceLabel, limits: p.limits })),
   }));
-  const summary = await geminiJson<{
-    vendor: string;
-    headline: string;
-    verdict: string;
-    limitChanges: PlanChange[];
-  }>(
+  return geminiJson<Summary>(
     `You are a skeptical analyst reviewing how a SaaS vendor's pricing changed over time, based on archived pricing pages.
 
 URL: ${url}
@@ -216,8 +272,6 @@ Tasks:
     summarySchema,
     "smart",
   );
-
-  return finalizeReport(url, snapshots, diff, summary);
 }
 
 export function summarizeVolatility(
@@ -343,7 +397,7 @@ export function finalizeReport(
   url: string,
   snapshots: SnapshotExtraction[],
   diff: Diff,
-  summary: { vendor: string; headline: string; verdict: string; limitChanges: PlanChange[] },
+  summary: Summary,
 ): Report {
   const good = snapshots.filter((s) => s.ok);
   const allChanges = [...diff.changes, ...summary.limitChanges].sort((a, b) => a.date.localeCompare(b.date));

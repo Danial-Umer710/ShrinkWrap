@@ -624,5 +624,10 @@
     "freeTierKilled": false
   },
   "verdict": "Linear has consistently adjusted its pricing and packaging since 2020. Core paid tiers have seen regular price hikes, such as the Business plan increasing from $12 to $16 per user by late 2025, alongside structural shifts that introduced stricter team limits on lower tiers.",
-  "headline": "Steadily increased tier prices while restructuring plans and limits over time."
+  "headline": "Steadily increased tier prices while restructuring plans and limits over time.",
+  "recommendation": {
+    "nextHikePrediction": "Likely within 12 months, around late 2026 or early 2027, driven by recent annual cadence hikes on Basic and Business tiers.",
+    "contractStrategy": "Lock into an annual contract now to freeze the current Basic ($10) or Business ($16) pricing against recurring upward adjustments.",
+    "architectureDefense": "Isolate issue tracking and project metadata behind internal repository abstraction layers to enable rapid migration to competing tools."
+  }
 }

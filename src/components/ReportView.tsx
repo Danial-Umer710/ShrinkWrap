@@ -62,6 +62,15 @@ function groupByDate(changes: PlanChange[]): DayGroup[] {
   });
 }
 
+function Advice({ label, text }: { label: string; text: string }) {
+  return (
+    <div className="rounded-xl border border-border bg-card/60 p-4">
+      <dt className="text-xs uppercase tracking-wide text-accent mb-1.5">{label}</dt>
+      <dd className="text-sm leading-relaxed">{text}</dd>
+    </div>
+  );
+}
+
 function Stat({ label, value }: { label: string; value: string | number }) {
   return (
     <div className="rounded-xl border border-border bg-card/60 p-4">
@@ -166,6 +175,18 @@ export default function ReportView({ report, permalink }: { report: Report; perm
           <p className="text-xs text-muted mt-3">
             Prices in the page&apos;s currency. &quot;Custom&quot; / contact-sales plans are not charted.
           </p>
+        </div>
+      )}
+
+      {report.recommendation && (
+        <div className="rounded-2xl border border-accent/30 bg-accent/5 p-4 sm:p-6">
+          <h3 className="font-medium mb-1">Planning &amp; Defense</h3>
+          <p className="text-xs text-muted mb-4">What to do about it, based on {report.vendor}&apos;s track record.</p>
+          <dl className="grid gap-4 sm:grid-cols-3">
+            <Advice label="Next hike" text={report.recommendation.nextHikePrediction} />
+            <Advice label="Contract strategy" text={report.recommendation.contractStrategy} />
+            <Advice label="Architecture defense" text={report.recommendation.architectureDefense} />
+          </dl>
         </div>
       )}
 

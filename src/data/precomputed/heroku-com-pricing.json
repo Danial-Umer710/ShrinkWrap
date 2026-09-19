@@ -904,5 +904,10 @@
     "freeTierKilled": true
   },
   "verdict": "Heroku started with generous free and low-cost tiers in 2009 before systematically tightening access and raising entry prices across its evolution. Buyers should note that free tiers were eventually eliminated entirely, replaced by low-cost paid entry plans like Eco and Basic by 2026.",
-  "headline": "Heroku steadily dismantled its free tier over time while shifting core dyno limits."
+  "headline": "Heroku steadily dismantled its free tier over time while shifting core dyno limits.",
+  "recommendation": {
+    "nextHikePrediction": "No direct base price hikes have been recorded, but historical volatility shows aggressive plan pruning and free tier elimination, signaling high risk for forced tier migrations.",
+    "contractStrategy": "Stay month-to-month since historical price adjustments manifest as sudden plan deprecations and tier replacements rather than straightforward percentage increases on existing plans.",
+    "architectureDefense": "Keep deployment configurations completely portable using containerization standards and avoid proprietary buildpacks or addons so migration off the platform remains straightforward."
+  }
 }
