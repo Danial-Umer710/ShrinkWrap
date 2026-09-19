@@ -471,13 +471,14 @@
       "detail": "Added Notion Agent, AI Meeting Notes, and Enterprise Search beta features."
     }
   ],
-  "grade": "F",
+  "grade": "D",
   "volatility": {
     "priceIncreases": 3,
     "planRemovals": 3,
     "limitTightenings": 2,
     "yearsCovered": 4.9,
-    "biggestIncreasePct": 33
+    "biggestIncreasePct": 33,
+    "freeTierKilled": false
   },
   "verdict": "Notion overhauled its plan structure in August 2023, replacing Personal and Team tiers with Free, Plus, and Business plans while imposing file upload caps and guest limits. Although the Business tier saw a temporary price drop to $15/seat in 2024, it increased to $20/member by 2026 alongside bundled AI capabilities. Buyers should account for recurring plan re-bundling and seat price creep when committing long-term.",
   "headline": "Notion restructured plans, capped free entitlements, and hiked seat prices over time."

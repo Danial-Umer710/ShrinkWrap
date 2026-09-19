@@ -1,0 +1,556 @@
+{
+  "url": "https://slack.com/pricing",
+  "vendor": "Slack",
+  "generatedAt": "2026-09-19T10:16:31.117Z",
+  "snapshots": [
+    {
+      "timestamp": "20140703032826",
+      "date": "2014-07-03",
+      "archiveUrl": "https://web.archive.org/web/20140703032826/https://slack.com/pricing",
+      "plans": [
+        {
+          "name": "Lite",
+          "monthlyPrice": 0,
+          "priceLabel": "$0",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Unlimited users and time",
+            "10,000 message searchable archive",
+            "5 external integrations",
+            "5GB total storage"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 6.67,
+          "priceLabel": "$6.67 / user / month",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "Fully searchable archive with unlimited messages",
+            "Unlimited external integrations",
+            "Simple usage statistics",
+            "Custom data retention policies"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 12.5,
+          "priceLabel": "$12.50 / user / month",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "Fully searchable archive with unlimited messages",
+            "Unlimited external integrations",
+            "Detailed usage statistics and reporting",
+            "Premium support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 49.99,
+          "priceLabel": "$49.99 / user / month",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "Fully searchable archive with unlimited messages",
+            "Unlimited external integrations",
+            "Detailed usage statistics and analysis",
+            "Priority support"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20160806031216",
+      "date": "2016-08-06",
+      "archiveUrl": "https://web.archive.org/web/20160806031216/https://slack.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "Free",
+          "currency": "$",
+          "perSeat": false,
+          "limits": [
+            "Searchable message archives up to 10k messages",
+            "10 apps or service integrations",
+            "Two-person calls",
+            "5GB total file storage for the team"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 billed monthly",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "Unlimited searchable message archives",
+            "Unlimited apps and service integrations",
+            "Custom retention policies",
+            "Guest access and priority support",
+            "10GB file storage per team member"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 15,
+          "priceLabel": "$15 billed monthly",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "SAML-based single sign-on (SSO)",
+            "Compliance Exports of all messages",
+            "99.99% Guaranteed Uptime SLA",
+            "24/7 Support with 4-hour response time",
+            "20GB file storage per team member"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": null,
+          "priceLabel": "Custom",
+          "currency": "$",
+          "perSeat": true,
+          "limits": [
+            "Federation across multiple teams",
+            "Unified directory and messaging",
+            "Shared channels across organization",
+            "Unified security and compliance policies",
+            "Organization-wide reporting & analytics"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20181102052727",
+      "date": "2018-11-02",
+      "archiveUrl": "https://web.archive.org/web/20181102052727/https://slack.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "10K of your team's most recent messages",
+            "10 third-party or custom integrations",
+            "One-on-one voice and video calls",
+            "5 GB total file storage",
+            "Standard support"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 billed monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited searchable messages",
+            "Unlimited third-party or custom integrations",
+            "Group voice and video calls up to 15 participants",
+            "10 GB file storage per team member",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 15,
+          "priceLabel": "$15 billed monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "SAML-based single sign-on (SSO)",
+            "Custom Exports for all messages",
+            "20 GB file storage per team member",
+            "24/7 support with four-hour response time",
+            "99.99% guaranteed uptime SLA"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20200802031211",
+      "date": "2020-08-02",
+      "archiveUrl": "https://web.archive.org/web/20200802031211/https://slack.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 USD /mo",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "10,000 most recent messages",
+            "10 app integrations",
+            "1:1 voice and video calls",
+            "5 GB total file storage",
+            "1 workspace"
+          ]
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8,
+          "priceLabel": "$8 USD per active user",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited integrations",
+            "Group voice and video calls up to 15",
+            "Guest accounts for outside orgs",
+            "10 GB file storage per member"
+          ]
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 15,
+          "priceLabel": "$15 USD per active user",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "SAML-based SSO & AD sync",
+            "Corporate exports for all messages",
+            "99.99% guaranteed uptime SLA",
+            "24/7 support with 4-hr response",
+            "20 GB file storage per member"
+          ]
+        },
+        {
+          "name": "Enterprise Grid",
+          "monthlyPrice": null,
+          "priceLabel": "Contact Sales",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Enterprise-grade security & HIPAA",
+            "Support for up to 500,000 users",
+            "Centralized controls & custom policies",
+            "Designated account team",
+            "1 TB file storage per member"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20220203234433",
+      "date": "2022-02-03",
+      "archiveUrl": "https://web.archive.org/web/20220203234433/https://slack.com/pricing",
+      "plans": [],
+      "ok": false
+    },
+    {
+      "timestamp": "20230802153922",
+      "date": "2023-08-02",
+      "archiveUrl": "https://web.archive.org/web/20230802153922/https://slack.com/pricing",
+      "plans": [],
+      "ok": false
+    },
+    {
+      "timestamp": "20250306065906",
+      "date": "2025-03-06",
+      "archiveUrl": "https://web.archive.org/web/20250306065906/https://slack.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 USD /mo free forever",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "90 days of message history",
+            "10 app integrations",
+            "1:1 audio and video meetings",
+            "1 workspace"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 7.25,
+          "priceLabel": "$7.25 USD per user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group audio and video meetings",
+            "1 workspace"
+          ]
+        },
+        {
+          "name": "Business+",
+          "monthlyPrice": 12.5,
+          "priceLabel": "$12.50 USD per user / month",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "User provisioning and deprovisioning",
+            "SAML-based single sign-on"
+          ]
+        },
+        {
+          "name": "Enterprise Grid",
+          "monthlyPrice": null,
+          "priceLabel": "Contact sales for pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Unlimited workspaces",
+            "Supports multiple SAML configurations"
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "timestamp": "20260903152745",
+      "date": "2026-09-03",
+      "archiveUrl": "https://web.archive.org/web/20260903152745/https://slack.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "priceLabel": "$0 USD free forever",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "90 days of message history",
+            "Up to 10 apps",
+            "1:1 meetings",
+            "1:1 external messages",
+            "Basic AI features"
+          ]
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 8.75,
+          "priceLabel": "$8.75 / user / month, when paying monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group meetings",
+            "Group external messages",
+            "Basic AI features"
+          ]
+        },
+        {
+          "name": "Business+",
+          "monthlyPrice": 18,
+          "priceLabel": "$18 / user / month, when paying monthly",
+          "currency": "USD",
+          "perSeat": true,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group meetings",
+            "Group external messages",
+            "Advanced AI features"
+          ]
+        },
+        {
+          "name": "Enterprise+",
+          "monthlyPrice": null,
+          "priceLabel": "Contact sales for pricing",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group meetings",
+            "Group external messages",
+            "Enterprise-Grade AI"
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2014-07-03",
+      "Lite": 0,
+      "Standard": 6.67,
+      "Plus": 12.5,
+      "Enterprise": 49.99
+    },
+    {
+      "date": "2016-08-06",
+      "Free": 0,
+      "Standard": 8,
+      "Plus": 15,
+      "Enterprise": null
+    },
+    {
+      "date": "2018-11-02",
+      "Free": 0,
+      "Standard": 8,
+      "Plus": 15
+    },
+    {
+      "date": "2020-08-02",
+      "Free": 0,
+      "Standard": 8,
+      "Plus": 15,
+      "Enterprise Grid": null
+    },
+    {
+      "date": "2025-03-06",
+      "Free": 0,
+      "Pro": 7.25,
+      "Business+": 12.5,
+      "Enterprise Grid": null
+    },
+    {
+      "date": "2026-09-03",
+      "Free": 0,
+      "Pro": 8.75,
+      "Business+": 18,
+      "Enterprise": null
+    }
+  ],
+  "planNames": [
+    "Lite",
+    "Standard",
+    "Plus",
+    "Enterprise",
+    "Free",
+    "Enterprise Grid",
+    "Pro",
+    "Business+"
+  ],
+  "changes": [
+    {
+      "date": "2016-08-06",
+      "plan": "Lite",
+      "kind": "plan_removed",
+      "detail": "Lite plan ($0) disappeared"
+    },
+    {
+      "date": "2016-08-06",
+      "plan": "Standard",
+      "kind": "price_increase",
+      "detail": "Standard: $6.67 / user / month → $8 billed monthly (+20%)"
+    },
+    {
+      "date": "2016-08-06",
+      "plan": "Plus",
+      "kind": "price_increase",
+      "detail": "Plus: $12.50 / user / month → $15 billed monthly (+20%)"
+    },
+    {
+      "date": "2016-08-06",
+      "plan": "Free",
+      "kind": "plan_added",
+      "detail": "New Free plan at Free"
+    },
+    {
+      "date": "2016-08-06",
+      "plan": "Standard",
+      "kind": "limit_loosened",
+      "detail": "File storage increased from unspecified limits to 10GB per team member."
+    },
+    {
+      "date": "2016-08-06",
+      "plan": "Plus",
+      "kind": "limit_loosened",
+      "detail": "File storage increased to 20GB per team member with guaranteed uptime SLA."
+    },
+    {
+      "date": "2018-11-02",
+      "plan": "Enterprise",
+      "kind": "plan_removed",
+      "detail": "Enterprise plan (Custom) disappeared"
+    },
+    {
+      "date": "2018-11-02",
+      "plan": "Free",
+      "kind": "limit_tightened",
+      "detail": "Searchable archive restricted to the 10K most recent messages."
+    },
+    {
+      "date": "2020-08-02",
+      "plan": "Enterprise Grid",
+      "kind": "plan_added",
+      "detail": "New Enterprise Grid plan at Contact Sales"
+    },
+    {
+      "date": "2025-03-06",
+      "plan": "Standard",
+      "kind": "plan_removed",
+      "detail": "Standard plan ($8 USD per active user) disappeared"
+    },
+    {
+      "date": "2025-03-06",
+      "plan": "Plus",
+      "kind": "plan_removed",
+      "detail": "Plus plan ($15 USD per active user) disappeared"
+    },
+    {
+      "date": "2025-03-06",
+      "plan": "Pro",
+      "kind": "plan_added",
+      "detail": "New Pro plan at $7.25 USD per user / month"
+    },
+    {
+      "date": "2025-03-06",
+      "plan": "Business+",
+      "kind": "plan_added",
+      "detail": "New Business+ plan at $12.50 USD per user / month"
+    },
+    {
+      "date": "2025-03-06",
+      "plan": "Free",
+      "kind": "limit_tightened",
+      "detail": "Message history was severely cut to just 90 days."
+    },
+    {
+      "date": "2026-09-03",
+      "plan": "Pro",
+      "kind": "price_increase",
+      "detail": "Pro: $7.25 USD per user / month → $8.75 / user / month, when paying monthly (+21%)"
+    },
+    {
+      "date": "2026-09-03",
+      "plan": "Business+",
+      "kind": "price_increase",
+      "detail": "Business+: $12.50 USD per user / month → $18 / user / month, when paying monthly (+44%)"
+    },
+    {
+      "date": "2026-09-03",
+      "plan": "Enterprise Grid",
+      "kind": "plan_removed",
+      "detail": "Enterprise Grid plan (Contact sales for pricing) disappeared"
+    },
+    {
+      "date": "2026-09-03",
+      "plan": "Enterprise",
+      "kind": "plan_added",
+      "detail": "New Enterprise plan at Contact sales for pricing"
+    }
+  ],
+  "grade": "D",
+  "volatility": {
+    "priceIncreases": 4,
+    "planRemovals": 5,
+    "limitTightenings": 2,
+    "yearsCovered": 12.2,
+    "biggestIncreasePct": 44,
+    "freeTierKilled": false
+  },
+  "verdict": "Slack has steadily increased its pricing and restricted limits over the years. The Free tier took a major hit by capping message history at 90 days by 2025, and monthly plan prices have risen significantly up to 2026. Buyers should anticipate rising costs upon renewal and evaluate whether advanced AI or enterprise features justify the premium tiers.",
+  "headline": "Slack raised monthly pricing across plans while shrinking the Free tier message history."
+}

@@ -100,7 +100,7 @@ function removalPenalty(changes: PlanChange[]): number {
   return penalty;
 }
 
-function computeGrade(v: Report["volatility"], changes: PlanChange[]): Report["grade"] {
+export function computeGrade(v: Report["volatility"], changes: PlanChange[]): Report["grade"] {
   const score =
     v.priceIncreases * 2 +
     removalPenalty(changes) * 3 +
@@ -108,11 +108,17 @@ function computeGrade(v: Report["volatility"], changes: PlanChange[]): Report["g
     (v.freeTierKilled ? 4 : 0) +
     (v.biggestIncreasePct && v.biggestIncreasePct >= 50 ? 2 : 0);
   const perYear = score / Math.max(1, v.yearsCovered);
-  if (perYear === 0) return "A";
-  if (perYear < 1) return "B";
-  if (perYear < 2) return "C";
-  if (perYear < 3.5) return "D";
-  return "F";
+  let grade: Report["grade"] = "F";
+  if (perYear === 0) grade = "A";
+  else if (perYear < 1) grade = "B";
+  else if (perYear < 2) grade = "C";
+  else if (perYear < 3.5) grade = "D";
+  // Killing the free tier strands everyone who built on it: never better than D,
+  // and F when paired with any hike or tightening.
+  if (v.freeTierKilled) {
+    grade = v.priceIncreases + v.limitTightenings > 0 || grade === "F" ? "F" : "D";
+  }
+  return grade;
 }
 
 export async function analyze(
@@ -154,7 +160,9 @@ export async function analyze(
 
   const good = snapshots.filter((s) => s.ok);
   if (good.length < 2) {
-    throw new Error("Could not read enough archived pricing pages for this URL. Try a different pricing URL.");
+    const firstErr = snapshots.find((s) => s.error)?.error;
+    const why = firstErr ? ` (${firstErr.split("\n")[0].slice(0, 160)})` : "";
+    throw new Error(`Could not read enough archived pricing pages for this URL${why}. Try again or use a different pricing URL.`);
   }
 
   emit({ type: "status", message: "Comparing prices across time…", step: 3, total: 4 });

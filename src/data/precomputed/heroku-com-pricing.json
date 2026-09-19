@@ -1,7 +1,7 @@
 {
   "url": "https://www.heroku.com/pricing",
   "vendor": "Heroku",
-  "generatedAt": "2026-09-19T10:00:32.500Z",
+  "generatedAt": "2026-09-19T10:17:53.718Z",
   "snapshots": [
     {
       "timestamp": "20090427055856",
@@ -11,13 +11,13 @@
         {
           "name": "Blossom",
           "monthlyPrice": 0,
-          "priceLabel": "FREE",
+          "priceLabel": "Free",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "5MB storage",
-            "Fits a blog or personal site",
-            "Shared cluster database"
+            "Shared cluster",
+            "Fits a blog, personal site or small project wiki"
           ]
         },
         {
@@ -28,8 +28,8 @@
           "perSeat": false,
           "limits": [
             "50MB storage",
-            "Small company intranet",
-            "Shared cluster database"
+            "Shared cluster",
+            "Great for a small company intranet or staging server"
           ]
         },
         {
@@ -40,8 +40,8 @@
           "perSeat": false,
           "limits": [
             "500MB storage",
-            "Small biz app or e-commerce site",
-            "Shared cluster database"
+            "Shared cluster",
+            "Perfect for a small biz app, e-commerce site or CMS"
           ]
         },
         {
@@ -52,8 +52,8 @@
           "perSeat": false,
           "limits": [
             "1 compute unit",
-            "500G storage",
-            "Dedicated high-performance database"
+            "500GB storage",
+            "Dedicated database box for heavy traffic apps"
           ]
         },
         {
@@ -65,7 +65,7 @@
           "limits": [
             "5 compute units",
             "1TB storage",
-            "Dedicated high-performance database"
+            "Dedicated database box for concurrent apps"
           ]
         },
         {
@@ -77,7 +77,7 @@
           "limits": [
             "20 compute units",
             "2TB storage",
-            "Dedicated high-performance database"
+            "Dedicated database box for maximum performance"
           ]
         }
       ],
@@ -89,28 +89,41 @@
       "archiveUrl": "https://web.archive.org/web/20110802083300/https://www.heroku.com/pricing",
       "plans": [
         {
-          "name": "Web/Worker Dynos",
+          "name": "Web Dynos",
           "monthlyPrice": 36.5,
           "priceLabel": "$0.05 / hour",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "750 free hours per month",
-            "$0.05 per hour per dyno",
-            "Web and background workers",
-            "Instant deployment and scaling"
+            "Single web process running code",
+            "Responds to HTTP requests",
+            "Increases HTTP performance",
+            "Billed hourly"
+          ]
+        },
+        {
+          "name": "Worker Dynos",
+          "monthlyPrice": 36.5,
+          "priceLabel": "$0.05 / hour",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "Single background process",
+            "Processes jobs from a queue",
+            "Increases capacity",
+            "Billed hourly"
           ]
         },
         {
           "name": "Shared Database",
-          "monthlyPrice": 0,
-          "priceLabel": "Free",
+          "monthlyPrice": 15,
+          "priceLabel": "$15 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "5 MB storage free",
             "Suitable for staging and testing",
-            "Upgradable to 20 GB for $15"
+            "Low-scale production applications",
+            "Up to 20 GB storage available"
           ]
         },
         {
@@ -177,19 +190,6 @@
             "13 comp. unit",
             "2TB database max"
           ]
-        },
-        {
-          "name": "Mecha",
-          "monthlyPrice": 6400,
-          "priceLabel": "$6,400 / month",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "400 connections",
-            "68 GB RAM",
-            "26 comp. unit",
-            "2TB database max"
-          ]
         }
       ],
       "ok": true
@@ -200,27 +200,42 @@
       "archiveUrl": "https://web.archive.org/web/20140207113650/https://www.heroku.com/pricing",
       "plans": [
         {
-          "name": "Dev",
-          "monthlyPrice": 0,
-          "priceLabel": "FREE",
+          "name": "1X Dyno",
+          "monthlyPrice": 36,
+          "priceLabel": "$0.05/dyno-hour",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "10K rows",
-            "Trial and development",
-            "Up to 4 hours downtime/month"
+            "512MB RAM",
+            "1x CPU Share",
+            "Lightweight isolated containers",
+            "Runs web and worker processes"
           ]
         },
         {
-          "name": "Basic",
-          "monthlyPrice": 9,
-          "priceLabel": "$9",
+          "name": "2X Dyno",
+          "monthlyPrice": 72,
+          "priceLabel": "$0.10/dyno-hour",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "10M rows",
-            "Up to 1 hour downtime/month",
-            "Continuous Protection"
+            "1024MB RAM",
+            "2x CPU Share",
+            "Increased performance",
+            "Independent scaling"
+          ]
+        },
+        {
+          "name": "Performance Dyno",
+          "monthlyPrice": 576,
+          "priceLabel": "$0.80/dyno-hour",
+          "currency": "USD",
+          "perSeat": false,
+          "limits": [
+            "6GB RAM",
+            "Superior Quality-of-Service",
+            "Low latency",
+            "High throughput"
           ]
         },
         {
@@ -232,7 +247,8 @@
           "limits": [
             "Business Hour Support",
             "1+ Day Response Times",
-            "Help application access"
+            "Access via Help application",
+            "Community forum and docs"
           ]
         },
         {
@@ -244,7 +260,8 @@
           "limits": [
             "24/7 Support",
             "1-hour Response SLA",
-            "3 month minimum commitment"
+            "Minimum 3 month commitment",
+            "Prioritized ticketing"
           ]
         },
         {
@@ -256,7 +273,8 @@
           "limits": [
             "Includes Premium Support",
             "Dedicated Technical Consulting",
-            "Requires Premium Support addition"
+            "Personalized account guidance",
+            "Fast response times"
           ]
         }
       ],
@@ -271,12 +289,12 @@
           "name": "Free",
           "monthlyPrice": 0,
           "priceLabel": "Free",
-          "currency": "USD",
+          "currency": "$",
           "perSeat": false,
           "limits": [
             "Sleeps after 30 mins of inactivity",
-            "Monthly pool of 1000 Free dyno hours",
-            "Custom domains supported",
+            "1000 Free dyno hours per month",
+            "Custom domains included",
             "512 MB RAM",
             "1 web / 1 worker"
           ]
@@ -284,22 +302,22 @@
         {
           "name": "Hobby",
           "monthlyPrice": 7,
-          "priceLabel": "$7 / dyno per month",
-          "currency": "USD",
+          "priceLabel": "$7 /dyno per month",
+          "currency": "$",
           "perSeat": false,
           "limits": [
             "Never sleeps",
-            "Multiple workers",
+            "Multiple workers for apps",
             "512 MB RAM",
             "10 Process Types",
-            "All Free dyno features included"
+            "Prorated to the second billing"
           ]
         },
         {
           "name": "Standard 1x",
           "monthlyPrice": 25,
-          "priceLabel": "$25 / dyno per month",
-          "currency": "USD",
+          "priceLabel": "$25/dyno per month",
+          "currency": "$",
           "perSeat": false,
           "limits": [
             "Simple horizontal scalability",
@@ -312,8 +330,8 @@
         {
           "name": "Standard 2x",
           "monthlyPrice": 50,
-          "priceLabel": "$50 / dyno per month",
-          "currency": "USD",
+          "priceLabel": "$50/dyno per month",
+          "currency": "$",
           "perSeat": false,
           "limits": [
             "Simple horizontal scalability",
@@ -326,57 +344,29 @@
         {
           "name": "Performance M",
           "monthlyPrice": 250,
-          "priceLabel": "$250 / dyno per month",
-          "currency": "USD",
+          "priceLabel": "$250/dyno per month",
+          "currency": "$",
           "perSeat": false,
           "limits": [
             "Superior performance for high traffic apps",
-            "Mix with Standard 1x and 2x dynos",
+            "Dedicated resources",
             "2.5GB RAM",
-            "Dedicated dynos",
-            "Unlimited Process Types"
+            "Unlimited Process Types",
+            "Mix with standard dynos"
           ]
         },
         {
           "name": "Performance L",
           "monthlyPrice": 500,
-          "priceLabel": "$500 / dyno per month",
-          "currency": "USD",
+          "priceLabel": "$500/dyno per month",
+          "currency": "$",
           "perSeat": false,
           "limits": [
             "Superior performance for high traffic apps",
-            "Mix with Standard 1x and 2x dynos",
+            "Dedicated resources",
             "14GB RAM",
-            "Dedicated dynos",
-            "Unlimited Process Types"
-          ]
-        },
-        {
-          "name": "Heroku Teams",
-          "monthlyPrice": 10,
-          "priceLabel": "$10 per month 6-25 team members",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "FREE 1-5 team members",
-            "Collaborate on multiple projects",
-            "App-level control over permissions",
-            "Centralized billing",
-            "Up to 25 team members"
-          ]
-        },
-        {
-          "name": "Heroku Enterprise",
-          "monthlyPrice": null,
-          "priceLabel": "Custom",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "Access to Heroku Private Spaces",
-            "SSO for Heroku",
-            "Add-on Controls whitelisting",
-            "Access to Heroku Connect",
-            "Premium Support & Solution Architect"
+            "Unlimited Process Types",
+            "Mix with standard dynos"
           ]
         }
       ],
@@ -394,101 +384,75 @@
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "1000 Free dyno hours",
-            "512 MB RAM",
-            "1 web / 1 worker",
-            "Sleeps after 30 mins"
+            "Ideal for experimenting",
+            "Sleeps after 30 mins of inactivity",
+            "1000 Free dyno hours per month",
+            "512 MB RAM"
           ]
         },
         {
           "name": "Hobby",
           "monthlyPrice": 7,
-          "priceLabel": "$7 / dyno / month",
+          "priceLabel": "$7 /dyno per month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "512 MB RAM",
-            "10 Process Types",
+            "Perfect for small scale personal projects",
             "Never sleeps",
-            "Free SSL & ACM"
+            "Free SSL for custom domains",
+            "512 MB RAM"
           ]
         },
         {
           "name": "Standard 1x",
           "monthlyPrice": 25,
-          "priceLabel": "$25 / dyno / month",
+          "priceLabel": "$25/dyno per month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "512MB RAM",
-            "Unlimited process types",
+            "Enhanced visibility and performance",
+            "Horizontal scalability",
             "Threshold alerts",
-            "Preboot deployment"
+            "Preboot zero downtime deploys"
           ]
         },
         {
           "name": "Standard 2x",
           "monthlyPrice": 50,
-          "priceLabel": "$50 / dyno / month",
+          "priceLabel": "$50/dyno per month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
+            "Enhanced visibility and performance",
             "1GB RAM",
-            "Unlimited process types",
             "Threshold alerts",
-            "Preboot deployment"
+            "Horizontal scalability"
           ]
         },
         {
           "name": "Performance M",
           "monthlyPrice": 250,
-          "priceLabel": "$250 / dyno / month",
+          "priceLabel": "$250 /dyno per month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "2.5GB RAM",
+            "Superior performance for high traffic apps",
+            "Dedicated resources",
             "Autoscaling",
-            "Dedicated dynos",
-            "High performance"
+            "2.5GB RAM"
           ]
         },
         {
           "name": "Performance L",
           "monthlyPrice": 500,
-          "priceLabel": "$500 / dyno / month",
+          "priceLabel": "$500 /dyno per month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
-            "14GB RAM",
+            "Superior performance for high traffic apps",
+            "Dedicated resources",
             "Autoscaling",
-            "Dedicated dynos",
-            "Max performance"
-          ]
-        },
-        {
-          "name": "Heroku Teams",
-          "monthlyPrice": 10,
-          "priceLabel": "$10 per month 6-25 team members",
-          "currency": "USD",
-          "perSeat": true,
-          "limits": [
-            "6-25 team members",
-            "App level permissions",
-            "Centralized billing",
-            "Multiple projects"
-          ]
-        },
-        {
-          "name": "Heroku CI",
-          "monthlyPrice": 10,
-          "priceLabel": "$10 per month",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "Unlimited tests",
-            "Zero queue time",
-            "Visual test runner",
-            "Integrated with Pipelines"
+            "14GB RAM"
           ]
         }
       ],
@@ -516,338 +480,78 @@
         {
           "name": "Eco",
           "monthlyPrice": 5,
-          "priceLabel": "$5",
+          "priceLabel": "$5 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "0.5 GB RAM",
-            "1x-4x compute",
             "Personal accounts only",
-            "Sleeps after 30 minutes of inactivity"
+            "Sleeps after 30 minutes of inactivity",
+            "Custom domains and unified logs"
           ]
         },
         {
           "name": "Basic",
           "monthlyPrice": 7,
-          "priceLabel": "$7",
+          "priceLabel": "$7 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "0.5 GB RAM",
-            "1x-4x compute",
+            "Always on",
             "Free SSL",
-            "Always on"
+            "10 process types"
           ]
         },
         {
           "name": "Standard-1X",
           "monthlyPrice": 25,
-          "priceLabel": "$25",
+          "priceLabel": "$25 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "0.5 GB RAM",
-            "1x-4x compute",
             "Simple horizontal scalability",
-            "App metrics and threshold alerts"
-          ]
-        },
-        {
-          "name": "Standard-2X",
-          "monthlyPrice": 50,
-          "priceLabel": "$50",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "1 GB RAM",
-            "2x-8x compute",
-            "Simple horizontal scalability",
-            "App metrics and threshold alerts"
+            "App metrics and threshold alerts",
+            "Unlimited process types"
           ]
         },
         {
           "name": "Performance-M",
           "monthlyPrice": 250,
-          "priceLabel": "$250",
+          "priceLabel": "$250 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "2.5 GB RAM",
-            "12x compute",
             "Dedicated compute resources",
-            "Autoscaling"
-          ]
-        },
-        {
-          "name": "Performance-L",
-          "monthlyPrice": 500,
-          "priceLabel": "$500",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "14 GB RAM",
-            "50x compute",
-            "Dedicated compute resources",
-            "Autoscaling"
-          ]
-        },
-        {
-          "name": "Performance-L-RAM",
-          "monthlyPrice": 500,
-          "priceLabel": "$500",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "30 GB RAM",
-            "24x compute",
-            "Dedicated compute resources",
-            "Autoscaling"
-          ]
-        },
-        {
-          "name": "Performance-XL",
-          "monthlyPrice": 750,
-          "priceLabel": "$750",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "62 GB RAM",
-            "50x compute",
-            "Dedicated compute resources",
-            "Autoscaling"
-          ]
-        },
-        {
-          "name": "Performance-2XL",
-          "monthlyPrice": 1500,
-          "priceLabel": "$1,500",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "126 GB RAM",
-            "100x compute",
-            "Dedicated compute resources",
-            "Autoscaling"
+            "Autoscaling",
+            "Predictable performance"
           ]
         },
         {
           "name": "Private-S",
           "monthlyPrice": 125,
-          "priceLabel": "$125",
+          "priceLabel": "$125 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "1 GB RAM",
-            "12x compute",
             "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "Private-M",
-          "monthlyPrice": 250,
-          "priceLabel": "$250",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "2.5 GB RAM",
-            "12x compute",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "Private-L",
-          "monthlyPrice": 500,
-          "priceLabel": "$500",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "14 GB RAM",
-            "50x compute",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "Private-L-RAM",
-          "monthlyPrice": 500,
-          "priceLabel": "$500",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "30 GB RAM",
-            "24x compute",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "Private-XL",
-          "monthlyPrice": 750,
-          "priceLabel": "$750",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "62 GB RAM",
-            "50x compute",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "Private-2XL",
-          "monthlyPrice": 1500,
-          "priceLabel": "$1,500",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "126 GB RAM",
-            "100x compute",
-            "Full network isolation",
+            "Dedicated runtime environment",
             "Private Space required"
           ]
         },
         {
           "name": "Shield-S",
           "monthlyPrice": 150,
-          "priceLabel": "$150",
+          "priceLabel": "$150 / month",
           "currency": "USD",
           "perSeat": false,
           "limits": [
             "1 GB RAM",
-            "12x compute",
-            "Ability to sign BAAs for HIPAA compliance",
-            "PCI compliance"
-          ]
-        },
-        {
-          "name": "Shield-M",
-          "monthlyPrice": 300,
-          "priceLabel": "$300",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "2.5 GB RAM",
-            "12x compute",
-            "Ability to sign BAAs for HIPAA compliance",
-            "PCI compliance"
-          ]
-        },
-        {
-          "name": "Shield-L",
-          "monthlyPrice": 600,
-          "priceLabel": "$600",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "14 GB RAM",
-            "50x compute",
-            "Ability to sign BAAs for HIPAA compliance",
-            "PCI compliance"
-          ]
-        },
-        {
-          "name": "Shield-L-RAM",
-          "monthlyPrice": 600,
-          "priceLabel": "$600",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "30 GB RAM",
-            "24x compute",
-            "Ability to sign BAAs for HIPAA compliance",
-            "PCI compliance"
-          ]
-        },
-        {
-          "name": "Shield-XL",
-          "monthlyPrice": 900,
-          "priceLabel": "$900",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "62 GB RAM",
-            "50x compute",
-            "Ability to sign BAAs for HIPAA compliance",
-            "PCI compliance"
-          ]
-        },
-        {
-          "name": "Shield-2XL",
-          "monthlyPrice": 1800,
-          "priceLabel": "$1,800",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "126 GB RAM",
-            "100x compute",
-            "Ability to sign BAAs for HIPAA compliance",
-            "PCI compliance"
-          ]
-        },
-        {
-          "name": "Classic 1CPU-0.5GB",
-          "monthlyPrice": 25,
-          "priceLabel": "$25",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "0.5GB RAM",
-            "1 vCPU",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "Classic 2CPU-1GB",
-          "monthlyPrice": 50,
-          "priceLabel": "$50",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "1 GB RAM",
-            "2 vCPUs",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "General Purpose 2CPU-4GB",
-          "monthlyPrice": 80,
-          "priceLabel": "$80",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "4 GB RAM",
-            "1 vCPU",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "General Purpose 2CPU-8GB",
-          "monthlyPrice": 160,
-          "priceLabel": "$160",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "8 GB RAM",
-            "2 vCPUs",
-            "Full network isolation",
-            "Private Space required"
-          ]
-        },
-        {
-          "name": "General Purpose 4CPU-16GB",
-          "monthlyPrice": 320,
-          "priceLabel": "$320",
-          "currency": "USD",
-          "perSeat": false,
-          "limits": [
-            "16 GB RAM",
-            "4 vCPUs",
-            "Full network isolation",
+            "Ability to sign BAAs for HIPAA",
+            "PCI compliance",
             "Private Space required"
           ]
         }
@@ -867,19 +571,20 @@
     },
     {
       "date": "2011-08-02",
-      "Web/Worker Dynos": 36.5,
-      "Shared Database": 0,
+      "Web Dynos": 36.5,
+      "Worker Dynos": 36.5,
+      "Shared Database": 15,
       "Ronin": 200,
       "Fugu": 400,
       "Ika": 800,
       "Zilla": 1600,
-      "Baku": 3200,
-      "Mecha": 6400
+      "Baku": 3200
     },
     {
       "date": "2014-02-07",
-      "Dev": 0,
-      "Basic": 9,
+      "1X Dyno": 36,
+      "2X Dyno": 72,
+      "Performance Dyno": 576,
       "Standard Support": 0,
       "Premium Support": 1000,
       "Technical Account Manager": 2000
@@ -891,9 +596,7 @@
       "Standard 1x": 25,
       "Standard 2x": 50,
       "Performance M": 250,
-      "Performance L": 500,
-      "Heroku Teams": 10,
-      "Heroku Enterprise": null
+      "Performance L": 500
     },
     {
       "date": "2019-08-06",
@@ -902,38 +605,16 @@
       "Standard 1x": 25,
       "Standard 2x": 50,
       "Performance M": 250,
-      "Performance L": 500,
-      "Heroku Teams": 10,
-      "Heroku CI": 10
+      "Performance L": 500
     },
     {
       "date": "2026-09-01",
       "Eco": 5,
       "Basic": 7,
       "Standard 1x": 25,
-      "Standard 2x": 50,
       "Performance M": 250,
-      "Performance L": 500,
-      "Performance-L-RAM": 500,
-      "Performance-XL": 750,
-      "Performance-2XL": 1500,
       "Private-S": 125,
-      "Private-M": 250,
-      "Private-L": 500,
-      "Private-L-RAM": 500,
-      "Private-XL": 750,
-      "Private-2XL": 1500,
-      "Shield-S": 150,
-      "Shield-M": 300,
-      "Shield-L": 600,
-      "Shield-L-RAM": 600,
-      "Shield-XL": 900,
-      "Shield-2XL": 1800,
-      "Classic 1CPU-0.5GB": 25,
-      "Classic 2CPU-1GB": 50,
-      "General Purpose 2CPU-4GB": 80,
-      "General Purpose 2CPU-8GB": 160,
-      "General Purpose 4CPU-16GB": 320
+      "Shield-S": 150
     }
   ],
   "planNames": [
@@ -943,13 +624,14 @@
     "Ronin",
     "Fugu",
     "Zilla",
-    "Web/Worker Dynos",
+    "Web Dynos",
+    "Worker Dynos",
     "Shared Database",
     "Ika",
     "Baku",
-    "Mecha",
-    "Dev",
-    "Basic",
+    "1X Dyno",
+    "2X Dyno",
+    "Performance Dyno",
     "Standard Support",
     "Premium Support",
     "Technical Account Manager",
@@ -959,37 +641,17 @@
     "Standard 2x",
     "Performance M",
     "Performance L",
-    "Heroku Teams",
-    "Heroku Enterprise",
-    "Heroku CI",
     "Eco",
-    "Performance-L-RAM",
-    "Performance-XL",
-    "Performance-2XL",
+    "Basic",
     "Private-S",
-    "Private-M",
-    "Private-L",
-    "Private-L-RAM",
-    "Private-XL",
-    "Private-2XL",
-    "Shield-S",
-    "Shield-M",
-    "Shield-L",
-    "Shield-L-RAM",
-    "Shield-XL",
-    "Shield-2XL",
-    "Classic 1CPU-0.5GB",
-    "Classic 2CPU-1GB",
-    "General Purpose 2CPU-4GB",
-    "General Purpose 2CPU-8GB",
-    "General Purpose 4CPU-16GB"
+    "Shield-S"
   ],
   "changes": [
     {
       "date": "2011-08-02",
       "plan": "Blossom",
       "kind": "plan_removed",
-      "detail": "Blossom plan (FREE) disappeared"
+      "detail": "Free tier killed: Blossom plan disappeared and no free plan remains"
     },
     {
       "date": "2011-08-02",
@@ -1005,15 +667,21 @@
     },
     {
       "date": "2011-08-02",
-      "plan": "Web/Worker Dynos",
+      "plan": "Web Dynos",
       "kind": "plan_added",
-      "detail": "New Web/Worker Dynos plan at $0.05 / hour"
+      "detail": "New Web Dynos plan at $0.05 / hour"
+    },
+    {
+      "date": "2011-08-02",
+      "plan": "Worker Dynos",
+      "kind": "plan_added",
+      "detail": "New Worker Dynos plan at $0.05 / hour"
     },
     {
       "date": "2011-08-02",
       "plan": "Shared Database",
       "kind": "plan_added",
-      "detail": "New Shared Database plan at Free"
+      "detail": "New Shared Database plan at $15 / month"
     },
     {
       "date": "2011-08-02",
@@ -1029,33 +697,39 @@
     },
     {
       "date": "2011-08-02",
-      "plan": "Mecha",
-      "kind": "plan_added",
-      "detail": "New Mecha plan at $6,400 / month"
-    },
-    {
-      "date": "2011-08-02",
       "plan": "Ronin",
-      "kind": "limit_loosened",
-      "detail": "Database storage cap increased from 500 GB to 2 TB."
+      "kind": "limit_tightened",
+      "detail": "Ronin plan capacity was explicitly limited to 16 connections and 1.7 GB RAM."
     },
     {
       "date": "2011-08-02",
       "plan": "Fugu",
-      "kind": "limit_loosened",
-      "detail": "Database storage cap increased from 1 TB to 2 TB."
+      "kind": "limit_tightened",
+      "detail": "Fugu plan capacity was explicitly limited to 20 connections and 1.7 GB RAM."
+    },
+    {
+      "date": "2011-08-02",
+      "plan": "Zilla",
+      "kind": "limit_tightened",
+      "detail": "Zilla plan capacity was explicitly limited to 100 connections and 17 GB RAM."
     },
     {
       "date": "2014-02-07",
-      "plan": "Web/Worker Dynos",
+      "plan": "Web Dynos",
       "kind": "plan_removed",
-      "detail": "Web/Worker Dynos plan ($0.05 / hour) disappeared"
+      "detail": "Web Dynos plan ($0.05 / hour) disappeared"
+    },
+    {
+      "date": "2014-02-07",
+      "plan": "Worker Dynos",
+      "kind": "plan_removed",
+      "detail": "Worker Dynos plan ($0.05 / hour) disappeared"
     },
     {
       "date": "2014-02-07",
       "plan": "Shared Database",
       "kind": "plan_removed",
-      "detail": "Shared Database plan (Free) disappeared"
+      "detail": "Shared Database plan ($15 / month) disappeared"
     },
     {
       "date": "2014-02-07",
@@ -1089,21 +763,21 @@
     },
     {
       "date": "2014-02-07",
-      "plan": "Mecha",
-      "kind": "plan_removed",
-      "detail": "Mecha plan ($6,400 / month) disappeared"
+      "plan": "1X Dyno",
+      "kind": "plan_added",
+      "detail": "New 1X Dyno plan at $0.05/dyno-hour"
     },
     {
       "date": "2014-02-07",
-      "plan": "Dev",
+      "plan": "2X Dyno",
       "kind": "plan_added",
-      "detail": "New Dev plan at FREE"
+      "detail": "New 2X Dyno plan at $0.10/dyno-hour"
     },
     {
       "date": "2014-02-07",
-      "plan": "Basic",
+      "plan": "Performance Dyno",
       "kind": "plan_added",
-      "detail": "New Basic plan at $9"
+      "detail": "New Performance Dyno plan at $0.80/dyno-hour"
     },
     {
       "date": "2014-02-07",
@@ -1125,15 +799,21 @@
     },
     {
       "date": "2016-07-08",
-      "plan": "Dev",
+      "plan": "1X Dyno",
       "kind": "plan_removed",
-      "detail": "Dev plan (FREE) disappeared"
+      "detail": "1X Dyno plan ($0.05/dyno-hour) disappeared"
     },
     {
       "date": "2016-07-08",
-      "plan": "Basic",
+      "plan": "2X Dyno",
       "kind": "plan_removed",
-      "detail": "Basic plan ($9) disappeared"
+      "detail": "2X Dyno plan ($0.10/dyno-hour) disappeared"
+    },
+    {
+      "date": "2016-07-08",
+      "plan": "Performance Dyno",
+      "kind": "plan_removed",
+      "detail": "Performance Dyno plan ($0.80/dyno-hour) disappeared"
     },
     {
       "date": "2016-07-08",
@@ -1163,221 +843,90 @@
       "date": "2016-07-08",
       "plan": "Hobby",
       "kind": "plan_added",
-      "detail": "New Hobby plan at $7 / dyno per month"
+      "detail": "New Hobby plan at $7 /dyno per month"
     },
     {
       "date": "2016-07-08",
       "plan": "Standard 1x",
       "kind": "plan_added",
-      "detail": "New Standard 1x plan at $25 / dyno per month"
+      "detail": "New Standard 1x plan at $25/dyno per month"
     },
     {
       "date": "2016-07-08",
       "plan": "Standard 2x",
       "kind": "plan_added",
-      "detail": "New Standard 2x plan at $50 / dyno per month"
+      "detail": "New Standard 2x plan at $50/dyno per month"
     },
     {
       "date": "2016-07-08",
       "plan": "Performance M",
       "kind": "plan_added",
-      "detail": "New Performance M plan at $250 / dyno per month"
+      "detail": "New Performance M plan at $250/dyno per month"
     },
     {
       "date": "2016-07-08",
       "plan": "Performance L",
       "kind": "plan_added",
-      "detail": "New Performance L plan at $500 / dyno per month"
-    },
-    {
-      "date": "2016-07-08",
-      "plan": "Heroku Teams",
-      "kind": "plan_added",
-      "detail": "New Heroku Teams plan at $10 per month 6-25 team members"
-    },
-    {
-      "date": "2016-07-08",
-      "plan": "Heroku Enterprise",
-      "kind": "plan_added",
-      "detail": "New Heroku Enterprise plan at Custom"
-    },
-    {
-      "date": "2019-08-06",
-      "plan": "Heroku Enterprise",
-      "kind": "plan_removed",
-      "detail": "Heroku Enterprise plan (Custom) disappeared"
-    },
-    {
-      "date": "2019-08-06",
-      "plan": "Heroku CI",
-      "kind": "plan_added",
-      "detail": "New Heroku CI plan at $10 per month"
+      "detail": "New Performance L plan at $500/dyno per month"
     },
     {
       "date": "2026-09-01",
       "plan": "Free",
       "kind": "plan_removed",
-      "detail": "Free plan (Free) disappeared"
+      "detail": "Free tier killed: Free plan disappeared and no free plan remains"
     },
     {
       "date": "2026-09-01",
       "plan": "Hobby",
       "kind": "plan_removed",
-      "detail": "Hobby plan ($7 / dyno / month) disappeared"
+      "detail": "Hobby plan ($7 /dyno per month) disappeared"
     },
     {
       "date": "2026-09-01",
-      "plan": "Heroku Teams",
+      "plan": "Standard 2x",
       "kind": "plan_removed",
-      "detail": "Heroku Teams plan ($10 per month 6-25 team members) disappeared"
+      "detail": "Standard 2x plan ($50/dyno per month) disappeared"
     },
     {
       "date": "2026-09-01",
-      "plan": "Heroku CI",
+      "plan": "Performance L",
       "kind": "plan_removed",
-      "detail": "Heroku CI plan ($10 per month) disappeared"
+      "detail": "Performance L plan ($500 /dyno per month) disappeared"
     },
     {
       "date": "2026-09-01",
       "plan": "Eco",
       "kind": "plan_added",
-      "detail": "New Eco plan at $5"
+      "detail": "New Eco plan at $5 / month"
     },
     {
       "date": "2026-09-01",
       "plan": "Basic",
       "kind": "plan_added",
-      "detail": "New Basic plan at $7"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Performance-L-RAM",
-      "kind": "plan_added",
-      "detail": "New Performance-L-RAM plan at $500"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Performance-XL",
-      "kind": "plan_added",
-      "detail": "New Performance-XL plan at $750"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Performance-2XL",
-      "kind": "plan_added",
-      "detail": "New Performance-2XL plan at $1,500"
+      "detail": "New Basic plan at $7 / month"
     },
     {
       "date": "2026-09-01",
       "plan": "Private-S",
       "kind": "plan_added",
-      "detail": "New Private-S plan at $125"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Private-M",
-      "kind": "plan_added",
-      "detail": "New Private-M plan at $250"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Private-L",
-      "kind": "plan_added",
-      "detail": "New Private-L plan at $500"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Private-L-RAM",
-      "kind": "plan_added",
-      "detail": "New Private-L-RAM plan at $500"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Private-XL",
-      "kind": "plan_added",
-      "detail": "New Private-XL plan at $750"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Private-2XL",
-      "kind": "plan_added",
-      "detail": "New Private-2XL plan at $1,500"
+      "detail": "New Private-S plan at $125 / month"
     },
     {
       "date": "2026-09-01",
       "plan": "Shield-S",
       "kind": "plan_added",
-      "detail": "New Shield-S plan at $150"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Shield-M",
-      "kind": "plan_added",
-      "detail": "New Shield-M plan at $300"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Shield-L",
-      "kind": "plan_added",
-      "detail": "New Shield-L plan at $600"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Shield-L-RAM",
-      "kind": "plan_added",
-      "detail": "New Shield-L-RAM plan at $600"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Shield-XL",
-      "kind": "plan_added",
-      "detail": "New Shield-XL plan at $900"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Shield-2XL",
-      "kind": "plan_added",
-      "detail": "New Shield-2XL plan at $1,800"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Classic 1CPU-0.5GB",
-      "kind": "plan_added",
-      "detail": "New Classic 1CPU-0.5GB plan at $25"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "Classic 2CPU-1GB",
-      "kind": "plan_added",
-      "detail": "New Classic 2CPU-1GB plan at $50"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "General Purpose 2CPU-4GB",
-      "kind": "plan_added",
-      "detail": "New General Purpose 2CPU-4GB plan at $80"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "General Purpose 2CPU-8GB",
-      "kind": "plan_added",
-      "detail": "New General Purpose 2CPU-8GB plan at $160"
-    },
-    {
-      "date": "2026-09-01",
-      "plan": "General Purpose 4CPU-16GB",
-      "kind": "plan_added",
-      "detail": "New General Purpose 4CPU-16GB plan at $320"
+      "detail": "New Shield-S plan at $150 / month"
     }
   ],
   "grade": "F",
   "volatility": {
     "priceIncreases": 0,
     "planRemovals": 21,
-    "limitTightenings": 0,
+    "limitTightenings": 3,
     "yearsCovered": 17.3,
-    "biggestIncreasePct": null
+    "biggestIncreasePct": null,
+    "freeTierKilled": true
   },
-  "verdict": "Heroku transitioned from early flat-rate site plans to per-hour dynos, eventually standardizing on tiered monthly dyno pricing. The biggest shift occurred in 2026 with the complete removal of the free tier in favor of paid Eco ($5) and Basic ($7) tiers. Buyers should account for per-dyno scaling costs as workloads grow.",
-  "headline": "Eliminated its free tier and repeatedly overhauled dyno and database plan structures."
+  "verdict": "Heroku started with generous free and low-cost tiers in 2009 before systematically tightening access and raising entry prices across its evolution. Buyers should note that free tiers were eventually eliminated entirely, replaced by low-cost paid entry plans like Eco and Basic by 2026.",
+  "headline": "Heroku steadily dismantled its free tier over time while shifting core dyno limits."
 }

@@ -654,7 +654,7 @@
     "limitTightenings": 0,
     "yearsCovered": 12.2,
     "biggestIncreasePct": null,
-    "freeTierKilled": true
+    "freeTierKilled": false
   },
   "verdict": "GitHub has significantly lowered its paid team barrier by dropping the Team plan price from $9 to $4 per user in 2021 while introducing a renewed Free tier in 2019. Enterprise pricing has remained steadily anchored at $21 per user per month across multiple structural restructurings, offering predictable scaling for larger organizations.",
   "headline": "GitHub expanded developer access while slashing team pricing by over half."
